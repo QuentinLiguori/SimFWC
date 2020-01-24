@@ -30,6 +30,49 @@ public class Team {
 	private String tactic;
 
 	/**
+	 * Static score of the team
+	 */
+	private int scoreTeam;
+	
+	/**
+	 * 
+	 */
+	private int powerTeam; 
+	
+	/**
+	 * @return the scoreTeam
+	 */
+	public int getScoreTeam() {
+		return scoreTeam;
+	}
+
+	/**
+	 * Set the score of the team from the global score of each player
+	 * @param players
+	 */
+	public void setScoreTeam(Player[] players) {
+		int score=0;
+		for (Player p : players){
+			score += p.getGlobalScore();
+		}
+		this.scoreTeam=score/23;
+	}
+
+	/**
+	 * @return the powerTeam
+	 */
+	public int getPowerTeam() {
+		return powerTeam;
+	}
+
+	/**
+	 * @param powerTeam the powerTeam to set
+	 */
+	public void setPowerTeam(int powerTeam) {
+		this.powerTeam = powerTeam;
+	}
+	
+	/**
 	 * @return the formation
 	 */
 	public String getFormation() {
