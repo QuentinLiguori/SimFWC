@@ -73,7 +73,8 @@ public class Team {
 		for (Player p : players){
 			score += p.getGlobalScore();
 		}
-		this.scoreTeam=score/23;
+		//this.scoreTeam=score/23;
+		this.scoreTeam=score/11;
 	}
 
 	/**
