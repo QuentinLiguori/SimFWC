@@ -45,6 +45,24 @@ public class Team {
 	public int getScoreTeam() {
 		return scoreTeam;
 	}
+	
+	/**
+	 * Constructor of a team
+	 * @param formation
+	 * @param country
+	 * @param players
+	 * @param coachs
+	 * @param tactic
+	 */
+	public Team(String formation, String country, Player[] players, Coach[] coachs, String tactic) {
+		super();
+		this.formation = formation;
+		this.country = country;
+		this.players = players;
+		this.coachs = coachs;
+		this.tactic = tactic;
+		setScoreTeam(players);
+	}
 
 	/**
 	 * Set the score of the team from the global score of each player
@@ -139,23 +157,6 @@ public class Team {
 	 * @param tactic the tactic to set
 	 */
 	public void setTactic(String tactic) {
-		this.tactic = tactic;
-	}
-
-	/**
-	 * Constructor of a team
-	 * @param formation
-	 * @param country
-	 * @param players
-	 * @param coachs
-	 * @param tactic
-	 */
-	public Team(String formation, String country, Player[] players, Coach[] coachs, String tactic) {
-		super();
-		this.formation = formation;
-		this.country = country;
-		this.players = players;
-		this.coachs = coachs;
 		this.tactic = tactic;
 	}
 	
