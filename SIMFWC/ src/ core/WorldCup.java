@@ -166,7 +166,75 @@ public class WorldCup {
 	        
 	        Team sweden = new Team("4-4-2","Poland", sweden_players, sweden_coachs,"defensive");
 
+		// FRANCE
+		// gardien
+		Player lloris =  new  Player ( " Lloris " , " Hugo " , 33 , 82 , 188 , " gardien " ,  80,  85,  90,  75,  90,  80,  90,  80);
+        Player lecompte =  new  Player ( " Lecomte " , " Benjamin " , 28 , 78 , 186 , " gardien " ,  80,  80,  85,  75,  85,  75,  80,  80);
+        Player areola    =  new  Player ( " Areola " , " Alphonse " , 26 , 94 , 195 , " gardien " ,  80,  80,  85,  75,  85,  75,  85,  80);
+        // défense
+        Joueur hernandez =  nouveau  joueur ( " Hernandez " , " Lucas " , 23 , 76 , 182 , " défense " , 85 , 80 , 80 , 85 , 85 , 80 , 80 , 95 );
+        Joueur dubois =  nouveau  joueur ( " Dubois " , " Léo " , 25 , 73 , 178 , " défense " , 90 , 85 , 80 , 70 , 80 , 80 , 80 , 85 );
+        Joueur kimpembe =  nouveau  joueur ( " Kimpembe " , " Presnel " , 24 , 80 , 189 , " défense " , 80 , 80 , 80 , 80 , 80 , 80 , 80 , 85 );
+        Joueur lenglet =  nouveau  joueur ( " Lenglet " , " Clément " , 24 , 81 , 186 , " défense " , 80 , 85 , 85 , 85 , 85 , 80 , 80 , 95 );
+        Joueur mendy =  nouveau  joueur ( " Mendy " , " Benjamin " , 25 , 85 , 185 , " défense " , 85 , 90 , 85 , 80 , 80 , 80 , 80 , 85 );
+        Player pavard =  new  Player ( " Pavard " , " Benjamin " , 23 , 76 , 186 , " defense " , 80 , 80 , 80 , 80 , 80 , 80 , 80 , 90 );
+        Joueur varane =  nouveau  joueur ( " Varane " , " Raphael " , 26 , 81 , 191 , " défense " , 85 , 80 , 80 , 85 , 85 , 90 , 90 , 95 );
+		Joueur zouma =  nouveau  joueur ( " Zouma " , " Kurt " , 25 , 95 , 190 , " défense " , 80 , 80 , 80 , 80 , 80 , 95 , 95 , 90 );
+        // milieu
+        Player pogba =  new  Player ( " Pogba " , " Paul " , 26 , 84 , 191 , " milieu " , 85 , 85 , 90 , 85 , 90 , 85 , 90 , 80 );
+        Player kanté =  new  Player ( " Kanté " , " N'Golo " , 28 , 70 , 168 , " milieu " , 85 , 85 , 90 , 75 , 80 , 100 , 90 , 95 );
+        Joueur ndombele  =  nouveau  joueur ( " Ndombele " , " Tanguy " , 23 , 76 , 181 , " milieu " , 85 , 80 , 85 , 80 , 85 , 80 , 85 , 80 );
+        Joueur matuidi  =  nouveau  joueur ( " Matuidi " , " Blaise " , 32 , 75 , 180 , " milieu " , 80 , 80 , 85 , 80 , 85 , 95 , 90 , 85 );
+        Player tolisso =  new  Player ( " Tolisso " , " Corentin " , 25 , 81 , 181 , " milieu " , 85 , 85 , 90 , 85 , 85 , 85 , 85 , 80 );
+        // attaque
+        Player dembele =  new  Player ( " Dembele " , " Ousmane " , 22 , 67 , 178 , " attaquant " , 95 , 85 , 85 , 85 , 85 , 85 , 80 , 80 );
+        Player coman =  new  Player ( " Coman " , " Kingsley " , 23 , 75 , 179 , " attaquant " , 95 , 80 , 80 , 80 , 85 , 80 , 80 , 80 );
+        Joueur nabil =  nouveau  joueur ( " Nabil " , " Fékir " , 26 , 75 , 173 , " attaquant " , 85 , 80 , 85 , 85 , 85 , 80 , 85 , 80 );
+        Player giroud =  new  Player ( " Giroud " , " Olivier " , 33 , 91 , 193 , " attaquant " , 75 , 75 , 80 , 95 , 85 , 80 , 90 , 80 );
+        Player griezmann =  new  Player ( " Griezmann " , " Antoine " , 28 , 73 , 176 , " attaquant " , 85 , 85 , 90 , 85 , 90 , 90 , 80 , 80 );
+        Joueur lemar =  nouveau  joueur ( " Lemar " , " Thomas " , 24 , 62 , 171 , " attaquant " , 85 , 85 , 85 , 80 , 90 , 85 , 85 , 80 );
+        Player mbappe =  new  Player ( " Mbappe " , " Kylian " , 21 , 73 , 178 , " attaquant " , 100 , 85 , 85 , 80 , 90 , 85 , 85 , 80 );
+        // tableau
+        Joueur france_players [] = {lloris, lecompte, areola, hernandez, dubois, kimpembe, lenglet, mendy, pavard, varane,
+        		zouma, pogba, kanté , ndombele , matuidi, tolisso , dembele, coman, nabil, giroud, griezmann, lemar, mbappe};
+        Coach didier =  nouveau  coach ( " Didier " , " Deschamps " , 51 , " française " , 5 );
+        Coach coach_france [] = {didier};
+        Équipe france =  nouvelle  équipe ( " 4-2-3-1 " , " France " , france_players, coach_france, " équilibré " );
 		
+		// ARGENTINE																						Vitesse	Centre	Passe	Tête	Tir	Endurance	Puissance	Tacle
+		// gardien
+		Player marchesín =  new  Player ( " Marchesín " , " Agustín  " , 31, 85 , 188 , " gardien " ,  80,  80,  85,  75,  85,  75,  80,  80);
+        Player musso =  new  Player ( " Musso " , " Juan " , 25, 93	, 191 , " gardien " ,  75,  80,  82,  75,  85,  75,  80,  75);
+        Player martínez    =  new  Player ( " Martínez " , " Emiliano " , 27, 85, 193 , " gardien " ,  75,  80,  80,  75,  85,  75,  80,  75);
+        // défense
+        Joueur foyth =  nouveau  joueur ( " Foyth " , " Juan " , 22, 69, 187 , " défense " , 75 , 75 , 75 , 75 , 75 , 70 , 75 , 75 );
+        Joueur saravia =  nouveau  joueur ( " Saravia " , " Renzo " , 26, 75, 176 , " défense " , 91 , 73 , 73 , 70 , 70 , 76 , 70 , 75 );
+        Joueur otamendi =  nouveau  joueur ( " Otamendi " , " Nicolás " , 31, 81, 183 , " défense " , 70 , 75 , 75 , 84 , 75 , 70 , 80 , 85 );
+        Joueur pezzella =  nouveau  joueur ( " Pezzella " , " Germán " , 28, 81, 186 , " défense " , 70 , 70 , 70 , 82 , 70 , 70 , 79 , 82 );
+        Joueur rojo =  nouveau  joueur ( " Rojo " , " Marcos " , 29, 85, 187 , " défense " , 70 , 72 , 72 , 77 , 80 , 70 , 80 , 79 );
+        Player tagliafico =  new  Player ( " Tagliafico " , " Nicolás " , 27, 65, 172 , " defense " , 82 , 81 , 78 , 82 , 75 , 86 , 74 , 84 );
+        Joueur pérez =  nouveau  joueur ( " Pérez " , " Nehuén " , 19, 75, 186 , " défense " , 70 , 70 , 70 , 70 , 70 , 73 , 71 , 77 );
+        // milieu
+        Player rodríguez =  new  Player ( " Rodríguez " , " Guido " , 24 , 80 , 185 , " milieu " , 70 , 70 , 78 , 70 , 76 , 77 , 81 , 79 );
+        Player loCelso =  new  Player ( " Lo Celso " , " Giovani " , 23, 68, 177 , " milieu " , 78 , 78 , 83 , 70 , 82 , 76 , 70 , 70 );
+        Joueur paredes  =  nouveau  joueur ( " Paredes " , " Leandro " , 25, 75, 180 , " milieu " , 70 , 76 , 82 , 70 , 82 , 79 , 70 , 75 );
+        // attaque
+        Player diMaria =  new  Player ( " Di Maria " , " Angel " , 31, 69, 180 , " attaquant " , 84 , 87 , 83 , 70 , 88 , 78 , 70 , 70 );
+        Player dePaul =  new  Player ( " De Paul " , " Rodrigo Javier " , 25, 70, 178, " attaquant " , 72 , 77 , 80 , 70 , 80 , 72 , 70 , 70 );
+        Joueur acuna =  nouveau  joueur ( " Acuña " , " Marcos " , 28, 69, 172 , " attaquant " , 75 , 87 , 81 , 70 , 88 , 90 , 81 , 82 );
+        Player pereyra =  new  Player ( " Pereyra " , " Roberto " , 29,	77, 182 , " attaquant " , 75 , 75 , 79 , 70 , 78 , 74 , 70 , 70 );
+        Player ocampos =  new  Player ( " Ocampos " , " Lucas " , 25, 84, 187 , " attaquant " , 83 , 76 , 77 , 77 , 82 , 91 , 81 , 70 );
+        Joueur messi =  nouveau  joueur ( " Messi " , " Lionel " , 32, 72, 170 , " attaquant " , 84 , 88 , 92 , 70 , 95 , 75 , 70 , 70 );
+        Player aguero =  new  Player ( " Agüero " , " Sergio " , 31, 70, 173 , " attaquant " , 78 , 70 , 83 , 78 , 94 , 79 , 74 , 70 );
+		Joueur gonzalez =  nouveau  joueur ( " González " , " Nicolás " , 21, 72, 180 , " attaquant " , 79 , 70 , 70 , 70 , 73 , 78 , 70 , 70 );
+		Joueur icardi =  nouveau  joueur ( " Icardi " , " Mauro " , 26, 75, 181 , " attaquant " , 75 , 70 , 74 , 88 , 90 , 70 , 73 , 70 );
+		Joueur dybala =  nouveau  joueur ( " Dybala " , " Paulo " , 26, 75, 177 , " attaquant " , 82 , 82 , 87 , 80 , 88 , 79 , 70 , 70 );
+        // tableau
+        Joueur argentin_players [] = {marchesín, musso, martínez, foyth, saravia, otamendi, pezzella, rojo, tagliafico, pérez,
+        		rodríguez, loCelso, paredes , diMaria , dePaul, acuna , pereyra, ocampos, messi, aguero, gonzalez, icardi, dybala};
+        Coach lionel =  nouveau  coach ( " Lionel " , " Scaloni " , 41 , " argentin " , 3 );
+        Coach coach_argentin [] = {lionel};
+        Équipe argentin =  nouvelle  équipe ( " 4-3-3 " , " Argentine " , argentin_players, coach_argentin, " offensif " );
 		
 		
         /**team */
