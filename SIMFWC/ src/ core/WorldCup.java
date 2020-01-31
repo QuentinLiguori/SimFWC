@@ -1,4 +1,3 @@
-
 package core;
 import data.Player;
 import data.Team;
@@ -270,6 +269,113 @@ public class WorldCup {
 		
 		
 		
+		/**
+		 * 	Teams of Portugal and Italy : LIGUORI
+		 */
+		
+		/**
+		 * Portugal Players
+		 */
+		
+		//goal
+		Player patricio = new Player("Patricio", "R", 31, 84, 189, "gardien", 49, 11, 34, 19, 13, 40, 55, 13);
+		Player sa = new Player("sa", "J", 31, 84, 189, "gardien", 49, 11, 34, 19, 13, 40, 55, 13);
+		Player beto = new Player("Beto", "", 3è, 84, 189, "gardien", 49, 11, 34, 19, 13, 40, 55, 13);
+
+		//defense
+        Player pepe = new Player("Pepe", "", 33, 78, 189, "defense", 64, 74, 69, 73, 60, 73, 65, 71);
+        Player dias = new Player("Dias", "R", 25, 80, 187, "defense", 76, 62, 78, 79, 52, 76, 70, 81);
+        Player guerreiro = new Player("guerreiro", "", 34, 84, 192, "defense", 34, 49, 68, 77, 59, 58, 74, 75);
+        Player pereira = new Player("pereira", "R", 31, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
+        Player rui = new Player("Rui", "M", 31, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
+        Player fonte = new Player("Fonte", "J", 36, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
+        Player cancelo = new Player("Cancelo", "J", 25, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
+
+
+        //Middle
+        Player pereiraD = new Player("pereira", "D", 32, 77, 184, "milieu", 37, 49, 73, 65, 47, 85, 66, 72);
+        Player moutinho = new Player("moutinho", "J", 26, 69, 180, "milieu", 78, 69, 67, 34, 68, 69, 77, 59);
+        Player fernandes = new Player("fernandes", "B", 25, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
+        Player carvalho = new Player("carvalho", "W", 25, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
+        Player pizzi = new Player("Pizzi", "", 25, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
+        Player neves = new Player("Neves", "R", 22, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
+
+
+        //attack
+        Player ronaldoC = new Player("Ronaldo", "C", 34, 83, 187, "attaquant", 77, 67, 70, 56, 72, 76, 73, 56);
+        Player guedes = new Player("Guedes", "G", 23, 68, 179, "attaquant", 73, 56, 60, 75, 74, 69, 79, 29);
+        Player silva = new Player("Silva", "B", 25, 64, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
+        Player felix = new Player("Felix", "J", 25, 64, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
+        Player jota = new Player("Jota", "D", 25, 64, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
+        Player silvaA = new Player("Silva", "A", 25, 64, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
+        Player bruma = new Player("Bruma", "", 25, 64, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
+
+
+        //array players
+        Player[] portugal_players = {patricio, sa, beto, pepe, dias, guerreiro, pereira, rui, fonte, cancelo, pereiraD, moutinho,
+        		fernandes, carvalho, pizzi, neves, ronaldoC, guedes, silva, felix, jota, silvaA, bruma};
+        
+        //array coachs	        
+        Coach santosF = new Coach("Santos","Fernando", 66,"portugal", 2);
+        Coach[] portugal_coachs  = {santosF};
+		
+        
+        Team portugal = new Team("4-4-2","Portugal", portugal_players, portugal_coachs,"offensif");
+
+        
+        
+		/**
+		 * Italy Players
+		 */
+		
+		//goal
+		Player donnarumma = new Player("Donnarumma", "G", 31, 84, 189, "gardien", 49, 11, 34, 19, 13, 40, 55, 13);
+		Player meret = new Player("meret", "A", 31, 84, 189, "gardien", 49, 11, 34, 19, 13, 40, 55, 13);
+		Player sirigu = new Player("Sirigu", "S", 33, 84, 189, "gardien", 49, 11, 34, 19, 13, 40, 55, 13);
+
+		
+
+		//defense
+        Player florenzi = new Player("florenzi", "A", 33, 78, 189, "defense", 64, 74, 69, 73, 60, 73, 65, 71);
+        Player bonucci = new Player("bonucci", "L", 32, 80, 187, "defense", 76, 62, 78, 79, 52, 76, 70, 81);
+        Player acerbi = new Player("acerbi", "F", 34, 84, 192, "defense", 34, 49, 68, 77, 59, 58, 74, 75);
+        Player biraghi = new Player("biraghi", "C", 31, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
+        Player romagnoli = new Player("Romagnoli", "A", 31, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
+        Player lorenzo = new Player("Lorenzo", "G", 36, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
+
+
+        //Middle
+        Player emerson = new Player("emerson", "", 32, 77, 184, "milieu", 37, 49, 73, 65, 47, 85, 66, 72);
+        Player barella = new Player("barella", "N", 26, 69, 180, "milieu", 78, 69, 67, 34, 68, 69, 77, 59);
+        Player jorginho = new Player("Jorginho", "", 28, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
+        Player verratti = new Player("Verratti", "M", 25, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
+        Player tonali = new Player("Tonali", "S", 25, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
+        Player sensi = new Player("Sensi", "S", 22, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
+        Player zaniolo = new Player("Zaniolo", "N", 20, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
+
+
+
+        //attack
+        Player bernardeschi = new Player("bernardeschi", "F", 34, 83, 187, "attaquant", 77, 67, 70, 56, 72, 76, 73, 56);
+        Player immobile = new Player("Immobile", "C", 23, 68, 179, "attaquant", 73, 56, 60, 75, 74, 69, 79, 29);
+        Player insigne = new Player("insigne", "L", 28, 64, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
+        Player belotti = new Player("Belotti", "A", 25, 64, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
+        Player politano = new Player("Politano", "M", 25, 64, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
+        Player shaarawy = new Player("shaarawy", "S", 25, 64, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
+        Player chiesa = new Player("Chiesa", "F", 22, 64, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
+
+
+        //array players
+        Player[] italy_players = {donnarumma, meret, sirigu, florenzi, bonucci, acerbi, biraghi, romagnoli, lorenzo, emerson, barella, jorginho,
+        		verratti, tonali, sensi, zaniolo, bernardeschi, immobile, insigne, belotti, politano, shaarawy, chiesa};
+        
+        //array coachs	        
+        Coach mancini = new Coach("Mancini","Roberto", 56,"italy", 2);
+        Coach[] italy_coachs  = {mancini};
+		
+        
+        Team italy = new Team("4-4-2","Italy", italy_players, italy_coachs,"offensif");
+
 		
 		
 		
