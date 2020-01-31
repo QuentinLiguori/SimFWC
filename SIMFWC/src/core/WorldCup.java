@@ -2,29 +2,34 @@ package core;
 
 import data.Player;
 import data.Team;
-import data.Hat;
 
-import java.util.Random;
-
-import data.Coach;
+import java.awt.SystemColor;
+import java.util.Collections;
 import data.GroupStage;
 
+import data.Coach;
+import data.Hat;
 
 public class WorldCup {
-	
-	private Hat hat1;
-	private Hat hat2;
-	private Hat hat3;
-	private Hat hat4;
-	
-	private GroupStage group1;
-	private GroupStage group2;
-	private GroupStage group3;
-	private GroupStage group4;
+
+	private static Hat hat1;
+	private static Hat hat2;
+	private static Hat hat3;
+	private static Hat hat4;
+	private static  GroupStage group1;
+	private static  GroupStage group2;
+	private static GroupStage group3;
+	private static GroupStage group4;
 
 	public static void main(String[] args) {
 
 		initTeams();
+		
+		
+		initGroupStage();
+		
+		
+		
 
 	}
 
@@ -486,13 +491,13 @@ public class WorldCup {
 		Player horta = new Player("horta", "p", 29, 60, 170, "attaquant", 89, 90, 72, 89, 38, 73, 88, 99);
 		Player joaoFelix = new Player("joao Felix", "v", 33, 60, 170, "attaquant", 75, 84, 61, 77, 36, 69, 88, 88);
 
-		Player[] purtugal_players = { lopes, patricioc, joseSa, pereiras, samedo, canceloe, almeida, caravalho, pepee,
+		Player[] belgique_players = { lopes, patricioc, joseSa, pereiras, samedo, canceloe, almeida, caravalho, pepee,
 				ferro, pizzie, deco, figo, martins, nani, rafa, guerreiroe, crinsianoRonaldo, eusebio, bernardoSilva,
 				eder, horta, joaoFelix };
 		Coach morinio = new Coach("marinio", "silva", 88, "portugal", 2);
 		// Coach ss = new Coach(lastName, firstName, age, nationality, level)
-		Coach[] coach_portugal = { morinio };
-		Team purtugal = new Team("4-5-1", "portugal", purtugal_players, coach_portugal, "offensif");
+		Coach[] coach_belgique = { morinio };
+		Team belgique = new Team("4-5-1", "belgique", belgique_players, coach_belgique, "offensif");
 
 		// ALGERIE
 
@@ -688,27 +693,54 @@ public class WorldCup {
 		 * Array of all the teams
 		 */
 		Team[] participant = { chili, uruguay, italy, portugal, sweden, poland, france, argentin, netherlands, morocco,
-				england, germany, algeria, purtugal, bresil, spain };
-		
-		System.out.println("Voici les équipes participants à la coupe du monde");
+				england, germany, algeria, belgique, bresil, spain };
+		System.out.println("voici  les equipes qui participe a la coupe du monde ");
 		for (Team p : participant){
 			System.out.println(p.getCountry() + "  : " +p.getScoreTeam());
 		}
+		
+		
+		initHats(participant);
 
 	}
-
-	public void initGroupStage() {
 		
-		group1 = new GroupStage(hat1.getTeam1(), hat1.getTeam2(), hat1.getTeam3(), hat1.getTeam4());
-		group2 = new GroupStage(hat2.getTeam1(), hat2.getTeam2(), hat2.getTeam3(), hat2.getTeam4());
-		group3 = new GroupStage(hat3.getTeam1(), hat3.getTeam2(), hat3.getTeam3(), hat3.getTeam4());
-		group4 = new GroupStage(hat4.getTeam1(), hat4.getTeam2(), hat4.getTeam3(), hat4.getTeam4());
+
+	
+	public static void initGroupStage() {
+		
+		group1 = new GroupStage(hat1.getTeam1(), hat2.getTeam1(), hat3.getTeam1(), hat4.getTeam1());
+		group2 = new GroupStage(hat1.getTeam2(), hat2.getTeam2(), hat3.getTeam2(), hat4.getTeam2());
+		group3 = new GroupStage(hat1.getTeam3(), hat2.getTeam3(), hat3.getTeam3(), hat4.getTeam3());
+		group4 = new GroupStage(hat1.getTeam4(), hat2.getTeam4(), hat3.getTeam4(), hat4.getTeam4());
 		
 		System.out.println("Les poules sonts :");
 		
+		System.out.println(group1.getTeam1().getCountry() + " - " +  group1.getTeam2().getCountry() + " - " +  group1.getTeam3().getCountry() + " - " +  group1.getTeam4().getCountry()  );
+		System.out.println(group2.getTeam1().getCountry() + " - " +  group2.getTeam2().getCountry() + " - " +  group2.getTeam3().getCountry() + " - " +  group2.getTeam4().getCountry()  );
+		System.out.println(group3.getTeam1().getCountry() + " - " +  group3.getTeam2().getCountry() + " - " +  group3.getTeam3().getCountry() + " - " +  group3.getTeam4().getCountry()  );
+		System.out.println(group4.getTeam1().getCountry() + " - " +  group4.getTeam2().getCountry() + " - " +  group4.getTeam3().getCountry() + " - " +  group4.getTeam4().getCountry()  );
+
 		
-	}
-	public void initHats(Team[] participant) {
+		
+}
+//	public static void initGroupStage() {
+//
+//		
+//		
+//		
+//		//	public static void initGroupStage() {
+	//
+//	
+//	
+//	
+//	
+//int nb = (int) (Math.random() * 6 );     //Pour un entier entre 0 et 5  
+//	
+//}
+//int nb = (int) (Math.random() * 6 );     //Pour un entier entre 0 et 5  
+//		
+//	}
+	public static void initHats(Team[] participant) {
 		
 		for (int i = 0; i < participant.length - 1; i++)  
         {
@@ -726,11 +758,33 @@ public class WorldCup {
         }
 		
 		hat1 = new Hat(participant[0], participant[1], participant[2], participant[3]);
-		hat2 = new Hat(participant[4], participant[5], participant[6], participant[7]);
-		hat3 = new Hat(participant[8], participant[9], participant[10], participant[11]);
-		hat4 = new Hat(participant[12], participant[13], participant[14], participant[15]);
+		 hat2 = new Hat(participant[4], participant[5], participant[6], participant[7]);
+		 hat3 = new Hat(participant[8], participant[9], participant[10], participant[11]);
+		 hat4 = new Hat(participant[12], participant[13], participant[14], participant[15]);
+		
+		System.out.println(hat1.getTeam1().getCountry() + " - " +  hat1.getTeam2().getCountry() + " - " +  hat1.getTeam3().getCountry() + " - " +  hat1.getTeam4().getCountry()  );
+		System.out.println(hat2.getTeam1().getCountry() + " - " +  hat2.getTeam2().getCountry() + " - " +  hat2.getTeam3().getCountry() + " - " +  hat2.getTeam4().getCountry()  );
+		System.out.println(hat3.getTeam1().getCountry() +  " - " +  hat3.getTeam2().getCountry() + " - " +  hat3.getTeam3().getCountry() + " - " +  hat3.getTeam4().getCountry()  );
+		System.out.println(hat4.getTeam1().getCountry() + " - " +  hat4.getTeam2().getCountry() + " - " +  hat4.getTeam3().getCountry() + " - " +  hat4.getTeam4().getCountry()  );
 
 		
-	}
 
+
+		
+}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
 }
