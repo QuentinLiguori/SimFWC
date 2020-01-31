@@ -67,6 +67,7 @@ public class Team {
 		this.coachs = coachs;
 		this.tactic = tactic;
 		setScoreTeam(players);
+		setPowerTeam(player);
 	}
 
 	/**
