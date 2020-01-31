@@ -1,164 +1,153 @@
-package data;
+package core;
+import data.Team;
 
-import data.Coach;
-import data.Player;
+public class Match {
 
-public class Team {
-	/**
-	 * Positions of the players on the soccer field
-	 */
-	private String formation;
-	
-	/**
-	 * Country represented by the team
-	 */
-	private String country;
-	
-	/**
-	 * Array of the players in the team
-	 */
-	private Player[] players;
-	
-	/**
-	 * Array of the coachs of the team
-	 */
-	private Coach[] coachs;
-	
-	/**
-	 * Game tactics of the team 
-	 */
-	private String tactic;
+	private int scoreA;
+	private int scoreB;
+	private Team teamA;
+	private Team teamB;
 
 	/**
-	 * Static score of the team
+	 * Constructor of a match between two teams
+	 * @param teamA
+	 * @param teamB
 	 */
-	private int scoreTeam;
-	
+	public Match(Team teamA, Team teamB) {
+		this.scoreA = 0;
+		this.scoreB = 0;
+		this.teamA = teamA;
+		this.teamB = teamB;
+	}
+
+	/**
+	 * @return the scoreB
+	 */
+	public int getScoreB() {
+		return scoreB;
+	}
+
+	/**
+	 * @param scoreB the scoreB to set
+	 */
+	public void setScoreB(int scoreB) {
+		this.scoreB = scoreB;
+	}
+
+	/**
+	 * @return the scoreA
+	 */
+	public int getScoreA() {
+		return scoreA;
+	}
+
+	/**
+	 * @param scoreA the scoreA to set
+	 */
+	public void setScoreA(int scoreA) {
+		this.scoreA = scoreA;
+	}
+
 	/**
 	 * 
+	 * @param teamA
+	 * @param teamB
 	 */
-	private int powerTeam; 
-	
-	/**
-	 * @return the scoreTeam
-	 */
-	public int getScoreTeam() {
-		return scoreTeam;
-	}
-	
-	/**
-	 * Constructor of a team
-	 * @param formation
-	 * @param country
-	 * @param players
-	 * @param coachs
-	 * @param tactic
-	 */
-	public Team(String formation, String country, Player[] players, Coach[] coachs, String tactic) {
-		super();
-		this.formation = formation;
-		this.country = country;
-		this.players = players;
-		this.coachs = coachs;
-		this.tactic = tactic;
-		setScoreTeam(players);
+	public void randomEvents(Team teamA, Team teamB) {
+		int deltaA = 0, deltaB = 0;
+		
+		//random events modify teamI.power
+		
+		teamA.setPowerTeam(teamA.getPowerTeam()-deltaA);
+		teamB.setPowerTeam(teamB.getPowerTeam()-deltaB);
 	}
 
-	/**
-	 * Set the score of the team from the global score of each player
-	 * @param players
-	 */
-	public void setScoreTeam(Player[] players) {
-		int score=0;
-		for (Player p : players){
-			score += p.getGlobalScore();
+	public void matchFlow() {
+		//up the team's power
+		int winningLuckA;
+		int winningLuckB;
+		randomEvents(teamA, teamB);
+
+		winningLuckA = (teamA.getPowerTeam() + teamA.getScoreTeam())/2;
+		winningLuckB = (teamB.getPowerTeam() + teamB.getScoreTeam())/2;
+
+		if (winningLuckA>winningLuckB) {
+			do {
+				setScoreA((int)Math.random() * 8);
+				setScoreB((int)Math.random() * 8);
+			}while(scoreA<=scoreB);
+
 		}
-		//this.scoreTeam=score/23;
-		this.scoreTeam=score/11;
-	}
-
-	/**
-	 * @return the powerTeam
-	 */
-	public int getPowerTeam() {
-		return powerTeam;
-	}
-
-	/**
-	 * @param powerTeam the powerTeam to set
-	 */
-	public void setPowerTeam(int powerTeam) {
-		this.powerTeam = powerTeam;
+		else if (winningLuckA<winningLuckB) {
+			do {
+				setScoreA((int)Math.random() * 8);
+				setScoreB((int)Math.random() * 8);
+			}while(scoreA>=scoreB);
+		}
+		else {
+			setScoreA((int)Math.random() * 8);
+			setScoreB(scoreA);
+		}
 	}
 	
 	/**
-	 * @return the formation
+	 * @return the teamA
 	 */
-	public String getFormation() {
-		return formation;
+	public Team getTeamA() {
+		return teamA;
 	}
 
 	/**
-	 * @param formation the formation to set
+	 * @return the teamB
 	 */
-	public void setFormation(String formation) {
-		this.formation = formation;
+	public Team getTeamB() {
+		return teamB;
 	}
 
 	/**
-	 * @return the country
+	 * 
+	 * @return
 	 */
-	public String getCountry() {
-		return country;
+	public Boolean equality() {
+		if (scoreA==scoreB) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 
 	/**
-	 * @param country the country to set
+	 * 
+	 * @return
 	 */
-	public void setCountry(String country) {
-		this.country = country;
+	public Team getWinner() {
+		if(scoreA<scoreB) {
+			return teamB;
+		}
+		else {
+		return teamA;
+		}
 	}
 
 	/**
-	 * @return the players
+	 * 
+	 * @return
 	 */
-	public Player[] getPlayers() {
-		return players;
+	public Team getLooser() {
+		if(scoreA>scoreB) {
+			return teamB;
+		}
+		else {
+		return teamA;
+		}
 	}
 
 	/**
-	 * @param players the players to set
+	 * 
+	 * @return
 	 */
-	public void setPlayers(Player[] players) {
-		this.players = players;
+	public String getFinalScore() {
+		return teamA.getCountry() + " : " +this.scoreA+"\n"+teamA.getCountry()+ " : " +this.scoreA+"\n";
 	}
-
-	/**
-	 * @return the coachs
-	 */
-	public Coach[] getCoachs() {
-		return coachs;
-	}
-
-	/**
-	 * @param coachs the coachs to set
-	 */
-	public void setCoachs(Coach[] coachs) {
-		this.coachs = coachs;
-	}
-
-	/**
-	 * @return the tactic
-	 */
-	public String getTactic() {
-		return tactic;
-	}
-
-	/**
-	 * @param tactic the tactic to set
-	 */
-	public void setTactic(String tactic) {
-		this.tactic = tactic;
-	}
-	
 }
