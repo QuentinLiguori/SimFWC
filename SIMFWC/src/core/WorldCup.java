@@ -351,6 +351,204 @@ public class WorldCup {
 				
 		        
 		        Team italy = new Team("4-4-2","Italy", italy_players, italy_coachs,"offensif");
+		
+		
+				//espagne
+		
+		Player deGea = new Player("De Gea", "d", 25, 60, 190, "gardien", 90, 84, 81, 92, 58, 85, 90, 90);
+        Player kepa = new Player("kepa", "c", 23, 60, 180, "gardien", 84, 82, 86, 85, 33, 80, 88, 50);
+        Player casillas   = new Player("herra", "h", 30, 60, 170, "gardien", 85, 75, 61, 84, 55, 86, 88, 50);
+        //defense
+        Player ramos = new Player("ramos", "d", 28, 60, 170, "defense", 72, 68, 75, 74, 87, 85, 88, 90);
+        Player pique = new Player("pique", "r", 23, 60, 170, "defense", 72, 63, 74, 80, 90, 82, 88, 90);
+        Player jordiAlba = new Player("jordi alba", "j", 32, 60, 170, "defense", 91, 70, 82, 84, 80, 74, 88, 80);
+        Player carvajal = new Player("carvajal", "m", 19, 60, 170, "defense", 82, 49, 79, 82, 83, 82, 88, 70);
+        Player azpilicueta = new Player("azpilicueta", "j", 34, 60, 170, "defense", 73, 57, 80, 75, 87, 78, 88, 90);
+        Player roberto = new Player("roberto", "i", 36, 60, 170, "defense", 78, 63, 81, 78, 77, 73, 88, 90);
+        Player iniesta = new Player("iniesta", "b", 31, 60, 170, "milieu", 79, 81, 94, 96, 70, 76, 99, 99);
+        //milieu
+        Player isco = new Player("isco", "v", 30, 60, 170, "milieu", 71, 77, 83, 90, 59, 60, 88, 50);
+        Player silvaDavid = new Player("david silva", "v", 18, 60, 170, "milieu", 66, 75, 89, 90, 53, 58, 88, 50);
+        Player busquets = new Player("Busquets", "a", 26, 60, 170, "milieu", 42, 62, 80, 81, 85, 80, 88, 50);
+        Player koke = new Player("koke", "p", 22, 60, 170, "milieu", 68, 75, 86, 82, 74, 79, 88, 50);
+        Player tiago = new Player("tiago", "p", 22, 60, 170, "milieu", 71, 76, 87, 91, 70, 64, 99, 99);
+        Player luis_alberto = new Player("luis_alberto", "s", 23, 60, 170, "milieu", 77, 82, 91, 88, 53, 63, 88, 50);
+        Player rodri = new Player("rodri", "d", 23, 60, 170, "milieu", 67, 68, 77, 78, 82, 80, 88, 50);
+        //attaque
+        Player diegoCosta = new Player("diegoCosta", "v", 25, 60, 170, "attaquant", 83, 92, 79, 89, 50,96 , 88, 96);
+        Player traore = new Player("traore", "s", 25, 60, 170, "attaquant", 99, 80, 80, 89, 43, 85, 90, 90);
+        Player villa = new Player("david villa", "c", 28, 60, 170, "attaquant", 90, 89, 79, 92, 46, 84, 88, 88);
+        Player raul = new Player("raul", "f", 29, 60, 170, "attaquant", 88, 92, 82, 90, 47, 75, 88, 99);
+        Player morales = new Player("morales", "p", 29, 60, 170, "attaquant", 94, 83, 78, 90, 59, 70, 88, 100);
+        Player aspas = new Player("aspas", "v", 33, 60, 170, "attaquant", 80, 86, 78, 86, 36, 65, 88, 88);
+		
+        
+        
+        
+        Player [] spain_players  = {deGea,kepa,casillas,ramos,pique,jordiAlba,carvajal,azpilicueta,roberto,iniesta,
+        		isco,silvaDavid,busquets,koke,tiago,luis_alberto,rodri,diegoCosta,traore,villa,raul,morales,aspas};
+        Coach gouardilla = new Coach("gourdiola","pepe",88,"spanich",2);
+        Coach [] coach_spain  = {gouardilla};
+        Team spain = new Team("4-3-3","spain",spain_players,coach_spain,"offensif");
+        
+        
+        
+        
+        
+        
+		
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        
+        
+        //BRESIL
+    	
+		Player alisson = new Player("Alisson", "d", 25, 60, 190, "gardien", 85, 84, 85, 89, 52, 90, 90, 90);
+        Player  ederson  = new Player(" Ederson ", "c", 23, 60, 180, "gardien", 86, 82, 93, 88, 64, 86, 88, 50);
+        Player neto   = new Player("Neto", "h", 30, 60, 170, "gardien", 86, 81, 79, 82, 52, 82, 88, 50);
+        //defene
+        Player marcelo = new Player("Marcelo", "d", 28, 60, 170, "defense", 86, 78, 86, 91, 82, 84, 88, 90);
+        Player  carlos  = new Player(" Carlos ", "r", 23, 60, 170, "defense", 92, 83, 86, 81, 86, 86, 88, 90);
+        Player  thiagoSilva  = new Player("thiago silva", "j", 32, 60, 170, "defense", 66, 57, 77, 76, 90, 81, 88, 80);
+        Player davidLuiz = new Player("david Luiz", "m", 19, 60, 170, "defense", 83, 76, 83, 82, 90, 86, 88, 70);
+        Player marquinhos  = new Player("Marquinhos ", "j", 34, 60, 170, "defense", 78, 43, 76, 75, 88, 79, 88, 90);
+        Player Militao  = new Player("Militao ", "i", 36, 60, 170, "defense", 83, 56, 75, 77, 86, 86, 88, 90);
+        Player casemiro = new Player("Casemiro", "b", 31, 60, 170, "milieu", 63, 75, 76, 73, 87, 90, 99, 99);
+        //milieu
+        Player coutinho = new Player("Coutinho", "v", 30, 60, 170, "milieu", 80, 82, 86, 91, 53, 65, 88, 50);
+        Player fabinho = new Player("Fabinho", "v", 18, 60, 170, "milieu", 69, 70, 79, 79, 87, 84, 88, 50);
+        Player rivaldo = new Player("Rivaldo", "a", 26, 60, 170, "milieu", 86, 87, 85, 88, 42, 	76, 88, 50);
+        Player allan = new Player("allan", "p", 22, 60, 170, "milieu", 78, 76, 81, 86, 87, 86, 88, 50);
+        Player fernandinho = new Player("fernandinho", "p", 22, 60, 170, "milieu", 66, 74, 79, 79, 84, 79, 99, 99);
+        Player socrates = new Player("socrates", "s", 23, 60, 170, "milieu",80, 86, 87, 87, 47, 82, 88, 50);
+        Player arthur = new Player("Arthur", "d", 23, 60, 170, "milieu", 69, 71, 81, 86, 73, 70, 88, 50);
+        //attaque
+        Player neymar  = new Player("Neymar ", "v", 25, 60, 170, "attaquant", 92, 86, 88, 96, 33,58 , 88, 96);
+        Player firmino = new Player("Firmino", "s", 25, 60, 170, "attaquant", 79, 84, 81, 89, 62, 80, 90, 90);
+        Player ronaldinho = new Player("Ronaldinho", "c", 28, 60, 170, "attaquant", 80, 85, 88, 90, 38, 77, 88, 88);
+        Player ronaldo = new Player("Ronaldo", "f", 29, 60, 170, "attaquant", 97, 95, 81, 95, 45, 76, 88, 99);
+        Player kaka = new Player("kaka", "p", 29, 60, 170, "attaquant", 91, 86, 88, 92, 44, 73, 88, 100);
+        Player willian = new Player("willian", "v", 33, 60, 170, "attaquant", 89, 84, 85, 89, 53, 65, 88, 88);
+        
+        
+
+        Player   [] bresil_players= {alisson,ederson,neto,marcelo,carlos,thiagoSilva,davidLuiz,marquinhos,Militao,casemiro,
+        		coutinho,fabinho,rivaldo,allan,fernandinho,socrates,arthur,neymar,firmino,ronaldinho,ronaldo,kaka,willian};
+        Coach sofiane = new Coach("idmbarkos","safawan",80,"bresilien",3);
+       // Coach ss  = new Coach(lastName, firstName, age, nationality, level)
+        Coach [] coach_bresil  = {sofiane};
+        Team bresil = new Team("4-3-4","brasil",bresil_players,coach_bresil,"offensif");
+		
+		
+        //-------------------------------------------------------------------------------------------------------------------------------------------------------
+        
+        //portugal 
+        
+        
+		
+        Player lopes = new Player("lopes", "d", 25, 60, 190, "gardien", 83, 83, 77, 85, 51, 82, 90, 90);
+        Player  patricio  = new Player(" patricio ", "c", 23, 60, 180, "gardien", 83, 77, 77, 86, 48, 75, 88, 50);
+        Player joseSa   = new Player("jose Sa", "h", 30, 60, 170, "gardien", 79, 76, 81, 83, 44, 79, 88, 50);
+        //defene
+        Player pereira = new Player("pereira", "d", 28, 60, 170, "defense", 86, 63, 88, 85, 90, 81, 88, 90);
+        Player  samedo  = new Player(" pereira ", "r", 23, 60, 170, "defense", 86, 65, 78, 82, 86, 86, 88, 90);
+        Player  cancelo  = new Player("cancelo", "j", 32, 60, 170, "defense", 75, 65, 84, 77, 86, 82, 88, 80);
+        Player almeida = new Player("almeida", "m", 19, 60, 170, "defense", 59, 59, 65, 62, 86, 80, 88, 70);
+        Player caravalho  = new Player("caravalho ", "j", 34, 60, 170, "defense", 82, 55, 78, 82, 83, 80, 88, 90);
+        Player pepe  = new Player("pepe", "i", 36, 60, 170, "defense", 43, 60, 67, 62, 82, 81, 88, 90);
+        Player ferro = new Player("ferro", "b", 31, 60, 170, "milieu", 93, 81, 87, 94, 38, 76, 99, 99);
+        //milieu
+        Player pizzi = new Player("pizzi", "v", 30, 60, 170, "milieu", 76, 85, 90, 85, 77, 85, 88, 50);
+        Player deco = new Player("deco", "v", 18, 60, 170, "milieu", 86, 86, 86, 92, 45, 68, 88, 50);
+        Player figo = new Player("figo", "a", 26, 60, 170, "milieu", 91, 82, 85, 88, 41, 	58, 88, 50);
+        Player martins = new Player("martins", "p", 22, 60, 170, "milieu", 64, 76, 87, 84, 80, 72, 88, 50);
+        Player nani = new Player("nani", "p", 22, 60, 170, "milieu", 91, 82, 83, 87, 52, 79, 99, 99);
+        Player rafa = new Player("rafa", "s", 23, 60, 170, "milieu",75, 71, 84, 82, 75, 77, 88, 50);
+        Player guerreiro = new Player("guerreiro", "d", 23, 60, 170, "milieu", 80, 78, 82, 86, 39, 68, 88, 50);
+        //attaque
+        Player crinsianoRonaldo  = new Player("crinsianoRonaldo ", "v", 25, 60, 170, "attaquant", 90, 94, 94, 98, 41,69 , 88, 96);
+        Player eusebio = new Player("eusebio", "s", 25, 60, 170, "attaquant", 82, 91, 79, 90, 34, 75, 90, 90);
+        Player bernardoSilva = new Player("bernardo Silva", "c", 28, 60, 170, "attaquant", 90, 87, 86, 91, 50, 70, 88, 88);
+        Player eder = new Player("eder", "f", 29, 60, 170, "attaquant", 64, 87, 73, 81, 32, 72, 88, 99);
+        Player horta = new Player("horta", "p", 29, 60, 170, "attaquant", 89, 90, 72, 89, 38, 73, 88, 99);
+        Player joaoFelix = new Player("joao Felix", "v", 33, 60, 170, "attaquant", 75, 84, 61, 77, 36, 69, 88, 88);
+		
+        
+        Player  [] purtugal_players = {lopes,patricio,joseSa,pereira,samedo,cancelo,almeida,caravalho,pepe,ferro,
+        		pizzi,deco,figo,martins,nani,rafa,guerreiro,crinsianoRonaldo,eusebio,bernardoSilva,eder,horta,joaoFelix};
+        Coach morinio = new Coach("marinio","silva",88,"portugal",2);
+       // Coach ss  = new Coach(lastName, firstName, age, nationality, level)
+        Coach [] coach_portugal  = {morinio};
+        Team purtugal = new Team("4-5-1","portugal",purtugal_players,coach_portugal,"offensif");
+		
+		
+		
+		
+		
+        //ALGERIE 
+        
+        
+		
+        Player mbolhi = new Player("mbolhi", "d", 25, 60, 190, "gardien", 83, 88, 90, 94, 99, 82, 90, 90);
+        Player  oukidja  = new Player(" oukidja ", "c", 23, 60, 180, "gardien", 88, 88, 88, 88, 99, 94, 88, 50);
+        Player doukha   = new Player("doukha", "h", 30, 60, 170, "gardien", 91, 92, 95, 88,98 , 99, 88, 50);
+        //defene
+        Player atal = new Player("atal", "d", 28, 60, 170, "defense", 80, 90, 88, 85, 90, 94, 99, 90);
+        Player  bensebaini  = new Player(" bensebaini ", "r", 23, 60, 170, "defense", 90, 90, 90, 94, 92, 96, 99, 90);
+        Player  benlamri  = new Player("benlamri", "j", 32, 60, 170, "defense", 99, 95, 84, 87, 86, 88, 88, 80);
+        Player tahrat = new Player("tahrat", "m", 19, 60, 170, "defense", 90, 92, 94, 95, 86, 88, 88, 89);
+        Player ghoulam  = new Player("ghoulam ", "j", 34, 60, 170, "defense", 92, 90, 91, 94, 90, 92, 94, 90);
+        Player mandi  = new Player("mandi", "i", 36, 60, 170, "defense", 94, 94, 94, 92, 91, 92, 99, 90);
+        Player guedioura = new Player("guedioura", "b", 31, 60, 170, "milieu", 93, 93, 93, 92, 87, 88, 99, 99);
+        //milieu
+        Player feghouli = new Player("feghouli", "v", 30, 60, 170, "milieu", 90, 91, 90, 88, 88, 85, 88, 88);
+        Player banacer = new Player("banacer", "v", 18, 60, 170, "milieu", 90, 90, 90, 92, 88, 91, 88, 94);
+        Player bentaleb = new Player("bentaleb", "a", 26, 60, 170, "milieu", 91, 82, 85, 88, 87, 88, 88, 50);
+        Player ferhat = new Player("martins", "p", 22, 60, 170, "milieu", 91, 92, 94, 94, 80, 89, 88, 90);
+        Player abeid = new Player("abeid", "p", 22, 60, 170, "milieu", 91, 92, 88, 98, 95, 97, 98, 91);
+        Player fares = new Player("fares", "s", 23, 60, 170, "milieu",75, 71, 84, 82, 75, 77, 88, 99);
+        Player matmour = new Player("matmour", "d", 23, 60, 170, "milieu", 88, 98, 87, 86, 39, 88, 88, 80);
+        //attaque
+        Player mehrez  = new Player("mehrez", "v", 25, 60, 170, "attaquant", 90, 94, 94, 98, 99,94 , 98, 96);
+        Player dolort = new Player("dolort", "s", 25, 60, 170, "attaquant", 92, 91, 88, 90, 96, 85, 90, 90);
+        Player Bounedjah = new Player("Bounedjah", "c", 28, 60, 170, "attaquant", 90, 92, 91, 90, 88, 89, 88, 88);
+        Player ounas = new Player("ounas", "f", 29, 60, 170, "attaquant", 90, 97, 90, 91, 88, 92, 90, 99);
+        Player soudani = new Player("soudani", "p", 29, 60, 170, "attaquant", 89, 90, 92, 99, 91, 92, 90, 99);
+        Player bellaili = new Player("bellaili", "v", 33, 60, 170, "attaquant", 90, 94, 99, 99, 98, 94, 90, 90);
+        
+        
+        
+        
+        
+        Player [] algeria_players  = {mbolhi,oukidja,doukha,atal,bensebaini,benlamri,tahrat,ghoulam,mandi,guedioura,
+        		feghouli,banacer,bentaleb,ferhat,abeid,fares,matmour,mehrez,dolort,Bounedjah,ounas,soudani,bellaili};
+        Coach belmadi = new Coach("belmadi","djamel",95,"algerien",4);
+       // Coach ss  = new Coach(lastName, firstName, age, nationality, level)
+        Coach []  coach_algeria = {morinio};
+        Team algeria = new Team("4-4-3","algerie",algeria_players,coach_algeria,"offensif");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		        
 		        
 		        /**
