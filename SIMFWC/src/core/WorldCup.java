@@ -7,6 +7,7 @@ import data.Hat;
 import java.util.Random;
 
 import data.Coach;
+import data.GroupStage;
 
 
 public class WorldCup {
@@ -15,6 +16,11 @@ public class WorldCup {
 	private Hat hat2;
 	private Hat hat3;
 	private Hat hat4;
+	
+	private GroupStage group1;
+	private GroupStage group2;
+	private GroupStage group3;
+	private GroupStage group4;
 
 	public static void main(String[] args) {
 
@@ -684,6 +690,7 @@ public class WorldCup {
 		Team[] participant = { chili, uruguay, italy, portugal, sweden, poland, france, argentin, netherlands, morocco,
 				england, germany, algeria, purtugal, bresil, spain };
 		
+		System.out.println("Voici les équipes participants à la coupe du monde");
 		for (Team p : participant){
 			System.out.println(p.getCountry() + "  : " +p.getScoreTeam());
 		}
@@ -692,8 +699,13 @@ public class WorldCup {
 
 	public void initGroupStage() {
 		
+		group1 = new GroupStage(hat1.getTeam1(), hat1.getTeam2(), hat1.getTeam3(), hat1.getTeam4());
+		group2 = new GroupStage(hat2.getTeam1(), hat2.getTeam2(), hat2.getTeam3(), hat2.getTeam4());
+		group3 = new GroupStage(hat3.getTeam1(), hat3.getTeam2(), hat3.getTeam3(), hat3.getTeam4());
+		group4 = new GroupStage(hat4.getTeam1(), hat4.getTeam2(), hat4.getTeam3(), hat4.getTeam4());
 		
-		int nb = (int) (Math.random() * 6 );     //Pour un entier entre 0 et 5  
+		System.out.println("Les poules sonts :");
+		
 		
 	}
 	public void initHats(Team[] participant) {
