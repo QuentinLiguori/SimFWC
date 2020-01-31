@@ -23,7 +23,7 @@ public class GroupStage {
 		setTeam4(team4);		
 	}
 	
-	public Team qualification() {
+	public void qualification() {
 		
 		Match firstTurn = new Match(team1,team2);
 		Match firstTurn2 = new Match(team3,team4);
@@ -52,25 +52,23 @@ public class GroupStage {
 		if(first.getGroupStageScore() < team4.getGroupStageScore()) {
 			first = team4;
 		}
-		if(second.getGroupStageScore() < team1.getGroupStageScore() && first.getGroupStageScore() != team1.getGroupStageScore) {
+		if(second.getGroupStageScore() < team1.getGroupStageScore() && first.getGroupStageScore() != team1.getGroupStageScore()) {
 			second = team1;
 		}
-		if(first.getGroupStageScore() < team3.getGroupStageScore() && first.getGroupStageScore() != team3.getGroupStageScore) {
+		if(first.getGroupStageScore() < team3.getGroupStageScore() && first.getGroupStageScore() != team3.getGroupStageScore()) {
 			second = team3;
 		}
-		if(first.getGroupStageScore() < team4.getGroupStageScore() && first.getGroupStageScore() != team4.getGroupStageScore) {
+		if(first.getGroupStageScore() < team4.getGroupStageScore() && first.getGroupStageScore() != team4.getGroupStageScore()) {
 			second = team4;
 		}
-		
-		return first, second;
 		
 	}
 	
 	public void addPoints(Match match) {
 		
 		if(match.getScoreA() == match.getScoreB() ) {
-			match.getTeamA().setGroupStageScore(match.getTeamB().getGroupStageScore() +1);
-			match.getLooser().setGroupStageScore(match.getLooser().getGroupStageScore() +1);
+			match.getTeamA().setGroupStageScore(match.getTeamA().getGroupStageScore() +1);
+			match.getLooser().setGroupStageScore(match.getTeamB().getGroupStageScore() +1);
 		}
 		else {
 			match.getWinner().setGroupStageScore(match.getWinner().getGroupStageScore() +3);
