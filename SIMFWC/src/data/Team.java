@@ -91,8 +91,15 @@ public class Team {
 	/**
 	 * @param powerTeam the powerTeam to set
 	 */
-	public void setPowerTeam(int powerTeam) {
-		this.powerTeam = powerTeam;
+	public void setPowerTeam(Player[] players) {
+		int power=0, nbPlayer=0;
+		for (Player p : players){
+			if(p.getPosition().equals("attaquant") || p.getPosition().equals("defense")) {
+				nbPlayer++;
+				power += p.getGlobalScore();
+			}
+		}
+		this.powerTeam=power/nbPlayer;
 	}
 	
 	/**
