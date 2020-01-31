@@ -178,10 +178,4 @@ public class Team {
 		this.groupStageScore = groupStageScore;
 	}
 
-	/**
-	 * @param scoreTeam the scoreTeam to set
-	 */
-	public void setScoreTeam(int scoreTeam) {
-		this.scoreTeam = scoreTeam;
-	}
 }
