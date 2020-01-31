@@ -2,6 +2,10 @@ package core;
 
 import data.Player;
 import data.Team;
+
+import java.awt.SystemColor;
+import java.util.Collections;
+
 import data.Coach;
 
 public class WorldCup {
@@ -178,7 +182,7 @@ public class WorldCup {
 		Coach janne = new Coach("Janne", "Anderson", 57, "polish", 2);
 		Coach[] sweden_coachs = { janne };
 
-		Team sweden = new Team("4-4-2", "Poland", sweden_players, sweden_coachs, "defensive");
+		Team sweden = new Team("4-4-2", "Swede", sweden_players, sweden_coachs, "defensive");
 
 		// FRANCE
 		// gardien
@@ -671,12 +675,18 @@ public class WorldCup {
 		/**
 		 * Array of all the teams
 		 */
-		Team[] participant = { chili, uruguay, italy, portugal, sweden, poland, france, argentin,netherlands, morocco, england, germany, algeria, purtugal, bresil};
+		Team[] participant = { chili, uruguay, italy, portugal, sweden, poland, france, argentin, netherlands, morocco,
+				england, germany, algeria, purtugal, bresil, spain };
+		
+		for (Team p : participant){
+			System.out.println(p.getCountry() + "  : " +p.getScoreTeam());
+		}
 
 	}
+		
 
 	public void initGroupStage() {
 
 	}
-
+	
 }
