@@ -54,14 +54,64 @@ public class Match {
 	 * @param teamB
 	 */
 	public void randomEvents(Team teamA, Team teamB) {
-		int deltaA = 0, deltaB = 0;
+		int eventOccured=0, teamChoosen=0;
+		int nbEvent = (int) (Math.random() *20);
 		
-		//random events modify teamI.power
+		for (int i = 0; i < nbEvent; i++) {
+			eventOccured = (int) (Math.random() * 6);
+			teamChoosen = (int) (Math.random() * 2);
+			if (teamChoosen==0) {
+				event(eventOccured, teamA);
+			}
+			else {
+				event(eventOccured, teamB);
+			}
+		}
 		
-		teamA.setPowerTeam(teamA.getPowerTeam()-deltaA);
-		teamB.setPowerTeam(teamB.getPowerTeam()-deltaB);
+	}
+	
+	/**
+	 * Modify a team's power according to the event's type
+	 * @param typeEvent
+	 * @param team
+	 */
+	public void event(int typeEvent, Team team) {
+		switch (typeEvent) {
+		
+		case 0:
+			//blessure
+			team.setPowerTeam(teamA.getPowerTeam()-5);
+			break;
+		
+		case 1:
+			//carton jaune
+			team.setPowerTeam(teamA.getPowerTeam()-2);
+			break;
+		
+		case 2:
+			//carton jaune
+			team.setPowerTeam(teamA.getPowerTeam()-2);
+			break;
+		case 3:
+			//exchange player
+			team.setPowerTeam(teamA.getPowerTeam()+2);
+			break;
+		
+		case 4:
+			//exchange player
+			team.setPowerTeam(teamA.getPowerTeam()+2);
+			break;
+		
+		default:
+			//carton rouge
+			team.setPowerTeam(teamA.getPowerTeam()-4);
+			break;
+		}
 	}
 
+	/**
+	 * Flow of the match
+	 */
 	public void matchFlow() {
 		//up the team's power
 		int winningLuckA;
