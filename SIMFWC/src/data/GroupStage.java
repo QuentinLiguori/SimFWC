@@ -25,8 +25,6 @@ public class GroupStage {
 	
 	public Team qualification() {
 		
-		int i =0;
-		
 		Match firstTurn = new Match(team1,team2);
 		Match firstTurn2 = new Match(team3,team4);
 		addPoints(firstTurn);
@@ -44,14 +42,27 @@ public class GroupStage {
 		
 		first = team1;
 		second = team2;
-		while(i == 0) {
-			if(first.getGroupStageScore() < team2.getGroupStageScore()) {
-				first = team2;
-				second = team1;
-			}
+
+		if(first.getGroupStageScore() < team2.getGroupStageScore()) {
+			first = team2;
+		}
+		if(first.getGroupStageScore() < team3.getGroupStageScore()) {
+			first = team3;
+		}
+		if(first.getGroupStageScore() < team4.getGroupStageScore()) {
+			first = team4;
+		}
+		if(second.getGroupStageScore() < team1.getGroupStageScore() && first.getGroupStageScore() != team1.getGroupStageScore) {
+			second = team1;
+		}
+		if(first.getGroupStageScore() < team3.getGroupStageScore() && first.getGroupStageScore() != team3.getGroupStageScore) {
+			second = team3;
+		}
+		if(first.getGroupStageScore() < team4.getGroupStageScore() && first.getGroupStageScore() != team4.getGroupStageScore) {
+			second = team4;
 		}
 		
-		return team1;
+		return first, second;
 		
 	}
 	
