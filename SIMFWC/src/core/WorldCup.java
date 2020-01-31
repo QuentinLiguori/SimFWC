@@ -355,7 +355,7 @@ public class WorldCup {
 		
 				//espagne
 		
-		Player deGea = new Player("De Gea", "d", 25, 60, 190, "gardien", 90, 84, 81, 92, 58, 85, 90, 90);
+	Player deGea = new Player("De Gea", "d", 25, 60, 190, "gardien", 90, 84, 81, 92, 58, 85, 90, 90);
         Player kepa = new Player("kepa", "c", 23, 60, 180, "gardien", 84, 82, 86, 85, 33, 80, 88, 50);
         Player casillas   = new Player("herra", "h", 30, 60, 170, "gardien", 85, 75, 61, 84, 55, 86, 88, 50);
         //defense
@@ -532,6 +532,8 @@ public class WorldCup {
 		
 		//Germany
 		
+		//Germany
+		
 		Player neuer = new Player("Neuer", "d", 25, 60, 190, "gardien", 92, 91, 95, 91, 63, 92, 90, 90);
         Player stegen = new Player("Ter Stegen", "c", 23, 60, 180, "gardien", 92, 91, 95, 91, 44, 89, 88, 50);
         Player bauman   = new Player("Bauman", "h", 30, 60, 170, "gardien", 84, 83, 72, 87, 51, 81, 88, 50);
@@ -561,11 +563,11 @@ public class WorldCup {
 
 
 
-        Player  [] germany_players = {Stegen,Bauman,Hummels,Kimich,Kimich,Boating,Bender,Tah,Max,Halstenberg,
+        Player [] germany_players = {Stegen,Bauman,Hummels,Kimich,Kimich,Boating,Bender,Tah,Max,Halstenberg,
         Reus,Kroos,Muler,Ozil,Schweinsteiger,Draxler,Gundogan,Bellarabi,Gnabry,Werner,Sane,Gotze,Hunt};
-    Coach jurgen = new Coach("jurgen","clup",73,"uruguayen",2);
-    Coach  [] coach_germany  = {jurgen};
-    Team germany = new Team("4-3-3","Germany",germany_players,coach_germany,"offensif");
+    	Coach oscar = new Coach("jurgen","clup",73,"uruguayen",2);
+    	Coach  [] coach_germany  = {jurgen};
+    	Team germany = new Team("4-3-3","Germany",germany_players,coach_germany,"offensif");
 		
 		
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -600,11 +602,11 @@ public class WorldCup {
         Player rooney = new Player("Rooney", "p", 29, 60, 170, "attaquant", 64, 81, 80, 76, 56, 76, 88, 100);
         Player ings = new Player("Ings", "v", 33, 60, 170, "attaquant", 81, 81, 69, 82, 37, 71, 88, 88);
 		
-        Player england_players [] = {Foster,Pickford,Pope,Arnold,Walker,Smalling,Fernand,marquinhos,Henderson,Gomez,Sancho,
+        Player [] england_players = {Foster,Pickford,Pope,Arnold,Walker,Smalling,Fernand,marquinhos,Henderson,Gomez,Sancho,
         Ali,Rashford,Maddison,Sancho,Philips,Lingard,Kane,Sterling,Abraham,Vardy,Rooney,Ings};
-    Coach heniken = new Coach("Heniken","adams",73,"uruguayen",2);
-    Coach [] coach_england = {heniken};
-    Team england = new Team("4-3-3","england",england_players,coach_england,"offensif");
+    	Coach oscar = new Coach("Heniken","adams",73,"uruguayen",2);
+    	Coach [] coach_england = {heniken};
+    	Team england = new Team("4-3-3","england",england_players,coach_england,"offensif");
         //-------------------------------------------------------------------------------------------------------------------------------------------------------
         
         
@@ -639,11 +641,11 @@ public class WorldCup {
         Player belhanda = new Player("willian", "v", 33, 60, 170, "attaquant", 45, 84, 85, 89, 53, 90, 54, 77);
 
         
-        Player morocco_players [] = {Zniti,Bounou,Munir,Hakimi,Costa,Feddal,Yamiq,Banoun,Mendyl,Saadane,Zyich,
+        Player [] morocco_players = {Zniti,Bounou,Munir,Hakimi,Costa,Feddal,Yamiq,Banoun,Mendyl,Saadane,Zyich,
         Amrabt,Fajr,Bennaser,Harit,Taarabt,Hafidi,Enssiri,Yajour,Alarabi,Chamakh,Hamdalah,Belhanda};
-    Coach eric = new Coach("Eric","guerets",73,"uruguayen",2);
-    Coach [] coach_morocco = {eric};
-    Team morocco = new Team("4-3-3","morocco",morocco_players,coach_morocco,"offensif");
+    	Coach oscar = new Coach("Eric","guerets",73,"uruguayen",2);
+    	Coach [] coach_morocco = {eric};
+    	Team morocco = new Team("4-3-3","morocco",morocco_players,coach_morocco,"offensif");
 		
         //-------------------------------------------------------------------------------------------------------------------------------------------------------
         
@@ -680,11 +682,13 @@ public class WorldCup {
 
 		
 		
-        Player netherlands_players [] = {Zoet,Bizot,Cillicen,VanDijk,DeLigt,DeVrij,Beek,Blind,Klaiber,Veltman,Jong,
+        Player [] netherlands_players = {Zoet,Bizot,Cillicen,VanDijk,DeLigt,DeVrij,Beek,Blind,Klaiber,Veltman,Jong,
         Promes,Wijnaldum,Stengkos,Brgwijin,Stengs,Chong,Depay,Dost,Gullit,Kluvert,Basten,Overmars};
-    Coach vanjal = new Coach("Vanjal","Tabanez",73,"uruguayen",2);
-    Coach [] coach_netherlands = {vanjal};
-    Team netherlands = new Team("4-3-3","netherlands",netherlands_players,coach_netherlands,"offensif");
+    	Coach oscar = new Coach("Vanjal","Tabanez",73,"uruguayen",2);
+    	Coach [] coach_netherlands = {vanjal};
+    	Team netherlands = new Team("4-3-3","netherlands",netherlands_players,coach_netherlands,"offensif");
+		
+
 		
 
 		
