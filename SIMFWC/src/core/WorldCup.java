@@ -2,13 +2,19 @@ package core;
 
 import data.Player;
 import data.Team;
+import data.Hat;
 
-import java.awt.SystemColor;
-import java.util.Collections;
+import java.util.Random;
 
 import data.Coach;
 
+
 public class WorldCup {
+	
+	private Hat hat1;
+	private Hat hat2;
+	private Hat hat3;
+	private Hat hat4;
 
 	public static void main(String[] args) {
 
@@ -683,10 +689,36 @@ public class WorldCup {
 		}
 
 	}
-		
 
 	public void initGroupStage() {
-
+		
+		
+		int nb = (int) (Math.random() * 6 );     //Pour un entier entre 0 et 5  
+		
 	}
-	
+	public void initHats(Team[] participant) {
+		
+		for (int i = 0; i < participant.length - 1; i++)  
+        {
+             int index = i;  
+             for (int j = i + 1; j < participant.length; j++)
+             {
+                  if (participant[j].getScoreTeam() < participant[index].getScoreTeam()){ 
+                       index = j;
+                  }
+             }
+
+             Team min = participant[index];
+             participant[index] = participant[i]; 
+             participant[i] = min;
+        }
+		
+		hat1 = new Hat(participant[0], participant[1], participant[2], participant[3]);
+		hat2 = new Hat(participant[4], participant[5], participant[6], participant[7]);
+		hat3 = new Hat(participant[8], participant[9], participant[10], participant[11]);
+		hat4 = new Hat(participant[12], participant[13], participant[14], participant[15]);
+
+		
+	}
+
 }
