@@ -67,7 +67,7 @@ public class Team {
 		this.coachs = coachs;
 		this.tactic = tactic;
 		setScoreTeam(players);
-		setPowerTeam(player);
+		//setPowerTeam(players);
 	}
 
 	/**
@@ -93,7 +93,7 @@ public class Team {
 	 * @param powerTeam the powerTeam to set
 	 */
 	public void setPowerTeam(int power) {
-		this.power = power;
+		this.powerTeam = power;
 	}
 	
 	/**
