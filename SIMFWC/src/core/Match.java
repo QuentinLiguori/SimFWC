@@ -18,7 +18,10 @@ public class Match {
 		this.scoreB = 0;
 		this.teamA = teamA;
 		this.teamB = teamB;
+		this.teamA.setPowerTeam(teamA.getScoreTeam()); 
+		this.teamB.setPowerTeam(teamB.getScoreTeam());
 	}
+	
 
 	/**
 	 * @return the scoreB
@@ -54,12 +57,11 @@ public class Match {
 	 * @param teamB
 	 */
 	public void randomEvents(Team teamA, Team teamB) {
-		int eventOccured=0, teamChoosen=0;
-		int nbEvent = (int) (Math.random() *20);
-		
+		int eventOccured, teamChoosen;
+		int nbEvent = (int) (Math.random() * 10);
 		for (int i = 0; i < nbEvent; i++) {
 			eventOccured = (int) (Math.random() * 6);
-			teamChoosen = (int) (Math.random() * 2);
+			teamChoosen  = (int) (Math.random() * 2);
 			if (teamChoosen==0) {
 				event(eventOccured, teamA);
 			}
@@ -67,7 +69,6 @@ public class Match {
 				event(eventOccured, teamB);
 			}
 		}
-		
 	}
 	
 	/**
@@ -80,31 +81,31 @@ public class Match {
 		
 		case 0:
 			//blessure
-			team.setPowerTeam(teamA.getPowerTeam()-5);
+			team.setPowerTeam(team.getPowerTeam()-5);
 			break;
 		
 		case 1:
 			//carton jaune
-			team.setPowerTeam(teamA.getPowerTeam()-2);
+			team.setPowerTeam(team.getPowerTeam()-2);
 			break;
 		
 		case 2:
 			//carton jaune
-			team.setPowerTeam(teamA.getPowerTeam()-2);
+			team.setPowerTeam(team.getPowerTeam()-2);
 			break;
 		case 3:
 			//exchange player
-			team.setPowerTeam(teamA.getPowerTeam()+2);
+			team.setPowerTeam(team.getPowerTeam()+2);
 			break;
 		
 		case 4:
 			//exchange player
-			team.setPowerTeam(teamA.getPowerTeam()+2);
+			team.setPowerTeam(team.getPowerTeam()+2);
 			break;
 		
 		default:
 			//carton rouge
-			team.setPowerTeam(teamA.getPowerTeam()-4);
+			team.setPowerTeam(team.getPowerTeam()-4);
 			break;
 		}
 	}
@@ -118,26 +119,30 @@ public class Match {
 		int winningLuckB;
 		randomEvents(teamA, teamB);
 
-		winningLuckA = (teamA.getPowerTeam() + teamA.getScoreTeam())/2;
-		winningLuckB = (teamB.getPowerTeam() + teamB.getScoreTeam())/2;
-
-		if (winningLuckA>winningLuckB) {
+		winningLuckA = teamA.getPowerTeam();
+		winningLuckB = teamB.getPowerTeam();
+		
+		if (winningLuckA<winningLuckB) {
 			do {
-				setScoreA((int)Math.random() * 8);
-				setScoreB((int)Math.random() * 8);
-			}while(scoreA<=scoreB);
+				setScoreA((int)(Math.random() * 8));
+				setScoreB((int)(Math.random() * 8));
+			}while(scoreA >= scoreB);
 
 		}
-		else if (winningLuckA<winningLuckB) {
+		
+		else if (winningLuckA > winningLuckB) {
 			do {
-				setScoreA((int)Math.random() * 8);
-				setScoreB((int)Math.random() * 8);
-			}while(scoreA>=scoreB);
+				setScoreA((int)(Math.random() * 8));
+				setScoreB((int)(Math.random() * 8));
+			}while(scoreA <= scoreB);
 		}
 		else {
-			setScoreA((int)Math.random() * 8);
-			setScoreB(scoreA);
+			do {
+				setScoreA((int)(Math.random() * 2));
+				setScoreB((int)(Math.random() * 2));
+			}while(scoreA == scoreB);
 		}
+		
 	}
 	
 	/**
