@@ -1,4 +1,5 @@
 package data;
+import core.Match;
 import data.Team;
 
 public class SemiFinal {
@@ -8,6 +9,12 @@ public class SemiFinal {
 	private Team teamC;
 	private Team teamD;
 	
+	private Team winnerA;
+	private Team winnerB;
+	private Team looserA;
+	private Team looserB;
+	
+	
 	public SemiFinal(Team teamA, Team teamB, Team teamC, Team teamD) {
 		
 		setTeamA(teamA);
@@ -15,6 +22,104 @@ public class SemiFinal {
 		setTeamC(teamC);
 		setTeamD(teamD);
 	}
+
+	
+	
+	public void play(Team teamA, Team teamB, Team teamC, Team teamD) {
+		
+		Match firstSemiFinal = new Match(teamA,teamB);
+		firstSemiFinal.matchFlow();
+		
+		setWinnerA(firstSemiFinal.getWinner());
+		setLooserA(firstSemiFinal.getLooser());
+		
+		System.out.println("Résultats de la première demi-Finale");
+		System.out.println(firstSemiFinal.getFinalScore() );
+		
+		Match secondSemiFinal = new Match(teamC,teamD);
+		secondSemiFinal.matchFlow();
+		
+		setWinnerB(secondSemiFinal.getWinner());
+		setLooserB(secondSemiFinal.getLooser());
+
+		
+		System.out.println("Résultats de la deuxième demi-Finale");
+		System.out.println(secondSemiFinal.getFinalScore() );
+
+		
+		
+	}
+	/**
+	 * @return the winnerA
+	 */
+	public Team getWinnerA() {
+		return winnerA;
+	}
+
+
+
+	/**
+	 * @param winnerA the winnerA to set
+	 */
+	public void setWinnerA(Team winnerA) {
+		this.winnerA = winnerA;
+	}
+
+
+
+	/**
+	 * @return the winnerB
+	 */
+	public Team getWinnerB() {
+		return winnerB;
+	}
+
+
+
+	/**
+	 * @param winnerB the winnerB to set
+	 */
+	public void setWinnerB(Team winnerB) {
+		this.winnerB = winnerB;
+	}
+
+
+
+	/**
+	 * @return the looserA
+	 */
+	public Team getLooserA() {
+		return looserA;
+	}
+
+
+
+	/**
+	 * @param looserA the looserA to set
+	 */
+	public void setLooserA(Team looserA) {
+		this.looserA = looserA;
+	}
+
+
+
+	/**
+	 * @return the looserB
+	 */
+	public Team getLooserB() {
+		return looserB;
+	}
+
+
+
+	/**
+	 * @param looserB the looserB to set
+	 */
+	public void setLooserB(Team looserB) {
+		this.looserB = looserB;
+	}
+
+
 
 	/**
 	 * @return the teamA
