@@ -1,5 +1,10 @@
 package data;
 import data.Team;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
 import core.Match;
 
 public class GroupStage {
@@ -24,24 +29,98 @@ public class GroupStage {
 	}
 	
 	public void qualification() {
+		System.out.println("6666666666666666666666666666666666666");
 		
 		Match firstTurn = new Match(team1,team2);
+		firstTurn.matchFlow();
+		System.out.println("equipe qui a gagne : "+ firstTurn.getWinner().getCountry());
+		System.out.println("equipe qui a perdu : "+ firstTurn.getLooser().getCountry());
+		System.out.println(firstTurn.getFinalScore() );
+
 		Match firstTurn2 = new Match(team3,team4);
+		firstTurn2.matchFlow();
+
+		System.out.println("equipe qui a gagne : "+ firstTurn2.getWinner().getCountry());
+		System.out.println("equipe qui a perdu  : "+ firstTurn2.getLooser().getCountry());
+		System.out.println(firstTurn2.getFinalScore() );
+
+
 		addPoints(firstTurn);
 		addPoints(firstTurn2);
 		
 		Match secondTurn = new Match(team1, team3);
+		secondTurn.matchFlow();
+
+		
+		System.out.println("equipe qui a gagne : "+ secondTurn.getWinner().getCountry());
+		System.out.println("equipe qui a perdu  : "+ secondTurn.getLooser().getCountry());
+		System.out.println(secondTurn.getFinalScore() );
+
+
 		Match secondTurn2 = new Match(team2, team4);
+		secondTurn2.matchFlow();
+
+		System.out.println("equipe qui a gagne : "+ secondTurn2.getWinner().getCountry());
+		System.out.println("equipe qui a perdu : "+ secondTurn2.getLooser().getCountry());
+		System.out.println(secondTurn2.getFinalScore() );
+
+
 		addPoints(secondTurn);
 		addPoints(secondTurn2);
 		
 		Match thirdTurn = new Match(team1, team4);
+		thirdTurn.matchFlow();
+
 		Match thirdTurn2 = new Match(team2, team3);
+		thirdTurn2.matchFlow();
+
+		System.out.println("equipe qui a gagne : "+ thirdTurn.getWinner().getCountry());
+		System.out.println("equipe qui a perdu  : "+ thirdTurn.getLooser().getCountry());
+		System.out.println(thirdTurn.getFinalScore() );
+
+		
+		System.out.println("equipe qui a gagne: "+ thirdTurn2.getWinner().getCountry());
+		System.out.println("equipe qui a perdu  : "+ thirdTurn2.getLooser().getCountry());
+		System.out.println(thirdTurn2.getFinalScore() );
+
 		addPoints(thirdTurn);
 		addPoints(thirdTurn2);
 		
-		first = team1;
-		second = team2;
+	//	first = team1;
+	//	second = team2;
+		
+		
+		ArrayList<Team> arry = new ArrayList<Team>();
+		arry.add(team1);
+		arry.add(team2);
+		arry.add(team3);
+		arry.add(team4);
+		System.out.println("");
+		
+		Collections.sort(arry, new Comparator<Team>() 
+		{
+
+			@Override
+			public int compare( Team o1, Team o2) {
+				// TODO Auto-generated method stub
+				int x  =  (int) o1.getGroupStageScore()    ;
+				int y  = (int) o2.getGroupStageScore()   ;
+				return Integer.valueOf(y).compareTo(x);
+			}
+			
+		});
+		
+		first =  arry.get(0);
+		second =  arry.get(1);
+		System.out.println("le premier equipe est "+ team1.getCountry() + " et son score " + team1.getGroupStageScore());
+		System.out.println("le premier equipe est "+ team2.getCountry() + " et son score " + team2.getGroupStageScore());
+
+		System.out.println("le premier equipe est "+ team3.getCountry() + " et son score " + team3.getGroupStageScore());
+		System.out.println("le premier equipe est "+ team4.getCountry() + " et son score " + team4.getGroupStageScore());
+
+
+		
+		/*
 
 		if(first.getGroupStageScore() < team2.getGroupStageScore()) {
 			first = team2;
@@ -61,6 +140,7 @@ public class GroupStage {
 		if(first.getGroupStageScore() < team4.getGroupStageScore() && first.getGroupStageScore() != team4.getGroupStageScore()) {
 			second = team4;
 		}
+		*/
 		
 	}
 	
@@ -133,4 +213,21 @@ public class GroupStage {
 	public void setTeam4(Team team4) {
 		this.team4 = team4;
 	}
+
+	public Team getFirst() {
+		return first;
+	}
+
+	public void setFirst(Team first) {
+		this.first = first;
+	}
+
+	public Team getSecond() {
+		return second;
+	}
+
+	public void setSecond(Team second) {
+		this.second = second;
+	}
+	
 }
