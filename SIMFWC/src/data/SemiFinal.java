@@ -25,7 +25,7 @@ public class SemiFinal {
 
 	
 	
-	public void play(Team teamA, Team teamB, Team teamC, Team teamD) {
+	public void play() {
 		
 		Match firstSemiFinal = new Match(teamA,teamB);
 		firstSemiFinal.matchFlow();
@@ -33,7 +33,7 @@ public class SemiFinal {
 		setWinnerA(firstSemiFinal.getWinner());
 		setLooserA(firstSemiFinal.getLooser());
 		
-		System.out.println("RÃ©sultats de la premiÃ¨re demi-Finale");
+		System.out.println("Résultats de la première demi-Finale");
 		System.out.println(firstSemiFinal.getFinalScore() );
 		
 		Match secondSemiFinal = new Match(teamC,teamD);
@@ -43,7 +43,7 @@ public class SemiFinal {
 		setLooserB(secondSemiFinal.getLooser());
 
 		
-		System.out.println("RÃ©sultats de la deuxiÃ¨me demi-Finale");
+		System.out.println("Résultats de la deuxième demi-Finale");
 		System.out.println(secondSemiFinal.getFinalScore() );
 
 		
@@ -177,5 +177,3 @@ public class SemiFinal {
 		this.teamD = teamD;
 	}
 }
-
-	

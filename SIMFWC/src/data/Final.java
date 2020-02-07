@@ -23,7 +23,7 @@ public class Final {
 
 	
 	
-	public void play(Team teamA, Team teamB, Team teamC, Team teamD) {
+	public void playFinal() {
 		
 		Match Final = new Match(teamA,teamB);
 		Final.matchFlow();
@@ -31,7 +31,7 @@ public class Final {
 		setFirst(Final.getWinner());
 		setSecond(Final.getLooser());
 		
-		System.out.println("RÃ©sultats de la Finale");
+		System.out.println("Résultats de la Finale");
 		System.out.println(Final.getFinalScore() );
 		
 		Match playOff = new Match(teamC,teamD);
@@ -39,7 +39,7 @@ public class Final {
 		
 		setThird(playOff.getWinner());
 		
-		System.out.println("RÃ©sultats de la petite Finale");
+		System.out.println("Résultats de la petite Finale");
 		System.out.println(playOff.getFinalScore() );
 		
 	}
