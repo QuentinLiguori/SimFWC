@@ -89,12 +89,12 @@ public class Match {
 					injury1.add(player);
 					//blessure
 				} 
-				else if( eventOccured == 1 &&  eventOccured == 2 ){
+				else if( eventOccured == 1 ||  eventOccured == 2 ){
 					//jaune
 					Player player =  teamA.getPlayers()[(int)(Math.random() * teamA.getPlayers().length)];
 					yellow_card1.add(player);
 				}
-				else if( eventOccured == 3 && eventOccured == 4 ) {
+				else if( eventOccured == 3 || eventOccured == 4 ) {
 					//echange
 					Player player =  teamA.getPlayers()[(int)(Math.random() * teamA.getPlayers().length)];
 					change1.add(player);
@@ -113,12 +113,12 @@ public class Match {
 					injury2.add(player);
 					//blessure
 				} 
-				else if( eventOccured == 1 &&  eventOccured == 2 ){
+				else if( eventOccured == 1 ||  eventOccured == 2 ){
 					//jaune
 					Player player =  teamB.getPlayers()[(int)(Math.random() * teamB.getPlayers().length)];
 					yellow_card2.add(player);
 				}
-				else if( eventOccured == 3 && eventOccured == 4 ) {
+				else if( eventOccured == 3 || eventOccured == 4 ) {
 					//echange
 					Player player =  teamB.getPlayers()[(int)(Math.random() * teamB.getPlayers().length)];
 					change2.add(player);
