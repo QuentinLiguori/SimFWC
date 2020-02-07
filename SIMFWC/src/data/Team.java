@@ -67,7 +67,7 @@ public class Team {
 		this.coachs = coachs;
 		this.tactic = tactic;
 		setScoreTeam(players);
-		//setPowerTeam(players);
+		setPowerTeam(getScoreTeam());
 	}
 
 	/**
@@ -75,11 +75,12 @@ public class Team {
 	 * @param players
 	 */
 	public void setScoreTeam(Player[] players) {
-		int score=0;
+		int i=0, score=0;
 		for (Player p : players){
+			i++;
 			score += p.getGlobalScore();
 		}
-		this.scoreTeam=score/23;
+		this.scoreTeam=score/i;
 	}
 
 	/**
