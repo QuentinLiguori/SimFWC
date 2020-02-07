@@ -698,6 +698,34 @@ public class WorldCup {
 		 */
 		Team[] participant = { chili, uruguay, italy, portugal, sweden, poland, france, argentin, netherlands, morocco,
 				england, germany, algeria, belgique, bresil, spain };
+		
+		/**Debut Deroulement */
+		System.out.println( "/** Team : belgique **/");
+		Iterator i = match.getDetails_Team1().keySet().iterator();
+		 
+		while (i.hasNext())
+		{
+		    String clef = (String)i.next();
+		    ArrayList<Player> players = match.getDetails_Team1().get(clef);
+		    System.out.println("Evenement " + clef + " : " + players.size() );
+		    for (Player p : players){
+		    	System.out.println(p.getName());
+			}
+		}		
+		
+		System.out.println( "/** Team : France **/");
+		Iterator j = match.getDetails_Team2().keySet().iterator();
+		 
+		while (j.hasNext())
+		{
+		    String clef = (String)j.next();
+		    ArrayList<Player> players = match.getDetails_Team2().get(clef);
+		    System.out.println("Evenement " + clef + " : " + players.size() );
+		    for (Player p : players){
+		    	System.out.println(p.getName());
+			}
+		}		
+		/**Fin deroulement ***/
 		System.out.println("Voici  les equipes qui participe a la coupe du monde ");
 		for (Team p : participant){
 			System.out.println(p.getCountry() + "  : " +p.getScoreTeam());
