@@ -1,13 +1,17 @@
 package core;
 
 import data.Player;
+import data.QuarterFinal;
+import data.SemiFinal;
 import data.Team;
 
 import java.awt.SystemColor;
+import java.util.ArrayList;
 import java.util.Collections;
 import data.GroupStage;
 
 import data.Coach;
+import data.Final;
 import data.Hat;
 
 public class WorldCup {
@@ -26,10 +30,10 @@ public class WorldCup {
 		initTeams();
 		
 		
-		initGroupStage();
+		//initGroupStage();
 		
 		
-		
+		finalStage(initGroupStage());
 
 	}
 
@@ -706,7 +710,7 @@ public class WorldCup {
 		
 
 	
-	public static void initGroupStage() {
+	public static ArrayList<Team> initGroupStage() {
 		
 		group1 = new GroupStage(hat1.getTeam1(), hat2.getTeam1(), hat3.getTeam1(), hat4.getTeam1());
 		group2 = new GroupStage(hat1.getTeam2(), hat2.getTeam2(), hat3.getTeam2(), hat4.getTeam2());
@@ -757,6 +761,20 @@ public class WorldCup {
 		System.out.println("Le deuxième qualifié de la poule D est " + group4.getSecond().getCountry());
 		System.out.println("------------------------------------");
 		
+		ArrayList<Team> arry = new ArrayList<Team>();
+		arry.add(group1.getFirst());
+		arry.add(group1.getSecond());
+		arry.add(group2.getFirst());
+		arry.add(group2.getSecond());
+		arry.add(group3.getFirst());
+		arry.add(group3.getSecond());
+		arry.add(group4.getFirst());
+		arry.add(group4.getSecond());
+	
+		return arry;
+
+		
+		
 		
 }
 public static void initHats(Team[] participant) {
@@ -793,6 +811,53 @@ public static void initHats(Team[] participant) {
 
 
 		
+}
+
+
+public static void finalStage(ArrayList<Team> arry ) {
+	
+	
+	QuarterFinal qF = new QuarterFinal(arry.get(0), arry.get(1), arry.get(2), arry.get(3), arry.get(4), arry.get(5), arry.get(6), arry.get(7));
+	
+	
+	System.out.println("************************************************");
+	System.out.println("Lancement des quarts de Finale");
+	qF.qualificationToSemiFinal();
+	
+	System.out.println("Le gagnant du premier quart de finale est : " + qF.getFirstWinner().getCountry());
+	System.out.println("Le gagnant du deuxième quart de finale est : " + qF.getSecondWinner().getCountry());
+	System.out.println("Le gagnant du troisième quart de finale est : " + qF.getThirdWinner().getCountry());
+	System.out.println("Le gagnant du quatrième quart de finale est : " + qF.getFourthWinner().getCountry());
+	
+	System.out.println("************************************************");
+
+	
+	SemiFinal sM =  new SemiFinal(qF.getFirstWinner(), qF.getSecondWinner(), qF.getThirdWinner(), qF.getFourthWinner());
+	sM.play();
+	
+	
+	System.out.println("Le gagnant du premier demi de finale est : " + sM.getWinnerA().getCountry());
+	System.out.println("Le gagnant du deuxième demi de finale est : " + sM.getWinnerB().getCountry());
+	
+	System.out.println("************************************************");
+	
+	Final fN =  new Final(sM.getTeamA(), sM.getWinnerB(), sM.getLooserA(), sM.getLooserB());
+	fN.playFinal();
+	
+	System.out.println("Le gagnant du premier 1ere place  finale est : " + fN.getFirst().getCountry());
+	System.out.println("Le gagnant du deuxième 2eme  finale est : " + fN.getSecond().getCountry());
+	System.out.println("Le gagnant du deuxième 3eme  de finale est : " + fN.getThird().getCountry());
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
 }
 		
 		
