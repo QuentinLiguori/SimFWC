@@ -29,19 +29,15 @@ public class GroupStage {
 	}
 	
 	public void qualification() {
-		System.out.println("6666666666666666666666666666666666666");
+		System.out.println("**********************************");
 		
 		Match firstTurn = new Match(team1,team2);
 		firstTurn.matchFlow();
-		System.out.println("equipe qui a gagne : "+ firstTurn.getWinner().getCountry());
-		System.out.println("equipe qui a perdu : "+ firstTurn.getLooser().getCountry());
 		System.out.println(firstTurn.getFinalScore() );
 
 		Match firstTurn2 = new Match(team3,team4);
 		firstTurn2.matchFlow();
 
-		System.out.println("equipe qui a gagne : "+ firstTurn2.getWinner().getCountry());
-		System.out.println("equipe qui a perdu  : "+ firstTurn2.getLooser().getCountry());
 		System.out.println(firstTurn2.getFinalScore() );
 
 
@@ -51,17 +47,12 @@ public class GroupStage {
 		Match secondTurn = new Match(team1, team3);
 		secondTurn.matchFlow();
 
-		
-		System.out.println("equipe qui a gagne : "+ secondTurn.getWinner().getCountry());
-		System.out.println("equipe qui a perdu  : "+ secondTurn.getLooser().getCountry());
 		System.out.println(secondTurn.getFinalScore() );
 
 
 		Match secondTurn2 = new Match(team2, team4);
 		secondTurn2.matchFlow();
 
-		System.out.println("equipe qui a gagne : "+ secondTurn2.getWinner().getCountry());
-		System.out.println("equipe qui a perdu : "+ secondTurn2.getLooser().getCountry());
 		System.out.println(secondTurn2.getFinalScore() );
 
 
@@ -71,24 +62,15 @@ public class GroupStage {
 		Match thirdTurn = new Match(team1, team4);
 		thirdTurn.matchFlow();
 
+		System.out.println(thirdTurn.getFinalScore() );
+		
 		Match thirdTurn2 = new Match(team2, team3);
 		thirdTurn2.matchFlow();
 
-		System.out.println("equipe qui a gagne : "+ thirdTurn.getWinner().getCountry());
-		System.out.println("equipe qui a perdu  : "+ thirdTurn.getLooser().getCountry());
-		System.out.println(thirdTurn.getFinalScore() );
-
-		
-		System.out.println("equipe qui a gagne: "+ thirdTurn2.getWinner().getCountry());
-		System.out.println("equipe qui a perdu  : "+ thirdTurn2.getLooser().getCountry());
 		System.out.println(thirdTurn2.getFinalScore() );
 
 		addPoints(thirdTurn);
-		addPoints(thirdTurn2);
-		
-	//	first = team1;
-	//	second = team2;
-		
+		addPoints(thirdTurn2);		
 		
 		ArrayList<Team> arry = new ArrayList<Team>();
 		arry.add(team1);
@@ -112,35 +94,12 @@ public class GroupStage {
 		
 		first =  arry.get(0);
 		second =  arry.get(1);
-		System.out.println("le premier equipe est "+ team1.getCountry() + " et son score " + team1.getGroupStageScore());
-		System.out.println("le premier equipe est "+ team2.getCountry() + " et son score " + team2.getGroupStageScore());
+		System.out.println("Résultat de la Poule");
+		System.out.println(team1.getCountry() + " : " + team1.getGroupStageScore());
+		System.out.println(team2.getCountry() + " : " + team2.getGroupStageScore());
 
-		System.out.println("le premier equipe est "+ team3.getCountry() + " et son score " + team3.getGroupStageScore());
-		System.out.println("le premier equipe est "+ team4.getCountry() + " et son score " + team4.getGroupStageScore());
-
-
-		
-		/*
-
-		if(first.getGroupStageScore() < team2.getGroupStageScore()) {
-			first = team2;
-		}
-		if(first.getGroupStageScore() < team3.getGroupStageScore()) {
-			first = team3;
-		}
-		if(first.getGroupStageScore() < team4.getGroupStageScore()) {
-			first = team4;
-		}
-		if(second.getGroupStageScore() < team1.getGroupStageScore() && first.getGroupStageScore() != team1.getGroupStageScore()) {
-			second = team1;
-		}
-		if(first.getGroupStageScore() < team3.getGroupStageScore() && first.getGroupStageScore() != team3.getGroupStageScore()) {
-			second = team3;
-		}
-		if(first.getGroupStageScore() < team4.getGroupStageScore() && first.getGroupStageScore() != team4.getGroupStageScore()) {
-			second = team4;
-		}
-		*/
+		System.out.println(team3.getCountry() + " : " + team3.getGroupStageScore());
+		System.out.println(team4.getCountry() + " : " + team4.getGroupStageScore());
 		
 	}
 	
