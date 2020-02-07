@@ -517,7 +517,7 @@ public class WorldCup {
 		Player mandi = new Player("mandi", "i", 36, 60, 170, "defense", 94, 94, 94, 92, 91, 92, 99, 90);
 		Player guedioura = new Player("guedioura", "b", 31, 60, 170, "milieu", 93, 93, 93, 92, 87, 88, 99, 99);
 		// milieu
-		Player feghouli = new Player("feghouli", "v", 30, 60, 170, "milieu", 90, 91, 90, 88, 88, 85, 88, 88);
+		Player feghouli = new Player("feghouli", "v", 30, 60, 170, "milieu", 76, 70, 90, 88, 88, 85, 88, 88);
 		Player banacer = new Player("banacer", "v", 18, 60, 170, "milieu", 90, 90, 90, 92, 88, 91, 88, 94);
 		Player bentaleb = new Player("bentaleb", "a", 26, 60, 170, "milieu", 91, 82, 85, 88, 87, 88, 88, 50);
 		Player ferhat = new Player("martins", "p", 22, 60, 170, "milieu", 91, 92, 94, 94, 80, 89, 88, 90);
@@ -841,7 +841,7 @@ public static void finalStage(ArrayList<Team> arry ) {
 	
 	System.out.println("************************************************");
 	
-	Final fN =  new Final(sM.getTeamA(), sM.getWinnerB(), sM.getLooserA(), sM.getLooserB());
+	Final fN =  new Final(sM.getWinnerA(), sM.getWinnerB(), sM.getLooserA(), sM.getLooserB());
 	fN.playFinal();
 	
 	System.out.println("Le gagnant du premier 1ere place  finale est : " + fN.getFirst().getCountry());
