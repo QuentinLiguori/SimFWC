@@ -184,57 +184,76 @@ public class QuarterFinal {
 
 
 
-	public Team getFirstWiner() {
-		return firstWiner;
+	/**
+	 * @return the firstWinner
+	 */
+	public Team getFirstWinner() {
+		return firstWinner;
 	}
 
 
 
-	public void setFirstWiner(Team firstWiner) {
-		this.firstWiner = firstWiner;
+	/**
+	 * @param firstWinner the firstWinner to set
+	 */
+	public void setFirstWinner(Team firstWinner) {
+		this.firstWinner = firstWinner;
 	}
 
 
 
-	public Team getSecondWiner() {
-		return secondWiner;
+	/**
+	 * @return the secondWinner
+	 */
+	public Team getSecondWinner() {
+		return secondWinner;
 	}
 
 
 
-	public void setSecondWiner(Team secondWiner) {
-		this.secondWiner = secondWiner;
+	/**
+	 * @param secondWinner the secondWinner to set
+	 */
+	public void setSecondWinner(Team secondWinner) {
+		this.secondWinner = secondWinner;
 	}
 
 
 
-	public Team getThirdWiner() {
-		return thirdWiner;
+	/**
+	 * @return the thirdWinner
+	 */
+	public Team getThirdWinner() {
+		return thirdWinner;
 	}
 
 
 
-	public void setThirdWiner(Team thirdWiner) {
-		this.thirdWiner = thirdWiner;
+	/**
+	 * @param thirdWinner the thirdWinner to set
+	 */
+	public void setThirdWinner(Team thirdWinner) {
+		this.thirdWinner = thirdWinner;
 	}
 
 
 
-	public Team getFourthWiner() {
-		return fourthWiner;
+	/**
+	 * @return the fourthWinner
+	 */
+	public Team getFourthWinner() {
+		return fourthWinner;
 	}
 
 
 
-	public void setFourthWiner(Team fourthWiner) {
-		this.fourthWiner = fourthWiner;
+	/**
+	 * @param fourthWinner the fourthWinner to set
+	 */
+	public void setFourthWinner(Team fourthWinner) {
+		this.fourthWinner = fourthWinner;
 	}
-	
-	
-	
 
-	
-	
-	
+
 
 }
