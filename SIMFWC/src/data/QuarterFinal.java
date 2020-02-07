@@ -19,13 +19,13 @@ public class QuarterFinal {
 	private Team team2D;
 	
 	
-	private Team firstWiner ;
+	private Team firstWinner ;
 	
-	private Team secondWiner ;
+	private Team secondWinner ;
 
-	private Team thirdWiner ;
+	private Team thirdWinner ;
 
-	private Team fourthWiner ;
+	private Team fourthWinner ;
 
 	
 	public QuarterFinal(Team team1a, Team team2a, Team team1b, Team team2b, Team team1c, Team team2c, Team team1d,Team team2d) {
@@ -43,20 +43,24 @@ public class QuarterFinal {
 	
 	
 	public void qualification() {
-		System.out.println("6666666666666666666666666666666666666");
-		
+		System.out.println("************************************************");
+		System.out.println("Premier quart de final");
+
 		Match firstTurn = new Match(team1A,team2B);
 		
-	//	System.out.println("equipe li rebhet : "+ firstTurn.getWinner().getCountry());
-	//	System.out.println("equipe li khesret : "+ firstTurn.getLooser().getCountry());
-	//	System.out.println("score houwa " + firstTurn.getScoreA() );
+	
+		
+		System.out.println("************************************************");
+		System.out.println("Deuxième quart de final");
+
 
 		Match firstTurn2 = new Match(team2A,team1B);
-	//	System.out.println("equipe li rebhet : "+ firstTurn2.getWinner().getCountry());
-	//	System.out.println("equipe li khesret : "+ firstTurn2.getLooser().getCountry());
 
-	//	addPoints(firstTurn);
-	//	addPoints(firstTurn2);
+	
+		
+		System.out.println("************************************************");
+		System.out.println("Troisième quart de final");
+
 		
 		
 		
@@ -64,24 +68,30 @@ public class QuarterFinal {
 		Match secondTurn = new Match(team1C, team2D);
 	//	System.out.println("equipe li rebhet : "+ secondTurn.getWinner().getCountry());
 	//	System.out.println("equipe li khesret : "+ secondTurn.getLooser().getCountry());
+		
+		
+		System.out.println("************************************************");
+		System.out.println("Quatrième quart de final");
+
 
 		Match secondTurn2 = new Match(team2C, team1D);
 	//	System.out.println("equipe li rebhet : "+ secondTurn2.getWinner().getCountry());
 	//	System.out.println("equipe li khesret : "+ secondTurn2.getLooser().getCountry());
 
-	//	addPoints(secondTurn);
-	//	addPoints(secondTurn2);
+	
+		System.out.println("************************************************");
+
 		
 		
 		
 		
-		firstWiner =  firstTurn.getWinner();
+		firstWinner =  firstTurn.getWinner();
 		
-		secondWiner =  firstTurn2.getWinner();
+		secondWinner =  firstTurn2.getWinner();
 		
-		thirdWiner = secondTurn.getWinner();
+		thirdWinner = secondTurn.getWinner();
 		
-		fourthWiner =  secondTurn2.getWinner();
+		fourthWinner =  secondTurn2.getWinner();
 
 		
 	}
