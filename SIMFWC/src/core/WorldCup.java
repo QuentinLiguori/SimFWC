@@ -238,9 +238,9 @@ public class WorldCup {
 		Player france_players[] = { lloris, lecompte, areola, hernandez, dubois, kimpembe, lenglet, mendy, pavard,
 				varane, zouma, pogba, kanté, ndombele, matuidi, tolisso, dembele, coman, nabil, giroud, griezmann,
 				lemar, mbappe };
-		Coach didier = new Coach(" Didier ", " Deschamps ", 51, " française ", 5);
+		Coach didier = new Coach("Didier", "Deschamps", 51, "française", 5);
 		Coach coach_france[] = { didier };
-		Team france = new Team(" 4-2-3-1 ", " France ", france_players, coach_france, " équilibré ");
+		Team france = new Team(" 4-2-3-1 ", "France ", france_players, coach_france, " équilibré ");
 
 		// ARGENTINE Vitesse Centre Passe Tête Tir Endurance Puissance Tacle
 		// gardien
@@ -417,7 +417,7 @@ public class WorldCup {
 				morales, aspas };
 		Coach gouardilla = new Coach("gourdiola", "pepe", 88, "spanich", 2);
 		Coach[] coach_spain = { gouardilla };
-		Team spain = new Team("4-3-3", "spain", spain_players, coach_spain, "offensif");
+		Team spain = new Team("4-3-3", "Spain", spain_players, coach_spain, "offensif");
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -456,7 +456,7 @@ public class WorldCup {
 		Coach sofiane = new Coach("idmbarkos", "safawan", 80, "bresilien", 3);
 		// Coach ss = new Coach(lastName, firstName, age, nationality, level)
 		Coach[] coach_bresil = { sofiane };
-		Team bresil = new Team("4-3-4", "brasil", bresil_players, coach_bresil, "offensif");
+		Team bresil = new Team("4-3-4", "Brasil", bresil_players, coach_bresil, "offensif");
 
 		// -------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -497,7 +497,7 @@ public class WorldCup {
 		Coach morinio = new Coach("marinio", "silva", 88, "portugal", 2);
 		// Coach ss = new Coach(lastName, firstName, age, nationality, level)
 		Coach[] coach_belgique = { morinio };
-		Team belgique = new Team("4-5-1", "belgique", belgique_players, coach_belgique, "offensif");
+		Team belgique = new Team("4-5-1", "Belgique", belgique_players, coach_belgique, "offensif");
 
 		// ALGERIE
 
@@ -534,7 +534,7 @@ public class WorldCup {
 		Coach belmadi = new Coach("belmadi", "djamel", 95, "algerien", 4);
 		// Coach ss = new Coach(lastName, firstName, age, nationality, level)
 		Coach[] coach_algeria = { morinio };
-		Team algeria = new Team("4-4-3", "algerie", algeria_players, coach_algeria, "offensif");
+		Team algeria = new Team("4-4-3", "Algerie", algeria_players, coach_algeria, "offensif");
 
 		// ----------------------------------------------------------------------------------------------------
 
@@ -613,7 +613,7 @@ public class WorldCup {
 				rooney, ings };
 		Coach heniken = new Coach("Heniken", "adams", 73, "uruguayen", 2);
 		Coach[] coach_england = { heniken };
-		Team england = new Team("4-3-3", "england", england_players, coach_england, "offensif");
+		Team england = new Team("4-3-3", "England", england_players, coach_england, "offensif");
 		// -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 		// Morocco
@@ -649,7 +649,7 @@ public class WorldCup {
 				amrabt, fajr, bennaser, harit, taarabt, hafidi, enssiri, yajour, alarabi, chamakh, hamdalah, belhanda };
 		Coach eric = new Coach("Eric", "guerets", 73, "uruguayen", 2);
 		Coach[] coach_morocco = { eric };
-		Team morocco = new Team("4-3-3", "morocco", morocco_players, coach_morocco, "offensif");
+		Team morocco = new Team("4-3-3", "Morocco", morocco_players, coach_morocco, "offensif");
 
 		// -------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -687,14 +687,14 @@ public class WorldCup {
 				overmars };
 		Coach vanjal = new Coach("Vanjal", "Tabanez", 73, "uruguayen", 2);
 		Coach[] coach_netherlands = { vanjal };
-		Team netherlands = new Team("4-3-3", "netherlands", netherlands_players, coach_netherlands, "offensif");
+		Team netherlands = new Team("4-3-3", "Netherlands", netherlands_players, coach_netherlands, "offensif");
 
 		/**
 		 * Array of all the teams
 		 */
 		Team[] participant = { chili, uruguay, italy, portugal, sweden, poland, france, argentin, netherlands, morocco,
 				england, germany, algeria, belgique, bresil, spain };
-		System.out.println("voici  les equipes qui participe a la coupe du monde ");
+		System.out.println("Voici  les equipes qui participe a la coupe du monde ");
 		for (Team p : participant){
 			System.out.println(p.getCountry() + "  : " +p.getScoreTeam());
 		}
@@ -713,54 +713,53 @@ public class WorldCup {
 		group3 = new GroupStage(hat1.getTeam3(), hat2.getTeam3(), hat3.getTeam3(), hat4.getTeam3());
 		group4 = new GroupStage(hat1.getTeam4(), hat2.getTeam4(), hat3.getTeam4(), hat4.getTeam4());
 		
+		System.out.println("------------------------------------");
 		System.out.println("Les poules sonts :");
 		
+		System.out.println("Poule A : " + group1.getTeam1().getCountry() + " - " +  group1.getTeam2().getCountry() + " - " +  group1.getTeam3().getCountry() + " - " +  group1.getTeam4().getCountry()  );
+		System.out.println("Poule B : " + group2.getTeam1().getCountry() + " - " +  group2.getTeam2().getCountry() + " - " +  group2.getTeam3().getCountry() + " - " +  group2.getTeam4().getCountry()  );
+		System.out.println("Poule C : " + group3.getTeam1().getCountry() + " - " +  group3.getTeam2().getCountry() + " - " +  group3.getTeam3().getCountry() + " - " +  group3.getTeam4().getCountry()  );
+		System.out.println("Poule D : " + group4.getTeam1().getCountry() + " - " +  group4.getTeam2().getCountry() + " - " +  group4.getTeam3().getCountry() + " - " +  group4.getTeam4().getCountry()  );
+		
+		
+		
+		
+		System.out.println("------------------------------------");
 		System.out.println(group1.getTeam1().getCountry() + " - " +  group1.getTeam2().getCountry() + " - " +  group1.getTeam3().getCountry() + " - " +  group1.getTeam4().getCountry()  );
-		System.out.println(group2.getTeam1().getCountry() + " - " +  group2.getTeam2().getCountry() + " - " +  group2.getTeam3().getCountry() + " - " +  group2.getTeam4().getCountry()  );
-		System.out.println(group3.getTeam1().getCountry() + " - " +  group3.getTeam2().getCountry() + " - " +  group3.getTeam3().getCountry() + " - " +  group3.getTeam4().getCountry()  );
-		System.out.println(group4.getTeam1().getCountry() + " - " +  group4.getTeam2().getCountry() + " - " +  group4.getTeam3().getCountry() + " - " +  group4.getTeam4().getCountry()  );
-		
-		
-		
 		
 		group1.qualification();
+
+		System.out.println("Le premier qualifié de la poule A est " + group1.getFirst().getCountry());
+		System.out.println("Le deuxième qualifié de la poule A est " + group1.getSecond().getCountry());
 		System.out.println("------------------------------------");
-		System.out.println(group1.getTeam1().getCountry() + " - " +  group1.getTeam2().getCountry() + " - " +  group1.getTeam3().getCountry() + " - " +  group1.getTeam4().getCountry()  );
+		
+		System.out.println(group2.getTeam1().getCountry() + " - " +  group2.getTeam2().getCountry() + " - " +  group2.getTeam3().getCountry() + " - " +  group2.getTeam4().getCountry()  );
+		
+		group2.qualification();
 
-		System.out.println("le premier de equiiiiipe est " + group1.getFirst().getCountry());
-		System.out.println("le 2eme de equiiiiipe est " + group1.getSecond().getCountry());
+		System.out.println("Le premier qualifié de la poule B est " + group2.getFirst().getCountry());
+		System.out.println("Le deuxième qualifié de la poule B est " + group2.getSecond().getCountry());
+		System.out.println("------------------------------------");
+		
+		System.out.println(group3.getTeam1().getCountry() + " - " +  group3.getTeam2().getCountry() + " - " +  group3.getTeam3().getCountry() + " - " +  group3.getTeam4().getCountry()  );
+		
+		group3.qualification();
+
+		System.out.println("Le premier qualifié de la poule C est " + group3.getFirst().getCountry());
+		System.out.println("Le deuxième qualifié de la poule C est " + group3.getSecond().getCountry());
 		System.out.println("------------------------------------");
 
+		System.out.println(group4.getTeam1().getCountry() + " - " +  group4.getTeam2().getCountry() + " - " +  group4.getTeam3().getCountry() + " - " +  group4.getTeam4().getCountry()  );
 		
-		
-		
-		
-		
-		
-		
-		
+		group4.qualification();
 
+		System.out.println("Le premier qualifié de la poule D est " + group4.getFirst().getCountry());
+		System.out.println("Le deuxième qualifié de la poule D est " + group4.getSecond().getCountry());
+		System.out.println("------------------------------------");
 		
 		
 }
-//	public static void initGroupStage() {
-//
-//		
-//		
-//		
-//		//	public static void initGroupStage() {
-	//
-//	
-//	
-//	
-//	
-//int nb = (int) (Math.random() * 6 );     //Pour un entier entre 0 et 5  
-//	
-//}
-//int nb = (int) (Math.random() * 6 );     //Pour un entier entre 0 et 5  
-//		
-//	}
-	public static void initHats(Team[] participant) {
+public static void initHats(Team[] participant) {
 		
 		for (int i = 0; i < participant.length - 1; i++)  
         {
@@ -778,15 +777,18 @@ public class WorldCup {
         }
 		
 		hat1 = new Hat(participant[0], participant[1], participant[2], participant[3]);
-		 hat2 = new Hat(participant[4], participant[5], participant[6], participant[7]);
-		 hat3 = new Hat(participant[8], participant[9], participant[10], participant[11]);
-		 hat4 = new Hat(participant[12], participant[13], participant[14], participant[15]);
+		hat2 = new Hat(participant[4], participant[5], participant[6], participant[7]);
+		hat3 = new Hat(participant[8], participant[9], participant[10], participant[11]);
+		hat4 = new Hat(participant[12], participant[13], participant[14], participant[15]);
+		
+		System.out.println("------------------------------------");
+		System.out.println("Les Chapeaux sont :");
 		
 		System.out.println(hat1.getTeam1().getCountry() + " - " +  hat1.getTeam2().getCountry() + " - " +  hat1.getTeam3().getCountry() + " - " +  hat1.getTeam4().getCountry()  );
 		System.out.println(hat2.getTeam1().getCountry() + " - " +  hat2.getTeam2().getCountry() + " - " +  hat2.getTeam3().getCountry() + " - " +  hat2.getTeam4().getCountry()  );
-		System.out.println(hat3.getTeam1().getCountry() +  " - " +  hat3.getTeam2().getCountry() + " - " +  hat3.getTeam3().getCountry() + " - " +  hat3.getTeam4().getCountry()  );
+		System.out.println(hat3.getTeam1().getCountry() + " - " +  hat3.getTeam2().getCountry() + " - " +  hat3.getTeam3().getCountry() + " - " +  hat3.getTeam4().getCountry()  );
 		System.out.println(hat4.getTeam1().getCountry() + " - " +  hat4.getTeam2().getCountry() + " - " +  hat4.getTeam3().getCountry() + " - " +  hat4.getTeam4().getCountry()  );
-
+		System.out.println("------------------------------------");
 		
 
 
