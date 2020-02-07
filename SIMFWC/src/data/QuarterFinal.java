@@ -42,80 +42,56 @@ public class QuarterFinal {
 
 	
 	
-	public void qualification() {
+	public void qualificationToSemiFinal() {
 		System.out.println("************************************************");
 		System.out.println("Premier quart de final");
 
-		Match firstTurn = new Match(team1A,team2B);
-		
-	
+		Match firstQuarter = new Match(team1A,team2B);
+		firstQuarter.matchFlow();
+		System.out.println(firstQuarter.getFinalScore() );
 		
 		System.out.println("************************************************");
 		System.out.println("Deuxième quart de final");
 
-
-		Match firstTurn2 = new Match(team2A,team1B);
+		Match secondQuarter = new Match(team2A,team1B);
+		secondQuarter.matchFlow();
+		System.out.println(secondQuarter.getFinalScore() );
 
 	
 		
 		System.out.println("************************************************");
 		System.out.println("Troisième quart de final");
 
-		
-		
-		
-		
-		Match secondTurn = new Match(team1C, team2D);
-	//	System.out.println("equipe li rebhet : "+ secondTurn.getWinner().getCountry());
-	//	System.out.println("equipe li khesret : "+ secondTurn.getLooser().getCountry());
-		
+		Match thirdQuarter = new Match(team1C, team2D);
+		thirdQuarter.matchFlow();
+
+		System.out.println(thirdQuarter.getFinalScore() );
 		
 		System.out.println("************************************************");
 		System.out.println("Quatrième quart de final");
 
 
-		Match secondTurn2 = new Match(team2C, team1D);
-	//	System.out.println("equipe li rebhet : "+ secondTurn2.getWinner().getCountry());
-	//	System.out.println("equipe li khesret : "+ secondTurn2.getLooser().getCountry());
+		Match fourthQuarter = new Match(team2C, team1D);
+		fourthQuarter.matchFlow();
+		System.out.println(fourthQuarter.getFinalScore() );
 
-	
+
 		System.out.println("************************************************");
 
 		
 		
 		
 		
-		firstWinner =  firstTurn.getWinner();
+		firstWinner =  firstQuarter.getWinner();
 		
-		secondWinner =  firstTurn2.getWinner();
+		secondWinner =  secondQuarter.getWinner();
 		
-		thirdWinner = secondTurn.getWinner();
+		thirdWinner = thirdQuarter.getWinner();
 		
-		fourthWinner =  secondTurn2.getWinner();
+		fourthWinner =  fourthQuarter.getWinner();
 
 		
 	}
-	
-	public void addPoints(Match match) {
-		
-		if(match.getScoreA() == match.getScoreB() ) {
-			match.getTeamA().setGroupStageScore(match.getTeamA().getGroupStageScore() +1);
-			match.getLooser().setGroupStageScore(match.getTeamB().getGroupStageScore() +1);
-		}
-		else {
-			match.getWinner().setGroupStageScore(match.getWinner().getGroupStageScore() +3);
-		}
-		
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	public Team getTeam1A() {
