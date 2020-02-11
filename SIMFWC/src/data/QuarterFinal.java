@@ -47,14 +47,14 @@ public class QuarterFinal {
 		System.out.println("Premier quart de final");
 
 		Match firstQuarter = new Match(team1A,team2B);
-		firstQuarter.matchFlow();
+		firstQuarter.matchFlowFinal();
 		System.out.println(firstQuarter.getFinalScore() );
 		
 		System.out.println("************************************************");
 		System.out.println("Deuxième quart de final");
 
 		Match secondQuarter = new Match(team2A,team1B);
-		secondQuarter.matchFlow();
+		secondQuarter.matchFlowFinal();
 		System.out.println(secondQuarter.getFinalScore() );
 
 	
@@ -63,7 +63,7 @@ public class QuarterFinal {
 		System.out.println("Troisième quart de final");
 
 		Match thirdQuarter = new Match(team1C, team2D);
-		thirdQuarter.matchFlow();
+		thirdQuarter.matchFlowFinal();
 
 		System.out.println(thirdQuarter.getFinalScore() );
 		
@@ -72,7 +72,7 @@ public class QuarterFinal {
 
 
 		Match fourthQuarter = new Match(team2C, team1D);
-		fourthQuarter.matchFlow();
+		fourthQuarter.matchFlowFinal();
 		System.out.println(fourthQuarter.getFinalScore() );
 
 
