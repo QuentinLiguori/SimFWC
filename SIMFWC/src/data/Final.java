@@ -26,20 +26,20 @@ public class Final {
 	public void playFinal() {
 		
 		Match Final = new Match(teamA,teamB);
-		Final.matchFlow();
+		Final.matchFlowFinal();
 		
 		setFirst(Final.getWinner());
 		setSecond(Final.getLooser());
 		
-		System.out.println("Résultats de la Finale");
+		System.out.println("RÃ©sultats de la Finale");
 		System.out.println(Final.getFinalScore() );
 		
 		Match playOff = new Match(teamC,teamD);
-		playOff.matchFlow();
+		playOff.matchFlowFinal();
 		
 		setThird(playOff.getWinner());
 		
-		System.out.println("Résultats de la petite Finale");
+		System.out.println("RÃ©sultats de la petite Finale");
 		System.out.println(playOff.getFinalScore() );
 		
 	}
