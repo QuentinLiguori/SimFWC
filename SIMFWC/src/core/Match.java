@@ -64,7 +64,7 @@ public class Match {
 	 */
 	public void randomEvents(Team teamA, Team teamB) {
 		int eventOccured=0, teamChoosen=0;
-		int nbEvent = new Random().nextInt(10);
+		int nbEvent = new Random().nextInt(12);
 		
 		/*initialisation des listes d'evenements pour les deux equipes */
 		
@@ -154,31 +154,31 @@ public class Match {
 		
 		case 0:
 			//blessure
-			team.setPowerTeam(team.getPowerTeam()-5);
+			team.setPowerTeam(team.getPowerTeam()-13);
 			break;
 		
 		case 1:
 			//carton jaune
-			team.setPowerTeam(team.getPowerTeam()-2);
+			team.setPowerTeam(team.getPowerTeam()-12);
 			break;
 		
 		case 2:
 			//carton jaune
-			team.setPowerTeam(team.getPowerTeam()-2);
+			team.setPowerTeam(team.getPowerTeam()-12);
 			break;
 		case 3:
 			//exchange player
-			team.setPowerTeam(team.getPowerTeam()+2);
+			team.setPowerTeam(team.getPowerTeam()+13);
 			break;
 		
 		case 4:
 			//exchange player
-			team.setPowerTeam(team.getPowerTeam()+2);
+			team.setPowerTeam(team.getPowerTeam()+13);
 			break;
 		
 		default:
 			//carton rouge
-			team.setPowerTeam(team.getPowerTeam()-4);
+			team.setPowerTeam(team.getPowerTeam()-12);
 			break;
 		}
 	}
@@ -186,7 +186,6 @@ public class Match {
 	/**
 	 * Flow of the match
 	 */
-	//ERROR HERE
 	public void matchFlow() {
 		//up the team's power
 		int winningLuckA, winningLuckB;
@@ -217,6 +216,44 @@ public class Match {
 		else {
 			setScoreA(new Random().nextInt(8));
 			setScoreB(scoreA);
+		}
+	}
+	
+	/**
+	 * Flow of the match
+	 */
+	public void matchFlowFinal() {
+		//up the team's power
+		int winningLuckA, winningLuckB;
+				
+		randomEvents(teamA, teamB);
+		
+		winningLuckA = (teamA.getPowerTeam() + teamA.getScoreTeam())/2;
+		winningLuckB = (teamB.getPowerTeam() + teamB.getScoreTeam())/2;
+		
+		//The teamA won the match
+		if (winningLuckA>winningLuckB) {
+			do {
+				setScoreA(new Random().nextInt(8));
+				setScoreB(new Random().nextInt(8));
+			}while(scoreA<=scoreB);
+
+		}
+		
+		//The teamB won the match
+		else if (winningLuckA<winningLuckB) {
+			 do {
+				setScoreA(new Random().nextInt(8));
+				setScoreB(new Random().nextInt(8));
+			} while(scoreA>=scoreB);
+		}
+		
+		//The match was a draw
+		else {
+			do {
+				setScoreA(new Random().nextInt(8));
+				setScoreB(new Random().nextInt(8));
+			} while(scoreA==scoreB);
 		}
 	}
 	
