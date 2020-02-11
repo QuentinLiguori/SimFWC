@@ -28,22 +28,22 @@ public class SemiFinal {
 	public void play() {
 		
 		Match firstSemiFinal = new Match(teamA,teamB);
-		firstSemiFinal.matchFlow();
+		firstSemiFinal.matchFlowFinal();
 		
 		setWinnerA(firstSemiFinal.getWinner());
 		setLooserA(firstSemiFinal.getLooser());
 		
-		System.out.println("Résultats de la première demi-Finale");
+		System.out.println("Resultats de la premiere demi-Finale");
 		System.out.println(firstSemiFinal.getFinalScore() );
 		
 		Match secondSemiFinal = new Match(teamC,teamD);
-		secondSemiFinal.matchFlow();
+		secondSemiFinal.matchFlowFinal();
 		
 		setWinnerB(secondSemiFinal.getWinner());
 		setLooserB(secondSemiFinal.getLooser());
 
 		
-		System.out.println("Résultats de la deuxième demi-Finale");
+		System.out.println("Resultats de la deuxieme demi-Finale");
 		System.out.println(secondSemiFinal.getFinalScore() );
 
 		
