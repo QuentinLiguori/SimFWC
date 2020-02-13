@@ -154,31 +154,31 @@ public class Match {
 		
 		case 0:
 			//blessure
-			team.setPowerTeam(team.getPowerTeam()-13);
+			team.setPowerTeam(team.getPowerTeam()-10);
 			break;
 		
 		case 1:
 			//carton jaune
-			team.setPowerTeam(team.getPowerTeam()-12);
+			team.setPowerTeam(team.getPowerTeam()-7);
 			break;
 		
 		case 2:
 			//carton jaune
-			team.setPowerTeam(team.getPowerTeam()-12);
+			team.setPowerTeam(team.getPowerTeam()-7);
 			break;
 		case 3:
 			//exchange player
-			team.setPowerTeam(team.getPowerTeam()+13);
+			team.setPowerTeam(team.getPowerTeam()+10);
 			break;
 		
 		case 4:
 			//exchange player
-			team.setPowerTeam(team.getPowerTeam()+13);
+			team.setPowerTeam(team.getPowerTeam()+10);
 			break;
 		
 		default:
 			//carton rouge
-			team.setPowerTeam(team.getPowerTeam()-12);
+			team.setPowerTeam(team.getPowerTeam()-14);
 			break;
 		}
 	}
