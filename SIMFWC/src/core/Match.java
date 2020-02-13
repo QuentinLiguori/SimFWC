@@ -168,12 +168,12 @@ public class Match {
 			break;
 		case 3:
 			//exchange player
-			team.setPowerTeam(team.getPowerTeam()+10);
+			team.setPowerTeam(team.getPowerTeam()+6);
 			break;
 		
 		case 4:
 			//exchange player
-			team.setPowerTeam(team.getPowerTeam()+10);
+			team.setPowerTeam(team.getPowerTeam()+6);
 			break;
 		
 		default:
