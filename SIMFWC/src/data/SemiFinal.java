@@ -14,7 +14,13 @@ public class SemiFinal {
 	private Team looserA;
 	private Team looserB;
 	
-	
+	/**
+	 * constructor of the class SemiFinal
+	 * @param teamA
+	 * @param teamB
+	 * @param teamC
+	 * @param teamD
+	 */
 	public SemiFinal(Team teamA, Team teamB, Team teamC, Team teamD) {
 		
 		setTeamA(teamA);
@@ -22,7 +28,10 @@ public class SemiFinal {
 		setTeamC(teamC);
 		setTeamD(teamD);
 	}
-
+	/**
+	 * this function Determined the semi final phase between 4 teams  
+	 * 
+	 */
 	
 	
 	public void play() {
