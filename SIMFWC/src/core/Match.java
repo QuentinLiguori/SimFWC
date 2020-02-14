@@ -14,6 +14,7 @@ public class Match {
 	private Team teamB;
 	private HashMap<String,ArrayList<Player> > details_Team1 = new HashMap<String,ArrayList<Player> >();
 	private HashMap<String,ArrayList<Player> > details_Team2 = new HashMap<String,ArrayList<Player> >();
+	private static int value_random = 5;
 
 	/**
 	 * Constructor of a match between two teams
@@ -64,9 +65,9 @@ public class Match {
 	 */
 	public void randomEvents(Team teamA, Team teamB) {
 		int eventOccured=0, teamChoosen=0;
-		int nbEvent = new Random().nextInt(12);
+		int nbEvent = new Random().nextInt(15);
 		
-		/*initialisation des listes d'evenements pour les deux equipes */
+		/*initialization of event lists for both teams */
 		
 		ArrayList<Player> yellow_card1 = new ArrayList<Player>();
 		ArrayList<Player> red_card1 = new ArrayList<Player>();
@@ -78,6 +79,19 @@ public class Match {
 		ArrayList<Player> injury2 = new ArrayList<Player>();
 		ArrayList<Player> change2 = new ArrayList<Player>();
 		
+		/**end**/
+		
+		/** To avoid duplicates in the choice of players */
+		ArrayList<Player> yellow_registre1 = new ArrayList<Player>();
+		ArrayList<Player> red_card_registre1 = new ArrayList<Player>();
+		ArrayList<Player> injury_registre1 = new ArrayList<Player>();
+		ArrayList<Player> change_registre1 = new ArrayList<Player>();
+		
+		ArrayList<Player> yellow_card_registre2 = new ArrayList<Player>();
+		ArrayList<Player> red_card_registre2 = new ArrayList<Player>();
+		ArrayList<Player> injury_registre2 = new ArrayList<Player>();
+		ArrayList<Player> change_registre2 = new ArrayList<Player>();
+		/** end **/
 		for (int i = 0; i < nbEvent; i++) {
 			eventOccured = new Random().nextInt(6);
 			teamChoosen = new Random().nextInt(2);
@@ -85,48 +99,80 @@ public class Match {
 			if (teamChoosen==0) {
 				event(eventOccured, teamA);
 				if(eventOccured == 0 ) {
+					//injury
 					Player player =  teamA.getPlayers()[(int)(Math.random() * teamA.getPlayers().length)];
+					while(injury_registre1.contains(player)) {
+						player =  teamA.getPlayers()[(int)(Math.random() * teamA.getPlayers().length)];
+					}
 					injury1.add(player);
-					//blessure
+					injury_registre1.add(player);
 				} 
 				else if( eventOccured == 1 ||  eventOccured == 2 ){
-					//jaune
+					//yellow_card
 					Player player =  teamA.getPlayers()[(int)(Math.random() * teamA.getPlayers().length)];
+					while(yellow_registre1.contains(player)) {
+						player =  teamA.getPlayers()[(int)(Math.random() * teamA.getPlayers().length)];
+					}
 					yellow_card1.add(player);
+					yellow_registre1.add(player);
 				}
 				else if( eventOccured == 3 || eventOccured == 4 ) {
 					//echange
 					Player player =  teamA.getPlayers()[(int)(Math.random() * teamA.getPlayers().length)];
+					while(change_registre1.contains(player)) {
+						player =  teamA.getPlayers()[(int)(Math.random() * teamA.getPlayers().length)];
+					}
 					change1.add(player);
+					change_registre1.add(player);
 				}
-				else {
-					//rouge
+				 else {
+					//red_card for team A
 					Player player =  teamA.getPlayers()[(int)(Math.random() * teamA.getPlayers().length)];
+					while(red_card_registre1.contains(player)) {
+						player =  teamA.getPlayers()[(int)(Math.random() * teamA.getPlayers().length)];
+					}
 					red_card1.add(player);
+					red_card_registre1.add(player);
 				}
 				
 			}
 			else {
 				event(eventOccured, teamB);
 				if(eventOccured == 0 ) {
+					//injury  for team B
 					Player player =  teamB.getPlayers()[(int)(Math.random() * teamB.getPlayers().length)];
+					while(injury_registre2.contains(player)) {
+						player =  teamB.getPlayers()[(int)(Math.random() * teamB.getPlayers().length)];
+					}
 					injury2.add(player);
-					//blessure
+					injury_registre2.add(player);
 				} 
 				else if( eventOccured == 1 ||  eventOccured == 2 ){
-					//jaune
+					//yellow card  for team B
 					Player player =  teamB.getPlayers()[(int)(Math.random() * teamB.getPlayers().length)];
+					while(yellow_card_registre2.contains(player)) {
+						player =  teamB.getPlayers()[(int)(Math.random() * teamB.getPlayers().length)];
+					}
 					yellow_card2.add(player);
+					yellow_card_registre2.add(player);
 				}
 				else if( eventOccured == 3 || eventOccured == 4 ) {
-					//echange
+					//echange  for team B
 					Player player =  teamB.getPlayers()[(int)(Math.random() * teamB.getPlayers().length)];
+					while(change_registre2.contains(player)) {
+						player =  teamB.getPlayers()[(int)(Math.random() * teamB.getPlayers().length)];
+					}
 					change2.add(player);
+					change_registre1.add(player);
 				}
 				else {
-					//rouge
+					//red card for team B
 					Player player =  teamB.getPlayers()[(int)(Math.random() * teamB.getPlayers().length)];
+					while(red_card_registre2.contains(player)) {
+						player =  teamB.getPlayers()[(int)(Math.random() * teamB.getPlayers().length)];
+					}
 					red_card2.add(player);
+					red_card_registre2.add(player);
 				}
 			}
 			
@@ -154,31 +200,31 @@ public class Match {
 		
 		case 0:
 			//blessure
-			team.setPowerTeam(team.getPowerTeam()-10);
+			team.setPowerTeam(team.getPowerTeam()-15);
 			break;
 		
 		case 1:
 			//carton jaune
-			team.setPowerTeam(team.getPowerTeam()-7);
+			team.setPowerTeam(team.getPowerTeam()-10);
 			break;
 		
 		case 2:
 			//carton jaune
-			team.setPowerTeam(team.getPowerTeam()-7);
+			team.setPowerTeam(team.getPowerTeam()-10);
 			break;
 		case 3:
 			//exchange player
-			team.setPowerTeam(team.getPowerTeam()+6);
+			team.setPowerTeam(team.getPowerTeam()+10);
 			break;
 		
 		case 4:
 			//exchange player
-			team.setPowerTeam(team.getPowerTeam()+6);
+			team.setPowerTeam(team.getPowerTeam()+10);
 			break;
 		
 		default:
 			//carton rouge
-			team.setPowerTeam(team.getPowerTeam()-14);
+			team.setPowerTeam(team.getPowerTeam()-20);
 			break;
 		}
 	}
@@ -198,8 +244,8 @@ public class Match {
 		//The teamA won the match
 		if (winningLuckA>winningLuckB) {
 			do {
-				setScoreA(new Random().nextInt(8));
-				setScoreB(new Random().nextInt(8));
+				setScoreA(new Random().nextInt(value_random));
+				setScoreB(new Random().nextInt(value_random));
 			}while(scoreA<=scoreB);
 
 		}
@@ -207,14 +253,14 @@ public class Match {
 		//The teamB won the match
 		else if (winningLuckA<winningLuckB) {
 			 do {
-				setScoreA(new Random().nextInt(8));
-				setScoreB(new Random().nextInt(8));
+				setScoreA(new Random().nextInt(value_random));
+				setScoreB(new Random().nextInt(value_random));
 			} while(scoreA>=scoreB);
 		}
 		
 		//The match was a draw
 		else {
-			setScoreA(new Random().nextInt(8));
+			setScoreA(new Random().nextInt(value_random));
 			setScoreB(scoreA);
 		}
 	}
@@ -234,8 +280,8 @@ public class Match {
 		//The teamA won the match
 		if (winningLuckA>winningLuckB) {
 			do {
-				setScoreA(new Random().nextInt(8));
-				setScoreB(new Random().nextInt(8));
+				setScoreA(new Random().nextInt(value_random));
+				setScoreB(new Random().nextInt(value_random));
 			}while(scoreA<=scoreB);
 
 		}
@@ -243,16 +289,16 @@ public class Match {
 		//The teamB won the match
 		else if (winningLuckA<winningLuckB) {
 			 do {
-				setScoreA(new Random().nextInt(8));
-				setScoreB(new Random().nextInt(8));
+				setScoreA(new Random().nextInt(value_random));
+				setScoreB(new Random().nextInt(value_random));
 			} while(scoreA>=scoreB);
 		}
 		
 		//The match was a draw
 		else {
 			do {
-				setScoreA(new Random().nextInt(8));
-				setScoreB(new Random().nextInt(8));
+				setScoreA(new Random().nextInt(value_random));
+				setScoreB(new Random().nextInt(value_random));
 			} while(scoreA==scoreB);
 		}
 	}
