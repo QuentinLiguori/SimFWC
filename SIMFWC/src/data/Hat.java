@@ -13,7 +13,13 @@ public class Hat {
 	private Team team4;
 	
 	
-	
+	/**
+	 * Set teams for hat
+	 * @param team1
+	 * @param team2
+	 * @param team3
+	 * @param team4
+	 */
 	public Hat(Team team1, Team team2, Team team3, Team team4) {
 		
 		setTeam1(team1);
@@ -23,7 +29,9 @@ public class Hat {
 
 		
 	}
-		
+	/**
+	 * Randomize the Hat to pick for the groups
+	 */
 	public void randomizeHat() {
 		ArrayList<Team> randomize = new ArrayList<>();
 		randomize.add(team1);
