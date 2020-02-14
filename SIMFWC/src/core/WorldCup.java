@@ -27,18 +27,14 @@ public class WorldCup {
 
 		initTeams();
 
-
-		//initGroupStage();
-
-
 		finalStage(initGroupStage());
 
 	}
-
+	/**
+	 * Initialize all the teams and the players
+	 */
 	public static void initTeams() {
-		// (String name, String firstName, int age, int weight, int height, String
-		// position, int speed, int center, int pass, int header, int shoot, int energy,
-		// int power, int tackle) {
+		
 		/***
 		 * Bayo : chili et uruguay
 		 */
@@ -113,12 +109,8 @@ public class WorldCup {
 		Player chili_players[] = { bravo, cortes, herra, diaz, roco, jara, medel, jara2, isla, beausejour, valdivia,
 				vidal, aranguiz, puch, pulgar, silva, diaz2, vargas, sanchez2, castillo, fuenzalida, paredes,
 				valdivia2 };
-		// Coach(String lastName, String firstName, int age, String nationality, int
-		// level)
 		Coach rueda = new Coach("Reinaldo", "Rueda", 63, "colombien", 3);
 		Coach coach_chili[] = { rueda };
-		// Team(String formation, String country, Player[] players, Coach[] coachs,
-		// String tactic)
 		Team chili = new Team("5-3-1", "Chili", chili_players, coach_chili, "defensif");
 
 		/**
@@ -244,7 +236,7 @@ public class WorldCup {
 		Coach coach_france[] = { didier };
 		Team france = new Team(" 4-2-3-1 ", "France ", france_players, coach_france, " équilibré ");
 
-		// ARGENTINE Vitesse Centre Passe Tête Tir Endurance Puissance Tacle
+		// ARGENTINE 
 		// gardien
 		Player marchesín = new Player(" Marchesín ", " Agustín  ", 31, 85, 188, " gardien ", 80, 80, 85, 75, 85, 75, 80,
 				80);
@@ -708,7 +700,11 @@ public class WorldCup {
 	}
 
 
-
+	/**
+	 * Group Stage randomize the hats and creates the groups,
+	 * Launch all the qualifications for the 4 groups
+	 * @return arry, an array of all the winners of groups
+	 */
 	public static ArrayList<Team> initGroupStage() {
 		
 		
@@ -785,6 +781,11 @@ public class WorldCup {
 
 
 	}
+	
+	/**
+	 * Get each team of the competition and rank them by strengh then insert them in hats by power
+	 * @param participant
+	 */
 	public static void initHats(Team[] participant) {
 
 		for (int i = 0; i < participant.length - 1; i++)  
@@ -820,7 +821,10 @@ public class WorldCup {
 
 	}
 
-
+	/**
+	 * Handle the final Stage of the World Cup 
+	 * @param arry, an array of all the winners from groupStage
+	 */
 	public static void finalStage(ArrayList<Team> arry ) {
 
 
