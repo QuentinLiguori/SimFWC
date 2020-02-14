@@ -26,7 +26,17 @@ public class QuarterFinal {
 	private Team thirdWinner ;
 
 	private Team fourthWinner ;
-
+	/**
+	 * the constructor of the class QuarterFinal 
+	 * @param team1a
+	 * @param team2a
+	 * @param team1b
+	 * @param team2b
+	 * @param team1c
+	 * @param team2c
+	 * @param team1d
+	 * @param team2d
+	 */
 	
 	public QuarterFinal(Team team1a, Team team2a, Team team1b, Team team2b, Team team1c, Team team2c, Team team1d,Team team2d) {
 		
