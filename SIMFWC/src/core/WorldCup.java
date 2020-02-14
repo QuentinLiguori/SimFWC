@@ -710,7 +710,13 @@ public class WorldCup {
 
 
 	public static ArrayList<Team> initGroupStage() {
-
+		
+		
+		hat1.randomizeHat();
+		hat2.randomizeHat();
+		hat3.randomizeHat();
+		hat4.randomizeHat();
+		
 		group1 = new GroupStage(hat1.getTeam1(), hat2.getTeam1(), hat3.getTeam1(), hat4.getTeam1());
 		group2 = new GroupStage(hat1.getTeam2(), hat2.getTeam2(), hat3.getTeam2(), hat4.getTeam2());
 		group3 = new GroupStage(hat1.getTeam3(), hat2.getTeam3(), hat3.getTeam3(), hat4.getTeam3());
