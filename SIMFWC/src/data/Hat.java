@@ -1,4 +1,8 @@
 package data;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
 import data.Team;
 
 public class Hat {
@@ -20,6 +24,18 @@ public class Hat {
 		
 	}
 		
+	public void randomizeHat() {
+		ArrayList<Team> randomize = new ArrayList<>();
+		randomize.add(team1);
+		randomize.add(team2);
+		randomize.add(team3);
+		randomize.add(team4);
+		Collections.shuffle(randomize);
+		setTeam1(randomize.get(0));
+		setTeam2(randomize.get(1));
+		setTeam3(randomize.get(2));
+		setTeam4(randomize.get(3));
+	}
 	/**
 	 * @return the team1
 	 */
