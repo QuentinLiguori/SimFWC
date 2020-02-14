@@ -19,7 +19,13 @@ public class GroupStage {
 	
 	
 	
-	
+	/**
+	 * Set teams for the groupStage
+	 * @param team1
+	 * @param team2
+	 * @param team3
+	 * @param team4
+	 */
 	public GroupStage(Team team1, Team team2, Team team3, Team team4) {
 		
 		setTeam1(team1);
@@ -28,6 +34,9 @@ public class GroupStage {
 		setTeam4(team4);		
 	}
 	
+	/**
+	 * Setup of all the match for one group stage, check winners and give points to go to the next phase
+	 */
 	public void qualification() {
 		System.out.println("**********************************");
 		
@@ -102,7 +111,10 @@ public class GroupStage {
 		System.out.println(team4.getCountry() + " : " + team4.getGroupStageScore());
 		
 	}
-	
+	/**
+	 * This function get the result of a match and give the points to the winner and looser
+	 * @param match
+	 */
 	public void addPoints(Match match) {
 		
 		if(match.getScoreA() == match.getScoreB() ) {
@@ -173,20 +185,32 @@ public class GroupStage {
 		this.team4 = team4;
 	}
 
+	/**
+	 * @return the first
+	 */
 	public Team getFirst() {
 		return first;
 	}
 
+	/**
+	 * @param first the first to set
+	 */
 	public void setFirst(Team first) {
 		this.first = first;
 	}
 
+	/**
+	 * @return the second
+	 */
 	public Team getSecond() {
 		return second;
 	}
 
+	/**
+	 * @param second the second to set
+	 */
 	public void setSecond(Team second) {
 		this.second = second;
 	}
-	
+
 }
