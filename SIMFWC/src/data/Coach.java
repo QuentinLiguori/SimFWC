@@ -105,6 +105,9 @@ public class Coach {
 	}
 
 	@Override
+	/**
+	*This method displays the informations of Coach 
+	*/
 	public String toString() {
 		return "Coach [lastName=" + lastName + ", firstName=" + firstName + ", age=" + age + ", nationality="
 				+ nationality + ", level=" + level + "]";
