@@ -39,7 +39,7 @@ public class Team {
 	private int scoreTeam;
 	
 	/**
-	 * 
+	 * power of team
 	 */
 	private int powerTeam; 
 	
