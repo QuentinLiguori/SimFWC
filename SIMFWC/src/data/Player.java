@@ -48,7 +48,7 @@ public class Player {
 	
 	
 	
-	// Getter and Setter of each attributes //
+	// Getter and Setter of each attribute //
 
 	/**
 	 * @return the name
@@ -258,11 +258,9 @@ public class Player {
 	 * @param globalScore the globalScore to set
 	 */
 	
-		public void setGlobalScore(int speed, int center, int pass, int header, int shoot, int energy, int power, int tackle) {
-			
-			
-			this.globalScore = (speed + center + pass + header + shoot + energy + power + tackle)/8;
-		}
+	public void setGlobalScore(int speed, int center, int pass, int header, int shoot, int energy, int power, int tackle) {		
+		this.globalScore = (speed + center + pass + header + shoot + energy + power + tackle)/8;
+	}
 	
 	
 	
