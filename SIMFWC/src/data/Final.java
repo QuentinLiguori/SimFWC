@@ -1,7 +1,11 @@
 package data;
 
 import core.Match;
-
+/**
+ * 
+ * @author TAREK
+ *
+ */
 public class Final {
 	
 	private Team teamA;
@@ -12,7 +16,13 @@ public class Final {
 	private Team first;
 	private Team second;
 	private Team third;
-	
+	/**
+	 * it create the object of Class Final
+	 * @param teamA
+	 * @param teamB
+	 * @param teamC
+	 * @param teamD
+	 */
 	public Final(Team teamA, Team teamB, Team teamC, Team teamD) {
 		
 		setTeamA(teamA);
@@ -22,7 +32,9 @@ public class Final {
 	}
 
 	
-	
+	/**
+	 * this fucntion Determined the final phase beetwen 4 teams 
+	 */
 	public void playFinal() {
 		
 		Match Final = new Match(teamA,teamB);
