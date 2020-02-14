@@ -40,7 +40,9 @@ public class QuarterFinal {
 		this.team2D = team2d;
 	}
 
-	
+	/**
+	 * this function Determined quarter final phase between 8 teams 
+	 */
 	
 	public void qualificationToSemiFinal() {
 		System.out.println("************************************************");
@@ -92,73 +94,118 @@ public class QuarterFinal {
 
 		
 	}
-	
-	
+
+	/**
+	 * @return the team1A
+	 */
 	public Team getTeam1A() {
 		return team1A;
 	}
 
+	/**
+	 * @param team1a the team1A to set
+	 */
 	public void setTeam1A(Team team1a) {
 		team1A = team1a;
 	}
 
+	/**
+	 * @return the team2A
+	 */
 	public Team getTeam2A() {
 		return team2A;
 	}
 
+	/**
+	 * @param team2a the team2A to set
+	 */
 	public void setTeam2A(Team team2a) {
 		team2A = team2a;
 	}
 
+	/**
+	 * @return the team1B
+	 */
 	public Team getTeam1B() {
 		return team1B;
 	}
 
+	/**
+	 * @param team1b the team1B to set
+	 */
 	public void setTeam1B(Team team1b) {
 		team1B = team1b;
 	}
 
+	/**
+	 * @return the team2B
+	 */
 	public Team getTeam2B() {
 		return team2B;
 	}
 
+	/**
+	 * @param team2b the team2B to set
+	 */
 	public void setTeam2B(Team team2b) {
 		team2B = team2b;
 	}
 
+	/**
+	 * @return the team1C
+	 */
 	public Team getTeam1C() {
 		return team1C;
 	}
 
+	/**
+	 * @param team1c the team1C to set
+	 */
 	public void setTeam1C(Team team1c) {
 		team1C = team1c;
 	}
 
+	/**
+	 * @return the team2C
+	 */
 	public Team getTeam2C() {
 		return team2C;
 	}
 
+	/**
+	 * @param team2c the team2C to set
+	 */
 	public void setTeam2C(Team team2c) {
 		team2C = team2c;
 	}
 
+	/**
+	 * @return the team1D
+	 */
 	public Team getTeam1D() {
 		return team1D;
 	}
 
+	/**
+	 * @param team1d the team1D to set
+	 */
 	public void setTeam1D(Team team1d) {
 		team1D = team1d;
 	}
 
+	/**
+	 * @return the team2D
+	 */
 	public Team getTeam2D() {
 		return team2D;
 	}
 
+	/**
+	 * @param team2d the team2D to set
+	 */
 	public void setTeam2D(Team team2d) {
 		team2D = team2d;
 	}
-
-
 
 	/**
 	 * @return the firstWinner
@@ -167,16 +214,12 @@ public class QuarterFinal {
 		return firstWinner;
 	}
 
-
-
 	/**
 	 * @param firstWinner the firstWinner to set
 	 */
 	public void setFirstWinner(Team firstWinner) {
 		this.firstWinner = firstWinner;
 	}
-
-
 
 	/**
 	 * @return the secondWinner
@@ -185,16 +228,12 @@ public class QuarterFinal {
 		return secondWinner;
 	}
 
-
-
 	/**
 	 * @param secondWinner the secondWinner to set
 	 */
 	public void setSecondWinner(Team secondWinner) {
 		this.secondWinner = secondWinner;
 	}
-
-
 
 	/**
 	 * @return the thirdWinner
@@ -203,16 +242,12 @@ public class QuarterFinal {
 		return thirdWinner;
 	}
 
-
-
 	/**
 	 * @param thirdWinner the thirdWinner to set
 	 */
 	public void setThirdWinner(Team thirdWinner) {
 		this.thirdWinner = thirdWinner;
 	}
-
-
 
 	/**
 	 * @return the fourthWinner
@@ -221,15 +256,12 @@ public class QuarterFinal {
 		return fourthWinner;
 	}
 
-
-
 	/**
 	 * @param fourthWinner the fourthWinner to set
 	 */
 	public void setFourthWinner(Team fourthWinner) {
 		this.fourthWinner = fourthWinner;
 	}
-
-
+	
 
 }
