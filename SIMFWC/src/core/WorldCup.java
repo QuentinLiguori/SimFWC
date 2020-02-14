@@ -5,9 +5,7 @@ import data.QuarterFinal;
 import data.SemiFinal;
 import data.Team;
 
-import java.awt.SystemColor;
 import java.util.ArrayList;
-import java.util.Collections;
 import data.GroupStage;
 
 import data.Coach;
@@ -28,11 +26,11 @@ public class WorldCup {
 	public static void main(String[] args) {
 
 		initTeams();
-		
-		
+
+
 		//initGroupStage();
-		
-		
+
+
 		finalStage(initGroupStage());
 
 	}
@@ -423,7 +421,7 @@ public class WorldCup {
 		Coach[] coach_spain = { gouardilla };
 		Team spain = new Team("4-3-3", "Spain", spain_players, coach_spain, "offensif");
 
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 		// BRESIL
 
@@ -537,7 +535,7 @@ public class WorldCup {
 				soudani, bellaili };
 		Coach belmadi = new Coach("belmadi", "djamel", 95, "algerien", 4);
 		// Coach ss = new Coach(lastName, firstName, age, nationality, level)
-		Coach[] coach_algeria = { morinio };
+		Coach[] coach_algeria = { belmadi };
 		Team algeria = new Team("4-4-3", "Algerie", algeria_players, coach_algeria, "offensif");
 
 		// ----------------------------------------------------------------------------------------------------
@@ -581,7 +579,7 @@ public class WorldCup {
 		Coach[] coach_germany = { jurgen };
 		Team germany = new Team("4-3-3", "Germany", germany_players, coach_germany, "offensif");
 
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 		// england
 
@@ -698,97 +696,73 @@ public class WorldCup {
 		 */
 		Team[] participant = { chili, uruguay, italy, portugal, sweden, poland, france, argentin, netherlands, morocco,
 				england, germany, algeria, belgique, bresil, spain };
-		
-		/**Debut Deroulement **/
-		/*System.out.println( "/** Team : belgique **/");
-		/*Iterator i = match.getDetails_Team1().keySet().iterator();
-		 
-		while (i.hasNext())
-		{
-		    String clef = (String)i.next();
-		    ArrayList<Player> players = match.getDetails_Team1().get(clef);
-		    System.out.println("Evenement " + clef + " : " + players.size() );
-		    for (Player p : players){
-		    	System.out.println(p.getName());
-			}
-		}		
-		
-		System.out.println( "/** Team : France **/");
-		/*Iterator j = match.getDetails_Team2().keySet().iterator();
-		 
-		while (j.hasNext())
-		{
-		    String clef = (String)j.next();
-		    ArrayList<Player> players = match.getDetails_Team2().get(clef);
-		    System.out.println("Evenement " + clef + " : " + players.size() );
-		    for (Player p : players){
-		    	System.out.println(p.getName());
-			}
-		}		*/
-		/**Fin deroulement ***/ 
-		System.out.println("Voici  les equipes qui participe a la coupe du monde ");
+
+		System.out.println("*** Voici  les equipes qui participe a la coupe du monde ***\n");
 		for (Team p : participant){
 			System.out.println(p.getCountry() + "  : " +p.getScoreTeam());
 		}
-		
-		
+
+
 		initHats(participant);
 
 	}
-		
 
-	
+
+
 	public static ArrayList<Team> initGroupStage() {
-		
+
 		group1 = new GroupStage(hat1.getTeam1(), hat2.getTeam1(), hat3.getTeam1(), hat4.getTeam1());
 		group2 = new GroupStage(hat1.getTeam2(), hat2.getTeam2(), hat3.getTeam2(), hat4.getTeam2());
 		group3 = new GroupStage(hat1.getTeam3(), hat2.getTeam3(), hat3.getTeam3(), hat4.getTeam3());
 		group4 = new GroupStage(hat1.getTeam4(), hat2.getTeam4(), hat3.getTeam4(), hat4.getTeam4());
-		
+
 		System.out.println("------------------------------------");
-		System.out.println("Les poules sonts :");
-		
+		System.out.println("*** Les poules sonts : ***");
+
 		System.out.println("Poule A : " + group1.getTeam1().getCountry() + " - " +  group1.getTeam2().getCountry() + " - " +  group1.getTeam3().getCountry() + " - " +  group1.getTeam4().getCountry()  );
 		System.out.println("Poule B : " + group2.getTeam1().getCountry() + " - " +  group2.getTeam2().getCountry() + " - " +  group2.getTeam3().getCountry() + " - " +  group2.getTeam4().getCountry()  );
 		System.out.println("Poule C : " + group3.getTeam1().getCountry() + " - " +  group3.getTeam2().getCountry() + " - " +  group3.getTeam3().getCountry() + " - " +  group3.getTeam4().getCountry()  );
 		System.out.println("Poule D : " + group4.getTeam1().getCountry() + " - " +  group4.getTeam2().getCountry() + " - " +  group4.getTeam3().getCountry() + " - " +  group4.getTeam4().getCountry()  );
-		
-		
-		
-		
+
+
+
+
 		System.out.println("------------------------------------");
+		System.out.println("*** Debut des phases de poules ***\n");
+
+
 		System.out.println(group1.getTeam1().getCountry() + " - " +  group1.getTeam2().getCountry() + " - " +  group1.getTeam3().getCountry() + " - " +  group1.getTeam4().getCountry()  );
-		
+
 		group1.qualification();
 
 		System.out.println("Le premier qualifié de la poule A est " + group1.getFirst().getCountry());
 		System.out.println("Le deuxième qualifié de la poule A est " + group1.getSecond().getCountry());
-		System.out.println("------------------------------------");
-		
+		System.out.println("**********************************\n");
+
 		System.out.println(group2.getTeam1().getCountry() + " - " +  group2.getTeam2().getCountry() + " - " +  group2.getTeam3().getCountry() + " - " +  group2.getTeam4().getCountry()  );
-		
+
 		group2.qualification();
 
 		System.out.println("Le premier qualifié de la poule B est " + group2.getFirst().getCountry());
 		System.out.println("Le deuxième qualifié de la poule B est " + group2.getSecond().getCountry());
-		System.out.println("------------------------------------");
-		
+		System.out.println("**********************************\n");
+
 		System.out.println(group3.getTeam1().getCountry() + " - " +  group3.getTeam2().getCountry() + " - " +  group3.getTeam3().getCountry() + " - " +  group3.getTeam4().getCountry()  );
-		
+
 		group3.qualification();
 
 		System.out.println("Le premier qualifié de la poule C est " + group3.getFirst().getCountry());
 		System.out.println("Le deuxième qualifié de la poule C est " + group3.getSecond().getCountry());
-		System.out.println("------------------------------------");
+		System.out.println("**********************************\n");
 
 		System.out.println(group4.getTeam1().getCountry() + " - " +  group4.getTeam2().getCountry() + " - " +  group4.getTeam3().getCountry() + " - " +  group4.getTeam4().getCountry()  );
-		
+
 		group4.qualification();
 
 		System.out.println("Le premier qualifié de la poule D est " + group4.getFirst().getCountry());
 		System.out.println("Le deuxième qualifié de la poule D est " + group4.getSecond().getCountry());
-		System.out.println("------------------------------------");
-		
+		System.out.println("**********************************\n");
+
 		ArrayList<Team> arry = new ArrayList<Team>();
 		arry.add(group1.getFirst());
 		arry.add(group1.getSecond());
@@ -798,108 +772,89 @@ public class WorldCup {
 		arry.add(group3.getSecond());
 		arry.add(group4.getFirst());
 		arry.add(group4.getSecond());
-	
+
 		return arry;
 
-		
-		
-		
-}
-public static void initHats(Team[] participant) {
-		
-		for (int i = 0; i < participant.length - 1; i++)  
-        {
-             int index = i;  
-             for (int j = i + 1; j < participant.length; j++)
-             {
-                  if (participant[j].getScoreTeam() < participant[index].getScoreTeam()){ 
-                       index = j;
-                  }
-             }
 
-             Team min = participant[index];
-             participant[index] = participant[i]; 
-             participant[i] = min;
-        }
-		
+
+
+	}
+	public static void initHats(Team[] participant) {
+
+		for (int i = 0; i < participant.length - 1; i++)  
+		{
+			int index = i;  
+			for (int j = i + 1; j < participant.length; j++)
+			{
+				if (participant[j].getScoreTeam() < participant[index].getScoreTeam()){ 
+					index = j;
+				}
+			}
+
+			Team min = participant[index];
+			participant[index] = participant[i]; 
+			participant[i] = min;
+		}
+
 		hat1 = new Hat(participant[0], participant[1], participant[2], participant[3]);
 		hat2 = new Hat(participant[4], participant[5], participant[6], participant[7]);
 		hat3 = new Hat(participant[8], participant[9], participant[10], participant[11]);
 		hat4 = new Hat(participant[12], participant[13], participant[14], participant[15]);
-		
+
 		System.out.println("------------------------------------");
-		System.out.println("Les Chapeaux sont :");
-		
+		System.out.println("*** Les Chapeaux sont : ***");
+
 		System.out.println(hat1.getTeam1().getCountry() + " - " +  hat1.getTeam2().getCountry() + " - " +  hat1.getTeam3().getCountry() + " - " +  hat1.getTeam4().getCountry()  );
 		System.out.println(hat2.getTeam1().getCountry() + " - " +  hat2.getTeam2().getCountry() + " - " +  hat2.getTeam3().getCountry() + " - " +  hat2.getTeam4().getCountry()  );
 		System.out.println(hat3.getTeam1().getCountry() + " - " +  hat3.getTeam2().getCountry() + " - " +  hat3.getTeam3().getCountry() + " - " +  hat3.getTeam4().getCountry()  );
 		System.out.println(hat4.getTeam1().getCountry() + " - " +  hat4.getTeam2().getCountry() + " - " +  hat4.getTeam3().getCountry() + " - " +  hat4.getTeam4().getCountry()  );
-		System.out.println("------------------------------------");
-		
-
-
-		
-}
-
-
-public static void finalStage(ArrayList<Team> arry ) {
-	
-	
-	QuarterFinal qF = new QuarterFinal(arry.get(0), arry.get(1), arry.get(2), arry.get(3), arry.get(4), arry.get(5), arry.get(6), arry.get(7));
-	
-	
-	System.out.println("************************************************");
-	System.out.println("Lancement des quarts de Finale");
-	qF.qualificationToSemiFinal();
-	
-	System.out.println("Le gagnant du premier quart de finale est : " + qF.getFirstWinner().getCountry());
-	System.out.println("Le gagnant du deuxième quart de finale est : " + qF.getSecondWinner().getCountry());
-	System.out.println("Le gagnant du troisième quart de finale est : " + qF.getThirdWinner().getCountry());
-	System.out.println("Le gagnant du quatrième quart de finale est : " + qF.getFourthWinner().getCountry());
-	
-	System.out.println("************************************************");
-
-	
-	SemiFinal sM =  new SemiFinal(qF.getFirstWinner(), qF.getSecondWinner(), qF.getThirdWinner(), qF.getFourthWinner());
-	sM.play();
-	
-	
-	System.out.println("Le gagnant du premier demi de finale est : " + sM.getWinnerA().getCountry());
-	System.out.println("Le gagnant du deuxième demi de finale est : " + sM.getWinnerB().getCountry());
-	
-	System.out.println("************************************************");
-	
-	Final fN =  new Final(sM.getWinnerA(), sM.getWinnerB(), sM.getLooserA(), sM.getLooserB());
-	fN.playFinal();
-	
-	System.out.println("Le gagnant du premier 1ere place  finale est : " + fN.getFirst().getCountry());
-	System.out.println("Le gagnant du deuxième 2eme  finale est : " + fN.getSecond().getCountry());
-	System.out.println("Le gagnant du deuxième 3eme  de finale est : " + fN.getThird().getCountry());
 
 
 
-	
-	
-	
-	
-	
-	
-	
-	
-}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-	
+
+	}
+
+
+	public static void finalStage(ArrayList<Team> arry ) {
+
+
+		QuarterFinal qF = new QuarterFinal(arry.get(0), arry.get(1), arry.get(2), arry.get(3), arry.get(4), arry.get(5), arry.get(6), arry.get(7));
+
+
+		System.out.println("************************************************");
+		System.out.println("*** Lancement des quarts de Finale ***");
+		qF.qualificationToSemiFinal();
+
+		System.out.println("Le gagnant du premier quart de finale est : " + qF.getFirstWinner().getCountry());
+		System.out.println("Le gagnant du deuxième quart de finale est : " + qF.getSecondWinner().getCountry());
+		System.out.println("Le gagnant du troisième quart de finale est : " + qF.getThirdWinner().getCountry());
+		System.out.println("Le gagnant du quatrième quart de finale est : " + qF.getFourthWinner().getCountry());
+
+		System.out.println("************************************************\n\n************************************************");
+		System.out.println("*** Lancement des demie-Finale ***");
+		System.out.println("************************************************");
+
+
+		SemiFinal sM =  new SemiFinal(qF.getFirstWinner(), qF.getSecondWinner(), qF.getThirdWinner(), qF.getFourthWinner());
+		sM.play();
+
+
+		System.out.println("Le gagnant du premier demi de finale est : " + sM.getWinnerA().getCountry());
+		System.out.println("Le gagnant du deuxième demi de finale est : " + sM.getWinnerB().getCountry());
+
+		System.out.println("************************************************\n\n************************************************");
+		System.out.println("*** Lancement des Finale ***");
+		System.out.println("************************************************");
+
+		Final fN =  new Final(sM.getWinnerA(), sM.getWinnerB(), sM.getLooserA(), sM.getLooserB());
+		fN.playFinal();
+
+		System.out.println("Le gagnant de la 1ere place  du tournois est : " + fN.getFirst().getCountry());
+		System.out.println("Le gagnant de la 2eme  du tournois est : " + fN.getSecond().getCountry());
+		System.out.println("Le gagnant de la 3eme  du tournois est : " + fN.getThird().getCountry());
+
+
+
+	}
+
 }
