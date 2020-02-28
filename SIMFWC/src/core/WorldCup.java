@@ -40,38 +40,36 @@ public class WorldCup {
 		 */
 		/** uruguay's players */
 		// goal
-		Player muslera = new Player("musler", "r", 25, 60, 170, "gardien", 70, 80, 88, 70, 65, 76, 88, 80);
-		Player campana = new Player("campana", "c", 21, 60, 170, "gardien", 60, 50, 66, 44, 33, 12, 66, 90);
-		Player conde = new Player("conde", "c", 35, 60, 170, "gardien", 90, 80, 90, 70, 90, 89, 88, 70);
+		Player muslera = new Player("Muslera", "Fernando", 33, 74, 190, "gardien", 70, 80, 88, 70, 65, 76, 88, 80);
+		Player campana = new Player("Campana", "Martin", 30, 75, 185, "gardien", 60, 50, 66, 44, 33, 12, 66, 90);
+		Player conde = new Player("Conde", "Esteban", 36, 85, 186, "gardien", 90, 80, 90, 70, 90, 89, 88, 70);
 		// defense
-		Player urretaviscaya = new Player("urretaviscaya", "u", 19, 60, 170, "defense", 90, 80, 90, 100, 90, 89, 88,
-				50);
-		Player lodeiro = new Player("lodeiro", "l", 26, 60, 170, "defense", 90, 80, 90, 70, 90, 89, 88, 50);
-		Player godin = new Player("godin", "g", 22, 60, 170, "defense", 88, 100, 100, 100, 90, 89, 99, 100);
-		Player gimerez = new Player("gimerez", "g", 35, 60, 170, "defense", 90, 80, 90, 70, 90, 89, 88, 80);
-		Player caceres = new Player("caceres", "c", 33, 60, 170, "defense", 90, 80, 90, 70, 90, 89, 88, 93);
-		Player perirra = new Player("perirra", "p", 31, 60, 170, "defense", 90, 80, 90, 70, 90, 89, 88, 92);
-		Player caceres2 = new Player("caceres", "c", 33, 60, 170, "defense", 90, 80, 90, 70, 90, 89, 88, 91);
+		Player urretaviscaya = new Player("Urretaviscaya", "Jonathan", 29, 69, 174, "defense", 90, 80, 90, 100, 90, 89, 88,50);
+		Player coates = new Player("Coates", "Sebastian", 29, 92, 196, "defense", 90, 80, 90, 70, 90, 89, 88, 50);
+		Player godin = new Player("Godin", "Diego", 34, 78, 187, "defense", 88, 100, 100, 100, 90, 89, 99, 100);
+		Player gimerez = new Player("Gimenez", "Jose Maria", 35, 60, 170, "defense", 90, 80, 90, 70, 90, 89, 88, 80);
+		Player caceres = new Player("Caceres", "Martin", 32, 78, 180, "defense", 90, 80, 90, 70, 90, 89, 88, 93);
+		Player pereira = new Player("Pereira", "Alvaro", 34, 78, 180, "defense", 90, 80, 90, 70, 90, 89, 88, 92);
+		Player caceres2 = new Player("Caceres", "Sebastian", 20, 77, 180, "defense", 90, 80, 90, 70, 90, 89, 88, 91);
 		// milieu
-		Player valverde = new Player("valverde", "v", 28, 60, 170, "milieu", 90, 80, 90, 70, 90, 89, 88, 99);
-		Player vecino = new Player("vecino", "v", 28, 60, 170, "milieu", 90, 80, 90, 70, 90, 89, 88, 99);
-		Player Nandez = new Player("Nandez", "n", 27, 60, 170, "milieu", 90, 80, 90, 70, 90, 89, 88, 77);
-		Player Lodeiro = new Player("Lodeiro", "l", 25, 60, 170, "milieu", 90, 80, 90, 70, 90, 89, 88, 80);
-		Player sanchez = new Player("sanchez", "s", 24, 60, 170, "milieu", 99, 100, 100, 100, 100, 99, 99, 99);
-		Player Bentacur = new Player("Bentacur", "b", 29, 60, 170, "milieu", 90, 88, 88, 88, 90, 97, 97, 88);
+		Player valverde = new Player("Valverde", "Federico", 21, 78, 182, "milieu", 90, 80, 90, 70, 90, 89, 88, 99);
+		Player vecino = new Player("Vecino", "Mathias", 28, 81, 187, "milieu", 90, 80, 90, 70, 90, 89, 88, 99);
+		Player nandez = new Player("Nandez", "Nahitan", 24, 70, 172, "milieu", 90, 80, 90, 70, 90, 89, 88, 77);
+		Player lodeiro = new Player("Lodeiro", "Lodeiro", 30, 69, 170, "milieu", 90, 80, 90, 70, 90, 89, 88, 80);
+		Player arambarri = new Player("Arambarri", "Mauro", 24, 74, 175, "milieu", 99, 100, 100, 100, 100, 99, 99, 99);
+		Player bentancur = new Player("Bentancur", "Rodrigo", 22, 78, 187, "milieu", 90, 88, 88, 88, 90, 97, 97, 88);
 		// attaque
-		Player suarez = new Player("suarez", "s", 38, 60, 170, "attaquant", 99, 99, 100, 100, 100, 99, 100, 100);
-		Player cavani = new Player("cavani", "c", 32, 60, 170, "attaquant", 98, 99, 98, 99, 98, 99, 100, 100);
-		Player rodriguez = new Player("rodriguez", "r", 18, 60, 170, "attaquant", 90, 95, 95, 95, 90, 95, 95, 95);
-		Player gomez = new Player("gomez", "g", 25, 60, 170, "attaquant", 90, 80, 90, 70, 90, 89, 88, 50);
-		Player urretaviscaya2 = new Player("urretaviscaya", "u", 24, 60, 170, "attaquant", 90, 80, 90, 70, 90, 89, 88,
-				50);
-		Player rolan = new Player("rolan", "r", 24, 60, 170, "attaquant", 90, 80, 90, 70, 90, 89, 88, 90);
-		Player stuani = new Player("stuani", "s", 24, 60, 170, "attaquant", 90, 80, 90, 70, 90, 89, 88, 50);
+		Player suarez = new Player("Suarez", "Luis", 33, 86, 170, "attaquant", 99, 99, 100, 100, 100, 99, 100, 100);
+		Player cavani = new Player("Cavani", "Edinson", 33, 77, 185, "attaquant", 98, 99, 98, 99, 98, 99, 100, 100);
+		Player rodriguez = new Player("Rodriguez", "Jonathan", 26, 77, 179, "attaquant", 90, 95, 95, 95, 90, 95, 95, 95);
+		Player gomez = new Player("Gomez", "Maximiliano", 23, 84, 186, "attaquant", 90, 80, 90, 70, 90, 89, 88, 50);
+		Player delacruz = new Player("De la Cruz", "Nicolas", 22, 65, 167, "attaquant", 90, 80, 90, 70, 90, 89, 88, 50);
+		Player rolan = new Player("Rolan", "Diego", 26, 72, 177, "attaquant", 90, 80, 90, 70, 90, 89, 88, 90);
+		Player stuani = new Player("Stuani", "Cristhian", 33, 76, 186, "attaquant", 90, 80, 90, 70, 90, 89, 88, 50);
 		// array payers
-		Player uruguay_players[] = { muslera, campana, conde, urretaviscaya, lodeiro, godin, gimerez, caceres, pereira,
-				caceres2, valverde, vecino, Nandez, Lodeiro, sanchez, Bentacur, suarez, cavani, rodriguez, gomez,
-				urretaviscaya2, rolan, stuani };
+		Player uruguay_players[] = { muslera, campana, conde, urretaviscaya, coates, godin, gimerez, caceres, pereira,
+				caceres2, valverde, vecino, nandez, lodeiro, arambarri, bentancur, suarez, cavani, rodriguez, gomez,
+				delacruz, rolan, stuani };
 		Coach oscar = new Coach("Oscar", "Tabanez", 73, "uruguayen", 2);
 		Coach coach_uruguay[] = { oscar };
 		Team uruguay = new Team("4-3-3", "Uruguay", uruguay_players, coach_uruguay, "offensif");
