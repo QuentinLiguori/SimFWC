@@ -115,37 +115,37 @@ public class WorldCup {
 		 */
 		/** Poland's players */
 		// goal
-		Player szczesny = new Player("szczesny", "w", 29, 90, 195, "gardien", 47, 12, 34, 16, 14, 45, 55, 13);
-		Player majecki = new Player("majecki", "r", 20, 78, 191, "gardien", 31, 12, 22, 12, 16, 23, 45, 25);
-		Player skorupski = new Player("skorupski", "l", 28, 84, 187, "gardien", 51, 19, 28, 10, 15, 31, 41, 12);
-		// defense
-		Player kedziora = new Player("kedziora", "t", 25, 77, 183, "defense", 79, 78, 67, 71, 51, 78, 56, 76);
-		Player glik = new Player("glik", "k", 31, 80, 190, "defense", 47, 29, 62, 79, 20, 63, 57, 77);
-		Player bednarek = new Player("bednarek", "j", 23, 77, 189, "defense", 68, 44, 66, 75, 23, 67, 25, 77);
-		Player rybus = new Player("rybus", "m", 30, 75, 173, "defense", 76, 74, 70, 47, 71, 74, 75, 70);
-		Player cionek = new Player("cionek", "t", 33, 80, 183, "defense", 62, 35, 53, 66, 26, 59, 31, 71);
-		Player reca = new Player("reca", "a", 24, 81, 187, "defense", 78, 67, 62, 62, 54, 68, 60, 63);
-		Player bereszynski = new Player("bereszynski", "b", 27, 77, 183, "defense", 86, 68, 65, 60, 60, 78, 64, 70);
-		// Middle
-		Player klich = new Player("klich", "m", 29, 82, 183, "milieu", 68, 67, 73, 48, 73, 83, 70, 50);
-		Player frankowski = new Player("frankowski", "p", 24, 70, 173, "milieu", 92, 66, 68, 57, 56, 83, 58, 50);
-		Player krychowiak = new Player("krychowiak", "g", 29, 85, 186, "milieu", 69, 63, 80, 75, 73, 75, 82, 75);
-		Player bielik = new Player("bielik", "k", 22, 78, 189, "milieu", 64, 49, 70, 68, 52, 64, 62, 68);
-		Player furman = new Player("furman", "d", 27, 71, 181, "milieu", 67, 72, 70, 60, 64, 72, 69, 64);
-		Player grosicki = new Player("grosicki", "k", 31, 78, 180, "milieu", 80, 72, 70, 69, 75, 64, 74, 25);
-		Player goralski = new Player("goralski", "j", 27, 66, 172, "attaquant", 73, 51, 70, 55, 46, 86, 50, 71);
-		// attack
-		Player zielinski = new Player("zielinski", "p", 25, 75, 180, "attaquant", 82, 77, 82, 52, 82, 73, 76, 71);
-		Player szymanski = new Player("szymanski", "s", 20, 58, 174, "attaquant", 79, 71, 62, 40, 67, 65, 67, 29);
-		Player lewandowski = new Player("lewandowski", "r", 31, 80, 184, "attaquant", 77, 71, 77, 85, 84, 78, 88, 35);
-		Player piatek = new Player("piatek", "k", 24, 77, 183, "attaquant", 75, 51, 56, 80, 69, 73, 80, 33);
-		Player kadzior = new Player("kadzior", "d", 27, 74, 175, "attaquant", 77, 58, 65, 89, 88, 73, 70, 46);
-		Player milik = new Player("milik", "a", 25, 78, 186, "attaquant", 71, 58, 66, 80, 82, 70, 86, 33);
+			Player szczesny = new Player("Szczesny", "Wojciech", 29, 90, 195, "gardien", 47, 12, 34, 16, 14, 45, 55, 13);
+	Player majecki = new Player("Majecki", "Radoslaw", 20, 78, 191, "gardien", 31, 12, 22, 12, 16, 23, 45, 25);
+	Player skorupski = new Player("Skorupski", "Lukasz", 28, 84, 187, "gardien", 51, 19, 28, 10, 15, 31, 41, 12);
+	// defense
+	Player kedziora = new Player("Kedziora", "Tomasz", 25, 77, 183, "defense", 79, 78, 67, 71, 51, 78, 56, 76);
+	Player glik = new Player("Glik", "Kamil", 31, 80, 190, "defense", 47, 29, 62, 79, 20, 63, 57, 77);
+	Player bednarek = new Player("Bednarek", "Jan", 23, 77, 189, "defense", 68, 44, 66, 75, 23, 67, 25, 77);
+	Player rybus = new Player("Rybus", "Maciej", 30, 75, 173, "defense", 76, 74, 70, 47, 71, 74, 75, 70);
+	Player cionek = new Player("Cionek", "Thiago", 33, 80, 183, "defense", 62, 35, 53, 66, 26, 59, 31, 71);
+	Player reca = new Player("Reca", "Arkadiusz", 24, 81, 187, "defense", 78, 67, 62, 62, 54, 68, 60, 63);
+	Player bereszynski = new Player("Bereszynski", "Bartosz", 27, 77, 183, "defense", 86, 68, 65, 60, 60, 78, 64, 70);
+	// Middle
+	Player klich = new Player("Klich", "Mateusz", 29, 82, 183, "milieu", 68, 67, 73, 48, 73, 83, 70, 50);
+	Player frankowski = new Player("Frankowski", "Przemyslaw", 24, 70, 173, "milieu", 92, 66, 68, 57, 56, 83, 58, 50);
+	Player krychowiak = new Player("Krychowiak", "Grzegorz", 29, 85, 186, "milieu", 69, 63, 80, 75, 73, 75, 82, 75);
+	Player bielik = new Player("Bielik", "Krystian", 22, 78, 189, "milieu", 64, 49, 70, 68, 52, 64, 62, 68);
+	Player furman = new Player("Furman", "Dominik", 27, 71, 181, "milieu", 67, 72, 70, 60, 64, 72, 69, 64);
+	Player grosicki = new Player("Grosicki", "Kamil", 31, 78, 180, "milieu", 80, 72, 70, 69, 75, 64, 74, 25);
+	Player goralski = new Player("Goralski", "Jacek", 27, 66, 172, "attaquant", 73, 51, 70, 55, 46, 86, 50, 71);
+	// attack
+	Player zielinski = new Player("Zielinski", "Piotr", 25, 75, 180, "attaquant", 82, 77, 82, 52, 82, 73, 76, 71);
+	Player szymanski = new Player("Szymanski", "Sebastian", 20, 58, 174, "attaquant", 79, 71, 62, 40, 67, 65, 67, 29);
+	Player lewandowski = new Player("Lewandowski", "Robert", 31, 80, 184, "attaquant", 77, 71, 77, 85, 84, 78, 88, 35);
+	Player piatek = new Player("Piatek", "Krzysztof", 24, 77, 183, "attaquant", 75, 51, 56, 80, 69, 73, 80, 33);
+	Player kadzior = new Player("Kadzior", "Damian", 27, 74, 175, "attaquant", 77, 58, 65, 89, 88, 73, 70, 46);
+	Player milik = new Player("Milik", "Arkadiusz", 25, 78, 186, "attaquant", 71, 58, 66, 80, 82, 70, 86, 33);
 
-		// array players
-		Player[] poland_players = { szczesny, majecki, skorupski, kedziora, glik, bednarek, rybus, cionek, reca,
-				bereszynski, klich, frankowski, krychowiak, bielik, furman, grosicki, goralski, zielinski, szymanski,
-				lewandowski, piatek, kadzior, milik };
+	// array players
+	Player[] poland_players = { szczesny, majecki, skorupski, kedziora, glik, bednarek, rybus, cionek, reca,
+			bereszynski, klich, frankowski, krychowiak, bielik, furman, grosicki, goralski, zielinski, szymanski,
+			lewandowski, piatek, kadzior, milik };
 		// array coachs
 		Coach jerzy = new Coach("Jerzy", "Brzeczek", 49, "polish", 1);
 		Coach[] poland_coachs = { jerzy };
