@@ -69,7 +69,7 @@ public class WorldCup {
 		Player rolan = new Player("rolan", "r", 24, 60, 170, "attaquant", 90, 80, 90, 70, 90, 89, 88, 90);
 		Player stuani = new Player("stuani", "s", 24, 60, 170, "attaquant", 90, 80, 90, 70, 90, 89, 88, 50);
 		// array payers
-		Player uruguay_players[] = { muslera, campana, conde, urretaviscaya, lodeiro, godin, gimerez, caceres, perirra,
+		Player uruguay_players[] = { muslera, campana, conde, urretaviscaya, lodeiro, godin, gimerez, caceres, pereira,
 				caceres2, valverde, vecino, Nandez, Lodeiro, sanchez, Bentacur, suarez, cavani, rodriguez, gomez,
 				urretaviscaya2, rolan, stuani };
 		Coach oscar = new Coach("Oscar", "Tabanez", 73, "uruguayen", 2);
