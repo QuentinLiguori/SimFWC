@@ -154,37 +154,37 @@ public class WorldCup {
 
 		/** Sweden's players */
 		// goal
-		Player johnsson = new Player("johnsson", "kj", 29, 84, 189, "gardien", 49, 11, 34, 19, 13, 40, 55, 13);
-		Player nordfelt = new Player("nordfelt", "k", 30, 87, 188, "gardien", 49, 11, 35, 13, 12, 33, 50, 14);
-		Player olsen = new Player("olsen", "r", 30, 86, 196, "gardien", 40, 20, 35, 16, 14, 37, 57, 14);
-		// defense
-		Player lustig = new Player("lustig", "m", 33, 78, 189, "defense", 64, 74, 69, 73, 60, 73, 65, 71);
-		Player lindelof = new Player("lindelof", "v", 25, 80, 187, "defense", 76, 62, 78, 79, 52, 76, 70, 81);
-		Player granqvist = new Player("granqvist", "a", 34, 84, 192, "defense", 34, 49, 68, 77, 59, 58, 74, 75);
-		Player bengtsson = new Player("bengtsson", "p", 31, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
-		Player augustinsson = new Player("augustinsson", "l", 25, 72, 181, "defense", 73, 79, 74, 56, 59, 88, 69, 75);
-		Player krafth = new Player("krafth", "e", 25, 72, 181, "defense", 77, 68, 66, 64, 58, 78, 70, 74);
-		Player helander = new Player("helander", "f", 26, 84, 192, "defense", 47, 30, 50, 74, 25, 59, 58, 74);
-		Player jansson = new Player("jansson", "p", 28, 86, 196, "defense", 65, 29, 65, 74, 50, 71, 68, 74);
-		// Middle
-		Player svensson = new Player("svensson", "g", 32, 77, 184, "milieu", 37, 49, 73, 65, 47, 85, 66, 72);
-		Player sema = new Player("sema", "k", 26, 69, 180, "milieu", 78, 69, 67, 34, 68, 69, 77, 59);
-		Player fransson = new Player("fransson", "a", 25, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
-		Player fosberg = new Player("fosberg", "e", 28, 76, 177, "milieu", 65, 84, 73, 45, 74, 69, 73, 25);
-		Player olsson = new Player("olsson", "k", 24, 69, 181, "milieu", 75, 65, 74, 52, 62, 78, 64, 57);
-		Player ekdal = new Player("ekdal", "a", 30, 82, 186, "milieu", 47, 67, 79, 62, 69, 72, 72, 68);
-		Player larsson = new Player("larsson", "s", 34, 70, 178, "attaquant", 55, 80, 77, 66, 72, 86, 77, 61);
-		// attack
-		Player quaison = new Player("quaison", "r", 26, 77, 183, "attaquant", 77, 67, 70, 56, 72, 76, 73, 56);
-		Player berg = new Player("berg", "m", 33, 74, 184, "attaquant", 73, 56, 60, 75, 74, 69, 79, 29);
-		Player andersson = new Player("andersson", "s", 28, 86, 190, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
-		Player tankovic = new Player("tanovic", "m", 24, 74, 180, "attaquant", 73, 65, 65, 63, 66, 74, 68, 24);
-		Player isak = new Player("isak", "a", 20, 74, 190, "attaquant", 85, 51, 57, 68, 68, 68, 77, 20);
+			Player johnsson = new Player("Johnsson", "Karl-Johan", 29, 84, 189, "gardien", 49, 11, 34, 19, 13, 40, 55, 13);
+	Player nordfelt = new Player("Nordfelt", "Kristoffer", 30, 87, 188, "gardien", 49, 11, 35, 13, 12, 33, 50, 14);
+	Player olsen = new Player("Olsen", "Robin", 30, 86, 196, "gardien", 40, 20, 35, 16, 14, 37, 57, 14);
+	// defense
+	Player lustig = new Player("Lustig", "Mikael", 33, 78, 189, "defense", 64, 74, 69, 73, 60, 73, 65, 71);
+	Player lindelof = new Player("Lindelof", "Victor", 25, 80, 187, "defense", 76, 62, 78, 79, 52, 76, 70, 81);
+	Player granqvist = new Player("Granqvist", "Andreas", 34, 84, 192, "defense", 34, 49, 68, 77, 59, 58, 74, 75);
+	Player bengtsson = new Player("Bengtsson", "Pierre", 31, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
+	Player augustinsson = new Player("Augustinsson", "Ludwig", 25, 72, 181, "defense", 73, 79, 74, 56, 59, 88, 69, 75);
+	Player krafth = new Player("Krafth", "Emil", 25, 72, 181, "defense", 77, 68, 66, 64, 58, 78, 70, 74);
+	Player helander = new Player("Helander", "Filip", 26, 84, 192, "defense", 47, 30, 50, 74, 25, 59, 58, 74);
+	Player jansson = new Player("Jansson", "Pontus", 28, 86, 196, "defense", 65, 29, 65, 74, 50, 71, 68, 74);
+	// Middle
+	Player svensson = new Player("Svensson", "Gustav", 32, 77, 184, "milieu", 37, 49, 73, 65, 47, 85, 66, 72);
+	Player sema = new Player("Sema", "Ken", 26, 69, 180, "milieu", 78, 69, 67, 34, 68, 69, 77, 59);
+	Player fransson = new Player("Fransson", "Alexander", 25, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
+	Player fosberg = new Player("Fosberg", "Emil", 28, 76, 177, "milieu", 65, 84, 73, 45, 74, 69, 73, 25);
+	Player olsson = new Player("Olsson", "Kristoffer", 24, 69, 181, "milieu", 75, 65, 74, 52, 62, 78, 64, 57);
+	Player ekdal = new Player("Ekdal", "Albin", 30, 82, 186, "milieu", 47, 67, 79, 62, 69, 72, 72, 68);
+	Player larsson = new Player("Larsson", "Sebastian", 34, 70, 178, "attaquant", 55, 80, 77, 66, 72, 86, 77, 61);
+	// attack
+	Player quaison = new Player("Quaison", "Robin", 26, 77, 183, "attaquant", 77, 67, 70, 56, 72, 76, 73, 56);
+	Player berg = new Player("Berg", "Marcus", 33, 74, 184, "attaquant", 73, 56, 60, 75, 74, 69, 79, 29);
+	Player andersson = new Player("Andersson", "Sebstian", 28, 86, 190, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
+	Player tankovic = new Player("Tanovic", "Muamer", 24, 74, 180, "attaquant", 73, 65, 65, 63, 66, 74, 68, 24);
+	Player isak = new Player("Isak", "Alexander", 20, 74, 190, "attaquant", 85, 51, 57, 68, 68, 68, 77, 20);
 
-		// array players
-		Player[] sweden_players = { johnsson, nordfelt, olsen, lustig, lindelof, granqvist, bengtsson, augustinsson,
-				krafth, helander, jansson, svensson, sema, fransson, fosberg, olsson, ekdal, larsson, quaison, berg,
-				andersson, tankovic, isak };
+	// array players
+	Player[] sweden_players = {johnsson, nordfelt, olsen, lustig, lindelof, granqvist, bengtsson, augustinsson,
+			krafth, helander, jansson, svensson, sema, fransson, fosberg, olsson, ekdal, larsson, quaison, berg,
+			andersson, tankovic, isak};
 
 		// array coachs
 		Coach janne = new Coach("Janne", "Anderson", 57, "polish", 2);
