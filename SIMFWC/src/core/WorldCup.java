@@ -76,37 +76,36 @@ public class WorldCup {
 
 		/** chili's players */
 		// goal
-		Player bravo = new Player("bravo", "b", 25, 60, 170, "gardien", 90, 99, 90, 100, 90, 99, 90, 90);
-		Player cortes = new Player("cortes", "c", 28, 60, 170, "gardien", 90, 80, 90, 70, 90, 89, 88, 50);
-		Player herra = new Player("herra", "h", 27, 60, 170, "gardien", 90, 80, 90, 70, 90, 89, 88, 50);
+		Player bravo = new Player("Bravo", "Claudio", 36, 80, 184, "gardien", 90, 99, 90, 100, 90, 99, 90, 90);
+		Player cortes = new Player("Cortes", "Brayan", 24, 79, 185, "gardien", 90, 80, 90, 70, 90, 89, 88, 50);
+		Player arias = new Player("Arias", "Gabriel", 32, 82, 188, "gardien", 90, 80, 90, 70, 90, 89, 88, 50);
 		// defense
-		Player diaz = new Player("diaz", "d", 28, 60, 170, "defense", 90, 80, 90, 70, 90, 89, 88, 90);
-		Player roco = new Player("roco", "r", 23, 60, 170, "defense", 90, 80, 90, 70, 90, 89, 88, 90);
-		Player jara = new Player("jara", "j", 32, 60, 170, "defense", 90, 80, 90, 70, 90, 89, 88, 80);
-		Player medel = new Player("medel", "m", 19, 60, 170, "defense", 90, 80, 90, 70, 90, 89, 88, 70);
-		Player jara2 = new Player("jara", "j", 34, 60, 170, "defense", 90, 80, 90, 70, 90, 89, 88, 90);
-		Player isla = new Player("isla", "i", 36, 60, 170, "defense", 90, 80, 90, 70, 90, 89, 88, 100);
-		Player beausejour = new Player("beausejour", "b", 31, 60, 170, "milieu", 100, 99, 98, 97, 100, 100, 100, 100);
+		Player diaz = new Player("Diaz", "Paulo", 25, 76, 178, "defense", 90, 80, 90, 70, 90, 89, 88, 90);
+		Player roco = new Player("Roco", "Enzo", 27, 79, 192, "defense", 90, 80, 90, 70, 90, 89, 88, 90);
+		Player jara = new Player("Jara", "Gonzalo", 34, 77, 178, "defense", 90, 80, 90, 70, 90, 89, 88, 80);
+		Player medel = new Player("Medel", "Gary", 32, 76, 171, "defense", 90, 80, 90, 70, 90, 89, 88, 70);
+		Player maripan = new Player("Maripan", "Guillermo", 25, 84, 193, "defense", 90, 80, 90, 70, 90, 89, 88, 90);
+		Player isla = new Player("Isla", "Mauricio", 36, 60, 170, "defense", 90, 80, 90, 70, 90, 89, 88, 100);
+		Player beausejour = new Player("Beausejour", "Jean", 35, 83, 178, "milieu", 100, 99, 98, 97, 100, 100, 100, 100);
 		// milieu
-		Player valdivia = new Player("valdivia", "v", 30, 60, 170, "milieu", 90, 80, 90, 70, 90, 89, 88, 50);
-		Player vidal = new Player("vidal", "v", 18, 60, 170, "milieu", 90, 80, 90, 70, 90, 89, 88, 50);
-		Player aranguiz = new Player("aranguiz", "a", 26, 60, 170, "milieu", 90, 80, 90, 70, 90, 89, 88, 50);
-		Player puch = new Player("puch", "p", 22, 60, 170, "milieu", 90, 80, 90, 70, 90, 89, 88, 50);
-		Player pulgar = new Player("pulgar", "p", 22, 60, 170, "milieu", 90, 90, 98, 99, 88, 100, 100, 100);
-		Player silva = new Player("silva", "s", 23, 60, 170, "milieu", 90, 80, 90, 70, 90, 89, 88, 50);
-		Player diaz2 = new Player("diaz", "d", 23, 60, 170, "milieu", 90, 80, 90, 70, 90, 89, 88, 50);
+		Player valdivia = new Player("Valdivia", "Jorge", 36, 71, 173, "milieu", 90, 80, 90, 70, 90, 89, 88, 50);
+		Player vidal = new Player("Vidal", "Arturo", 32, 75, 180, "milieu", 90, 80, 90, 70, 90, 89, 88, 50);
+		Player aranguiz = new Player("Aranguiz", "Charles", 30, 70, 171, "milieu", 90, 80, 90, 70, 90, 89, 88, 50);
+		Player puch = new Player("Puch", "Edson", 33, 73, 168, "milieu", 90, 80, 90, 70, 90, 89, 88, 50);
+		Player pulgar = new Player("Pulgar", "Erick", 26, 74, 187, "milieu", 90, 90, 98, 99, 88, 100, 100, 100);
+		Player silva = new Player("Silva", "Francisco", 34, 75, 178, "milieu", 90, 80, 90, 70, 90, 89, 88, 50);
+		Player diaz2 = new Player("Diaz", "Marcelo", 33, 68, 167, "milieu", 90, 80, 90, 70, 90, 89, 88, 50);
 		// attaque
-		Player vargas = new Player("vargas", "v", 25, 60, 170, "attaquant", 90, 80, 90, 70, 90, 89, 88, 96);
-		Player sanchez2 = new Player("sanchez", "s", 25, 60, 170, "attaquant", 99, 99, 90, 90, 90, 98, 100, 100);
-		Player castillo = new Player("castillo", "c", 28, 60, 170, "attaquant", 90, 80, 90, 70, 90, 89, 88, 88);
-		Player fuenzalida = new Player("fuenzalida", "f", 29, 60, 170, "attaquant", 90, 80, 90, 70, 90, 89, 88, 99);
-		Player paredes = new Player("paredes", "p", 29, 60, 170, "attaquant", 90, 80, 90, 70, 90, 89, 88, 100);
-		Player valdivia2 = new Player("valdivia", "v", 33, 60, 170, "attaquant", 90, 80, 90, 70, 90, 89, 88, 88);
+		Player vargas = new Player("Vargas", "Eduardo", 30, 81, 174, "attaquant", 90, 80, 90, 70, 90, 89, 88, 96);
+		Player sanchez = new Player("Sanchez", "Alexis", 31, 62, 168, "attaquant", 99, 99, 90, 90, 90, 98, 100, 100);
+		Player castillo = new Player("Castillo", "Nicolas", 37, 81, 179, "attaquant", 90, 80, 90, 70, 90, 89, 88, 88);
+		Player fuenzalida = new Player("Fuenzalida", "José Pedro", 35, 67, 170, "attaquant", 90, 80, 90, 70, 90, 89, 88, 99);
+		Player paredes = new Player("Paredes", "Esteban", 39, 82, 178, "attaquant", 90, 80, 90, 70, 90, 89, 88, 100);
+		Player fernandes = new Player("Fernandes", "Junior", 31, 78, 183, "attaquant", 90, 80, 90, 70, 90, 89, 88, 88);
 
 		// array chili's players
-		Player chili_players[] = { bravo, cortes, herra, diaz, roco, jara, medel, jara2, isla, beausejour, valdivia,
-				vidal, aranguiz, puch, pulgar, silva, diaz2, vargas, sanchez2, castillo, fuenzalida, paredes,
-				valdivia2 };
+		Player chili_players[] = { bravo, cortes, arias, diaz, roco, jara, medel, maripan, isla, beausejour, valdivia,
+				vidal, aranguiz, puch, pulgar, silva, diaz2, vargas, sanchez2, castillo, fuenzalida, paredes, fernandes };
 		Coach rueda = new Coach("Reinaldo", "Rueda", 63, "colombien", 3);
 		Coach coach_chili[] = { rueda };
 		Team chili = new Team("5-3-1", "Chili", chili_players, coach_chili, "defensif");
