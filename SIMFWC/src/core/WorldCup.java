@@ -436,7 +436,7 @@ public class WorldCup {
 
 		// -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-				// portugal
+		//Belgique
 
 		Player courtois = new Player("Courtois", "Thibaut", 27, 96, 199, "gardien", 83, 83, 77, 85, 51, 82, 90, 90);
 		Player mignolet = new Player("Mignolet", "Simon", 31, 87, 193, "gardien", 83, 77, 77, 86, 48, 75, 88, 50);
@@ -513,37 +513,33 @@ public class WorldCup {
 
 		// ----------------------------------------------------------------------------------------------------
 
-		// Germany
-
-		// Germany
-
-		Player neuer = new Player("Neuer", "d", 25, 60, 190, "gardien", 92, 91, 95, 91, 63, 92, 90, 90);
-		Player stegen = new Player("Ter Stegen", "c", 23, 60, 180, "gardien", 92, 91, 95, 91, 44, 89, 88, 50);
-		Player bauman = new Player("Bauman", "h", 30, 60, 170, "gardien", 84, 83, 72, 87, 51, 81, 88, 50);
+    		// Germany
+		Player neuer = new Player("Neuer", "Manuel", 33, 92, 193, "gardien", 92, 91, 95, 91, 63, 92, 90, 90);
+		Player stegen = new Player("Ter Stegen", "Marc-Andre", 27, 85, 187, "gardien", 92, 91, 95, 91, 44, 89, 88, 50);
+		Player bauman = new Player("Baumann", "Oliver", 29, 82, 187, "gardien", 84, 83, 72, 87, 51, 81, 88, 50);
 		// defense
-		Player hummels = new Player("Hummels", "d", 28, 60, 170, "defense", 51, 58, 76, 73, 89, 76, 88, 90);
-		Player kimich = new Player("Kimich", "r", 23, 60, 170, "defense", 73, 70, 88, 85, 81, 79, 88, 90);
-		Player boating = new Player("Boating", "j", 32, 60, 170, "defense", 66, 50, 72, 66, 84, 82, 88, 80);
-		Player bender = new Player("Bender", "m", 19, 60, 170, "defense", 69, 67, 75, 75, 87, 80, 88, 70);
-		Player tah = new Player("Tah", "j", 34, 60, 170, "defense", 71, 27, 59, 58, 83, 81, 88, 90);
-		Player max = new Player("Max", "i", 36, 60, 170, "defense", 85, 57, 82, 79, 74, 76, 88, 90);
-		Player halstenberg = new Player("Halstenberg", "b", 31, 60, 170, "milieu", 69, 66, 72, 72, 80, 80, 99, 99);
+		Player hummels = new Player("Hummels", "Mats", 31, 94, 191, "defense", 51, 58, 76, 73, 89, 76, 88, 90);
+		Player kimich = new Player("Kimmich", "Joshua", 25, 73, 176, "defense", 73, 70, 88, 85, 81, 79, 88, 90);
+		Player boating = new Player("Boateng", "Jerome", 31, 92, 192, "defense", 66, 50, 72, 66, 84, 82, 88, 80);
+		Player bender = new Player("Bender", "Sven", 30, 81, 186, "defense", 69, 67, 75, 75, 87, 80, 88, 70);
+		Player tah = new Player("Tah", "Jonathan", 24, 97, 195, "defense", 71, 27, 59, 58, 83, 81, 88, 90);
+		Player max = new Player("Max", "Kruse", 31, 76, 180, "defense", 85, 57, 82, 79, 74, 76, 88, 90);
+		Player halstenberg = new Player("Halstenberg", "Marcel", 28, 87, 188, "milieu", 69, 66, 72, 72, 80, 80, 99, 99);
 		// milieu
-		Player reus = new Player("Reus", "v", 30, 60, 170, "milieu", 86, 89, 85, 88, 46, 67, 88, 50);
-		Player kroos = new Player("Kroos", "v", 18, 60, 170, "milieu", 46, 83, 91, 82, 71, 70, 88, 50);
-		Player muler = new Player("Muler", "a", 26, 60, 170, "milieu", 85, 85, 81, 88, 57, 73, 88, 50);
-		Player ozil = new Player("Ozil", "p", 22, 60, 170, "milieu", 82, 82, 88, 86, 26, 60, 88, 50);
-		Player schweinsteiger = new Player("Schweinsteiger", "p", 22, 60, 170, "milieu", 71, 84, 90, 85, 82, 86, 99,
-				99);
-		Player draxler = new Player("Draxler", "s", 23, 60, 170, "milieu", 79, 81, 83, 88, 88, 71, 88, 50);
-		Player gundogan = new Player("Gundogan", "d", 23, 60, 170, "milieu", 68, 77, 86, 86, 74, 73, 88, 50);
+		Player reus = new Player("Reus", "Marco", 30, 71, 180, "milieu", 86, 89, 85, 88, 46, 67, 88, 50);
+		Player kroos = new Player("Kroos", "Toni", 30, 76, 183, "milieu", 46, 83, 91, 82, 71, 70, 88, 50);
+		Player muler = new Player("Muller", "Thomas", 30, 75, 186, "milieu", 85, 85, 81, 88, 57, 73, 88, 50);
+		Player ozil = new Player("Ozil", "Mesut", 31, 71, 180, "milieu", 82, 82, 88, 86, 26, 60, 88, 50);
+		Player schweinsteiger = new Player("Schweinsteiger", "Bastian", 35, 79, 183, "milieu", 71, 84, 90, 85, 82, 86, 99, 99);
+		Player draxler = new Player("Draxler", "Julian", 26, 77, 187, "milieu", 79, 81, 83, 88, 88, 71, 88, 50);
+		Player gundogan = new Player("Gundogan", "ilkay", 29, 80, 180, "milieu", 68, 77, 86, 86, 74, 73, 88, 50);
 		// attaque
-		Player bellarabi = new Player("Bellarbi", "v", 25, 60, 170, "attaquant", 93, 78, 78, 86, 36, 73, 88, 96);
-		Player gnabry = new Player("Gnabry", "s", 25, 60, 170, "attaquant", 90, 82, 75, 85, 43, 69, 90, 90);
-		Player werner = new Player("Werner", "c", 28, 60, 170, "attaquant", 93, 84, 71, 84, 36, 71, 88, 88);
-		Player sane = new Player("Sane", "f", 29, 60, 170, "attaquant", 95, 81, 79, 86, 38, 70, 88, 99);
-		Player gotze = new Player("Gotze", "p", 29, 60, 170, "attaquant", 71, 78, 85, 86, 56, 70, 88, 100);
-		Player hunt = new Player("Hunt", "v", 33, 60, 170, "attaquant", 65, 73, 75, 76, 44, 63, 88, 88);
+		Player bellarabi = new Player("Bellarabi", "Karim", 29, 81, 184, "attaquant", 93, 78, 78, 86, 36, 73, 88, 96);
+		Player gnabry = new Player("Gnabry", "Serge", 24, 75, 175, "attaquant", 90, 82, 75, 85, 43, 69, 90, 90);
+		Player werner = new Player("Werner", "Timo", 23, 76, 180, "attaquant", 93, 84, 71, 84, 36, 71, 88, 88);
+		Player sane = new Player("Sane", "Leroy", 24, 75, 183, "attaquant", 95, 81, 79, 86, 38, 70, 88, 99);
+		Player gotze = new Player("Gotze", "Mario", 27, 75, 176, "attaquant", 71, 78, 85, 86, 56, 70, 88, 100);
+		Player hunt = new Player("Hunt", "Aaron", 33, 73, 183, "attaquant", 65, 73, 75, 76, 44, 63, 88, 88);
 
 		Player[] germany_players = { neuer, stegen, bauman, hummels, kimich, boating, bender, tah, max, halstenberg,
 				reus, kroos, muler, ozil, schweinsteiger, draxler, gundogan, bellarabi, gnabry, werner, sane, gotze,
