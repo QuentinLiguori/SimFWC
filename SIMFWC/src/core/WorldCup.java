@@ -318,35 +318,35 @@ public class WorldCup {
 		 */
 
 		// goal
-		Player donnarumma = new Player("Donnarumma", "G", 31, 84, 189, "gardien", 49, 11, 34, 19, 13, 40, 55, 13);
-		Player meret = new Player("meret", "A", 31, 84, 189, "gardien", 49, 11, 34, 19, 13, 40, 55, 13);
-		Player sirigu = new Player("Sirigu", "S", 33, 84, 189, "gardien", 49, 11, 34, 19, 13, 40, 55, 13);
+		Player donnarumma = new Player("Donnarumma", "Gianluigi", 31, 84, 189, "gardien", 49, 11, 34, 19, 13, 40, 55, 13);
+	Player meret = new Player("Meret", "Alex", 22, 83, 190, "gardien", 49, 31, 44, 29, 23, 50, 65, 23);
+	Player sirigu = new Player("Sirigu", "Salvatore", 33, 80, 192, "gardien", 60, 22, 43, 40, 31, 51, 55, 31);
 
-		// defense
-		Player florenzi = new Player("florenzi", "A", 33, 78, 189, "defense", 64, 74, 69, 73, 60, 73, 65, 71);
-		Player bonucci = new Player("bonucci", "L", 32, 80, 187, "defense", 76, 62, 78, 79, 52, 76, 70, 81);
-		Player acerbi = new Player("acerbi", "F", 34, 84, 192, "defense", 34, 49, 68, 77, 59, 58, 74, 75);
-		Player biraghi = new Player("biraghi", "C", 31, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
-		Player romagnoli = new Player("Romagnoli", "A", 31, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
-		Player lorenzo = new Player("Lorenzo", "G", 36, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
+	// defense
+	Player florenzi = new Player("Florenzi", "Alessandro", 28, 67, 173, "defense", 64, 74, 69, 73, 60, 73, 65, 71);
+	Player bonucci = new Player("Bonucci", "Leonardo", 32, 85, 190, "defense", 76, 62, 78, 79, 52, 76, 70, 81);
+	Player acerbi = new Player("Acerbi", "Francesco", 32, 88, 192, "defense", 34, 49, 68, 77, 59, 58, 74, 75);
+	Player biraghi = new Player("Biraghi", "Cristiano", 27, 78, 185, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
+	Player romagnoli = new Player("Romagnoli", "Alessio", 25, 78, 188, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
+	Player lorenzo = new Player("Di Lorenzo", "Giovanni", 26, 83, 183, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
 
-		// Middle
-		Player emerson = new Player("emerson", "", 32, 77, 184, "milieu", 37, 49, 73, 65, 47, 85, 66, 72);
-		Player barella = new Player("barella", "N", 26, 69, 180, "milieu", 78, 69, 67, 34, 68, 69, 77, 59);
-		Player jorginho = new Player("Jorginho", "", 28, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
-		Player verratti = new Player("Verratti", "M", 25, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
-		Player tonali = new Player("Tonali", "S", 25, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
-		Player sensi = new Player("Sensi", "S", 22, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
-		Player zaniolo = new Player("Zaniolo", "N", 20, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
+	// Middle
+	Player emerson = new Player("Emerson", "", 25, 79, 176, "milieu", 37, 49, 73, 65, 47, 85, 66, 72);
+	Player barella = new Player("Barella", "NicolO", 26, 68, 175, "milieu", 78, 69, 67, 34, 68, 69, 77, 59);
+	Player jorginho = new Player("Jorginho", "", 28, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
+	Player verratti = new Player("Verratti", "Marco", 27, 60, 165, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
+	Player tonali = new Player("Tonali", "Sandro", 19, 79, 181, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
+	Player sensi = new Player("Sensi", "Stefano", 24, 62, 168, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
+	Player zaniolo = new Player("Zaniolo", "Nicolo", 20, 79, 190, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
 
-		// attack
-		Player bernardeschi = new Player("bernardeschi", "F", 34, 83, 187, "attaquant", 77, 67, 70, 56, 72, 76, 73, 56);
-		Player immobile = new Player("Immobile", "C", 23, 68, 179, "attaquant", 73, 56, 60, 75, 74, 69, 79, 29);
-		Player insigne = new Player("insigne", "L", 28, 64, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
-		Player belotti = new Player("Belotti", "A", 25, 64, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
-		Player politano = new Player("Politano", "M", 25, 64, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
-		Player shaarawy = new Player("shaarawy", "S", 25, 64, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
-		Player chiesa = new Player("Chiesa", "F", 22, 64, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
+	// attack
+	Player bernardeschi = new Player("Bernardeschi", "Federico", 26, 77, 185, "attaquant", 77, 67, 70, 56, 72, 76, 73, 56);
+	Player immobile = new Player("Immobile", "Ciro", 30, 85, 185, "attaquant", 73, 56, 60, 75, 74, 69, 79, 29);
+	Player insigne = new Player("Insigne", "Lorenzo", 28, 59, 163, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
+	Player belotti = new Player("Belotti", "Andrea", 26, 72, 181, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
+	Player politano = new Player("Politano", "Matteo", 26, 67, 171, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
+	Player shaarawy = new Player("Shaarawy", "Stephan", 27, 78, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
+	Player chiesa = new Player("Chiesa", "Federico", 22, 70, 175, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
 
 		// array players
 		Player[] italy_players = { donnarumma, meret, sirigu, florenzi, bonucci, acerbi, biraghi, romagnoli, lorenzo,
