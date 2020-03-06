@@ -72,7 +72,7 @@ public class WorldCup {
 				delacruz, rolan, stuani };
 		Coach oscar = new Coach("Oscar", "Tabanez", 73, "uruguayen", 2);
 		Coach coach_uruguay[] = { oscar };
-		Team uruguay = new Team("4-3-3", "Uruguay", uruguay_players, coach_uruguay, "offensif");
+		Team uruguay = new Team("4-3-3", "Uruguay", uruguay_players, coach_uruguay, "offensif","../Flag/uruguay-flag-icon-32.png");
 
 		/** chili's players */
 		// goal
@@ -108,7 +108,7 @@ public class WorldCup {
 				vidal, aranguiz, puch, pulgar, silva, diaz2, vargas, sanchez2, castillo, fuenzalida, paredes, fernandes };
 		Coach rueda = new Coach("Reinaldo", "Rueda", 63, "colombien", 3);
 		Coach coach_chili[] = { rueda };
-		Team chili = new Team("5-3-1", "Chili", chili_players, coach_chili, "defensif");
+		Team chili = new Team("5-3-1", "Chili", chili_players, coach_chili, "defensif","../Flag/chile-flag-icon-32.png");
 
 		/**
 		 * Poland ans Sweden's teams : Radolanirina
@@ -150,7 +150,7 @@ public class WorldCup {
 		Coach jerzy = new Coach("Jerzy", "Brzeczek", 49, "polish", 1);
 		Coach[] poland_coachs = { jerzy };
 
-		Team poland = new Team("4-3-4", "Poland", poland_players, poland_coachs, "offensif");
+		Team poland = new Team("4-3-4", "Poland", poland_players, poland_coachs, "offensif","../Flag/poland-flag-icon-32.png");
 
 		/** Sweden's players */
 		// goal
@@ -190,7 +190,7 @@ public class WorldCup {
 		Coach janne = new Coach("Janne", "Anderson", 57, "polish", 2);
 		Coach[] sweden_coachs = { janne };
 
-		Team sweden = new Team("4-4-2", "Swede", sweden_players, sweden_coachs, "defensive");
+		Team sweden = new Team("4-4-2", "Swede", sweden_players, sweden_coachs, "defensive","../Flag/sweden-flag-icon-32.png");
 
 		// FRANCE
 		// gardien
@@ -226,7 +226,7 @@ public class WorldCup {
 				lemar, mbappe };
 		Coach didier = new Coach("Didier", "Deschamps", 51, "française", 95);
 		Coach coach_france[] = { didier };
-		Team france = new Team("4-2-3-1", "France", france_players, coach_france, "équilibré");
+		Team france = new Team(" 4-2-3-1 ", "France ", france_players, coach_france, " équilibré ","../Flag/france-flag-icon-32.png");
 
 		// ARGENTINE 
 		// gardien
@@ -262,7 +262,7 @@ public class WorldCup {
 				icardi, dybala };
 		Coach lionel = new Coach("Lionel", "Scaloni", 41, "argentin", 45);
 		Coach coach_argentin[] = { lionel };
-		Team argentin = new Team("4-3-3", "Argentine", argentin_players, coach_argentin, "offensif");
+		Team argentin = new Team(" 4-3-3 ", " Argentine ", argentin_players, coach_argentin, " offensif ","../Flag/argentina-flag-icon-32.png");
 
 		/**
 		 * Teams of Portugal and Italy : LIGUORI
@@ -311,7 +311,7 @@ public class WorldCup {
 		Coach santosF = new Coach("Santos", "Fernando", 66, "portugal", 2);
 		Coach[] portugal_coachs = { santosF };
 
-		Team portugal = new Team("4-4-2", "Portugal", portugal_players, portugal_coachs, "offensif");
+		Team portugal = new Team("4-4-2", "Portugal", portugal_players, portugal_coachs, "offensif","../Flag/portugal-flag-icon-32.png");
 
 		/**
 		 * Italy Players
@@ -357,7 +357,7 @@ public class WorldCup {
 		Coach mancini = new Coach("Mancini", "Roberto", 56, "italy", 2);
 		Coach[] italy_coachs = { mancini };
 
-		Team italy = new Team("4-4-2", "Italy", italy_players, italy_coachs, "offensif");
+		Team italy = new Team("4-4-2", "Italy", italy_players, italy_coachs, "offensif","../Flag/italy-flag-icon-32.png");
 
 		// espagne
 
@@ -393,7 +393,7 @@ public class WorldCup {
 				morales, aspas };
 		Coach gouardilla = new Coach("gourdiola", "pepe", 88, "spanich", 2);
 		Coach[] coach_spain = { gouardilla };
-		Team spain = new Team("4-3-3", "Spain", spain_players, coach_spain, "offensif");
+		Team spain = new Team("4-3-3", "Spain", spain_players, coach_spain, "offensif","../Flag/spain-flag-icon-32.png");
 
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -432,7 +432,7 @@ public class WorldCup {
 		Coach sofiane = new Coach("idmbarkos", "safawan", 80, "bresilien", 3);
 		// Coach ss = new Coach(lastName, firstName, age, nationality, level)
 		Coach[] coach_bresil = { sofiane };
-		Team bresil = new Team("4-3-4", "Brasil", bresil_players, coach_bresil, "offensif");
+		Team bresil = new Team("4-3-4", "Brasil", bresil_players, coach_bresil, "offensif","../Flag/brazil-flag-icon-32.png");
 
 		// -------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -473,7 +473,7 @@ public class WorldCup {
 		Coach morinio = new Coach("marinio", "silva", 88, "portugal", 2);
 		// Coach ss = new Coach(lastName, firstName, age, nationality, level)
 		Coach[] coach_belgique = { morinio };
-		Team belgique = new Team("4-5-1", "Belgique", belgique_players, coach_belgique, "offensif");
+		Team belgique = new Team("4-5-1", "Belgique", belgique_players, coach_belgique, "offensif","../Flag/belgium-flag-icon-32.png");
 
 		// ALGERIE
 
@@ -510,7 +510,7 @@ public class WorldCup {
 		Coach belmadi = new Coach("belmadi", "djamel", 95, "algerien", 4);
 		// Coach ss = new Coach(lastName, firstName, age, nationality, level)
 		Coach[] coach_algeria = { belmadi };
-		Team algeria = new Team("4-4-3", "Algerie", algeria_players, coach_algeria, "offensif");
+		Team algeria = new Team("4-4-3", "Algerie", algeria_players, coach_algeria, "offensif","../Flag/algeria-flag-icon-32.png");
 
 		// ----------------------------------------------------------------------------------------------------
 
@@ -551,7 +551,7 @@ public class WorldCup {
 				hunt };
 		Coach jurgen = new Coach("jurgen", "clup", 73, "uruguayen", 2);
 		Coach[] coach_germany = { jurgen };
-		Team germany = new Team("4-3-3", "Germany", germany_players, coach_germany, "offensif");
+		Team germany = new Team("4-3-3", "Germany", germany_players, coach_germany, "offensif","../Flag/germany-flag-icon-32.png");
 
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -589,7 +589,7 @@ public class WorldCup {
 				rooney, ings };
 		Coach heniken = new Coach("Heniken", "adams", 73, "uruguayen", 2);
 		Coach[] coach_england = { heniken };
-		Team england = new Team("4-3-3", "England", england_players, coach_england, "offensif");
+		Team england = new Team("4-3-3", "England", england_players, coach_england, "offensif","../Flag/england-flag-icon-32.png");
 		// -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 		// Morocco
@@ -625,7 +625,7 @@ public class WorldCup {
 				amrabt, fajr, bennaser, harit, taarabt, hafidi, enssiri, yajour, alarabi, chamakh, hamdalah, belhanda };
 		Coach eric = new Coach("Eric", "guerets", 73, "uruguayen", 2);
 		Coach[] coach_morocco = { eric };
-		Team morocco = new Team("4-3-3", "Morocco", morocco_players, coach_morocco, "offensif");
+		Team morocco = new Team("4-3-3", "Morocco", morocco_players, coach_morocco, "offensif","../Flag/morocco-flag-icon-32.png");
 
 		// -------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -663,7 +663,7 @@ public class WorldCup {
 				overmars };
 		Coach vanjal = new Coach("Vanjal", "Tabanez", 73, "uruguayen", 2);
 		Coach[] coach_netherlands = { vanjal };
-		Team netherlands = new Team("4-3-3", "Netherlands", netherlands_players, coach_netherlands, "offensif");
+		Team netherlands = new Team("4-3-3", "Netherlands", netherlands_players, coach_netherlands, "offensif","../Flag/netherlands-flag-icon-32.png");
 
 		/**
 		 * Array of all the teams
