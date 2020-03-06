@@ -552,32 +552,32 @@ public class WorldCup {
 
 		// england
 
-		Player foster = new Player("Foster", "d", 25, 60, 190, "gardien", 82, 83, 76, 84, 52, 82, 90, 90);
-		Player pickford = new Player(" Pickford ", "c", 23, 60, 180, "gardien", 82, 78, 87, 86, 44, 82, 88, 50);
-		Player pope = new Player("Pope", "h", 30, 60, 170, "gardien", 82, 83, 79, 83, 52, 83, 88, 50);
-		// defene
-		Player arnold = new Player("Arnold", "d", 28, 60, 170, "defense", 92, 85, 97, 92, 92, 87, 88, 90);
-		Player walker = new Player(" Walker ", "r", 23, 60, 170, "defense", 93, 68, 81, 81, 84, 84, 88, 90);
-		Player smalling = new Player("Smaling", "j", 32, 60, 170, "defense", 76, 53, 65, 64, 87, 86, 88, 80);
-		Player fernand = new Player("Fernand", "m", 19, 60, 170, "defense", 84, 48, 65, 64, 70, 84, 83, 70);
-		Player Guigz = new Player("Guigz ", "j", 34, 60, 170, "defense", 78, 43, 76, 75, 88, 79, 88, 90);
-		Player henderson = new Player("Henderson ", "i", 36, 60, 170, "defense", 52, 54, 69, 75, 84, 86, 88, 90);
-		Player gomeze = new Player("gomeze", "b", 31, 60, 170, "milieu", 85, 35, 73, 75, 84, 91, 99, 99);
-		// milieu
-		Player sanchoc = new Player("Sanchoc", "v", 30, 60, 170, "milieu", 99, 95, 98, 99, 84, 95, 88, 50);
-		Player ali = new Player("Ali", "v", 18, 60, 170, "milieu", 77, 85, 83, 86, 73, 82, 88, 50);
-		Player rashford = new Player("Rashford", "a", 26, 60, 170, "milieu", 94, 85, 75, 85, 47, 80, 88, 50);
-		Player maddison = new Player("Maddison", "p", 22, 60, 170, "milieu", 80, 81, 87, 84, 44, 62, 88, 50);
-		Player sancho = new Player("Sancho", "p", 22, 60, 170, "milieu", 88, 72, 77, 90, 90, 36, 99, 99);
-		Player philips = new Player("Philips", "s", 23, 60, 170, "milieu", 77, 80, 86, 86, 84, 83, 88, 50);
-		Player lingard = new Player("Li,gard", "d", 23, 60, 170, "milieu", 80, 78, 81, 76, 83, 72, 88, 50);
-		// attaque
-		Player kane = new Player("Kane ", "v", 25, 60, 170, "attaquant", 80, 95, 86, 87, 87, 51, 87, 96);
-		Player sterling = new Player("Sterling", "s", 25, 60, 170, "attaquant", 94, 80, 79, 90, 46, 46, 90, 90);
-		Player abraham = new Player("Abraham", "c", 28, 60, 170, "attaquant", 84, 87, 70, 83, 39, 80, 88, 88);
-		Player vardy = new Player("Vardy", "f", 29, 60, 170, "attaquant", 91, 86, 72, 81, 81, 59, 88, 99);
-		Player rooney = new Player("Rooney", "p", 29, 60, 170, "attaquant", 64, 81, 80, 76, 56, 76, 88, 100);
-		Player ings = new Player("Ings", "v", 33, 60, 170, "attaquant", 81, 81, 69, 82, 37, 71, 88, 88);
+			Player foster = new Player("Foster", "Ben", 26, 90, 193, "gardien", 82, 83, 76, 84, 52, 82, 90, 90);
+			Player pickford = new Player("Pickford", "Jordan", 25, 77, 185, "gardien", 82, 78, 87, 86, 44, 82, 88, 50);
+			Player pope = new Player("Pope", "Nick", 27, 76, 200, "gardien", 82, 83, 79, 83, 52, 83, 88, 50);
+			// defene
+			Player arnold = new Player("Alexander-Arnold", "Trent", 21, 69, 180, "defense", 92, 85, 97, 92, 92, 87, 88, 90);
+			Player walker = new Player("Walker", "Kyle", 29, 70, 183, "defense", 93, 68, 81, 81, 84, 84, 88, 90);
+			Player smalling = new Player("Smalling", "Chris", 30, 81, 194, "defense", 76, 53, 65, 64, 87, 86, 88, 80);
+			Player fernand = new Player("Fernand", "Rio", 41, 87, 195, "defense", 84, 48, 65, 64, 70, 84, 83, 70);
+			Player Guigz = new Player("Giggs", "Ryan", 46, 65, 179, "defense", 78, 43, 76, 75, 88, 79, 88, 90);
+			Player henderson = new Player("Henderson", "Jordan", 29, 80, 182, "defense", 52, 54, 69, 75, 84, 86, 88, 90);
+			Player gomeze = new Player("Gomez", "Joe", 22, 77, 188, "milieu", 85, 35, 73, 75, 84, 91, 99, 99);
+			// milieu
+			Player sanchoc = new Player("Sanchoc", "Frank", 30, 60, 170, "milieu", 99, 95, 98, 99, 84, 95, 88, 50);
+			Player ali = new Player("Ali", "Dele", 23, 80, 183, "milieu", 77, 85, 83, 86, 73, 82, 88, 50);
+			Player rashford = new Player("Rashford", "Marcus", 22, 80, 185, "milieu", 94, 85, 75, 85, 47, 80, 88, 50);
+			Player maddison = new Player("Maddison", "James", 23, 73, 175, "milieu", 80, 81, 87, 84, 44, 62, 88, 50);
+			Player sancho = new Player("Sancho", "Jadon", 19, 76, 180, "milieu", 88, 72, 77, 90, 90, 36, 99, 99);
+			Player philips = new Player("Philips", "Kevin", 46, 60, 180, "milieu", 77, 80, 86, 86, 84, 83, 88, 50);
+			Player lingard = new Player("Lingard", "Jesse", 27, 65, 175, "milieu", 80, 78, 81, 76, 83, 72, 88, 50);
+			// attaque
+			Player kane = new Player("Kane", "Harry", 26, 77, 188, "attaquant", 80, 95, 86, 87, 87, 51, 87, 96);
+			Player sterling = new Player("Sterling", "Raheem", 25, 60, 170, "attaquant", 94, 80, 79, 90, 46, 46, 90, 90);
+			Player abraham = new Player("Abraham", "Tammy", 22, 60, 170, "attaquant", 84, 87, 70, 83, 39, 80, 88, 88);
+			Player vardy = new Player("Vardy", "Jamie", 33, 70, 178, "attaquant", 91, 86, 72, 81, 81, 59, 88, 99);
+			Player rooney = new Player("Rooney", "Wayne", 34, 69, 176, "attaquant", 64, 81, 80, 76, 56, 76, 88, 100);
+			Player ings = new Player("Ings", "Danny", 27, 73, 178, "attaquant", 81, 81, 69, 82, 37, 71, 88, 88);
 
 		Player[] england_players = { foster, pickford, pope, arnold, walker, smalling, fernand, Guigz, henderson,
 				gomeze, sanchoc, ali, rashford, maddison, sancho, philips, lingard, kane, sterling, abraham, vardy,
