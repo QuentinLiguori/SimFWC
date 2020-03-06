@@ -7,10 +7,14 @@ public class Team {
 	
 	private int groupStageScore = 0;
 	
+	
+	private String flag;
 
 	/**
 	 * Positions of the players on the soccer field
 	 */
+	
+	
 	private String formation;
 	
 	/**
@@ -39,7 +43,7 @@ public class Team {
 	private int scoreTeam;
 	
 	/**
-	 * power of team
+	 * 
 	 */
 	private int powerTeam; 
 	
@@ -59,8 +63,9 @@ public class Team {
 	 * @param coachs
 	 * @param tactic
 	 */
-	public Team(String formation, String country, Player[] players, Coach[] coachs, String tactic) {
+	public Team(String formation, String country, Player[] players, Coach[] coachs, String tactic, String flag) {
 		super();
+		this.flag = flag;
 		this.formation = formation;
 		this.country = country;
 		this.players = players;
@@ -178,6 +183,26 @@ public class Team {
 	 */
 	public void setGroupStageScore(int groupStageScore) {
 		this.groupStageScore = groupStageScore;
+	}
+	/**
+	 * @return the flag
+	 */
+	public String getFlag() {
+		return flag;
+	}
+
+	/**
+	 * @param flag the flag to set
+	 */
+	public void setFlag(String flag) {
+		this.flag = flag;
+	}
+
+	/**
+	 * @param scoreTeam the scoreTeam to set
+	 */
+	public void setScoreTeam(int scoreTeam) {
+		this.scoreTeam = scoreTeam;
 	}
 
 }
