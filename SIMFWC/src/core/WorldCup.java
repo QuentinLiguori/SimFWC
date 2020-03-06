@@ -593,70 +593,69 @@ public class WorldCup {
 		// -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 		// Morocco
-
-		Player zniti = new Player("Zniti", "d", 25, 60, 190, "gardien", 70, 60, 80, 50, 60, 81, 66, 90);
-		Player bounou = new Player(" Bounou ", "c", 23, 60, 180, "gardien", 75, 66, 71, 62, 65, 54, 78, 50);
-		Player munir = new Player("Munir", "h", 30, 60, 170, "gardien", 81, 76, 81, 83, 44, 79, 88, 50);
+		Player zniti = new Player("Zniti", "Anas", 25, 85, 190, "gardien", 70, 60, 80, 50, 60, 81, 66, 90);
+		Player bounou = new Player("Bounou", "Yassine", 28, 78, 192, "gardien", 75, 66, 71, 62, 65, 54, 78, 50);
+		Player munir = new Player("Munir", "Mohand Mohamedi", 30, 89, 190, "gardien", 81, 76, 81, 83, 44, 79, 88, 50);
 		// defene
-		Player hakimi = new Player("Hakimi", "d", 28, 60, 170, "defense", 65, 65, 78, 80, 69, 60, 88, 90);
-		Player costa = new Player(" Costa ", "r", 23, 60, 170, "defense", 86, 65, 78, 82, 86, 64, 88, 90);
-		Player feddal = new Player("mascherano", "j", 32, 60, 170, "defense", 70, 85, 84, 77, 86, 82, 88, 80);
-		Player yamiq = new Player("Yamiq", "m", 19, 60, 170, "defense", 89, 90, 84, 75, 60, 60, 88, 70);
-		Player banoun = new Player("Banoun ", "j", 34, 60, 170, "defense", 82, 90, 84, 82, 83, 80, 88, 90);
-		Player mendyl = new Player("Mendyl ", "i", 36, 60, 170, "defense", 89, 85, 20, 75, 40, 80, 88, 90);
-		Player saadane = new Player("Saadane", "b", 31, 60, 170, "defense", 93, 81, 30, 94, 80, 40, 99, 99);
+		Player hakimi = new Player("Hakimi", "Achraf", 21, 73, 181, "defense", 65, 65, 78, 80, 69, 60, 88, 90);
+		Player costa = new Player("Costa", "Manuel", 33, 84, 191, "defense", 86, 65, 78, 82, 86, 64, 88, 90);
+		Player feddal = new Player("Feddal", "Zouhair", 30, 83, 192, "defense", 70, 85, 84, 77, 86, 82, 88, 80);
+		Player yamiq = new Player("Yamiq", "Jawad", 28, 83, 190, "defense", 89, 90, 84, 75, 60, 60, 88, 70);
+		Player banoun = new Player("Banoun ", "Badr", 26, 82, 193, "defense", 82, 90, 84, 82, 83, 80, 88, 90);
+		Player mendyl = new Player("Mendyl ", "Hamza", 22, 73, 179, "defense", 89, 85, 20, 75, 40, 80, 88, 90);
+		Player saadane = new Player("Saadane", "Marwane", 28, 75, 187, "defense", 93, 81, 30, 94, 80, 40, 99, 99);
 		// milieu
-		Player zyich = new Player("Zyich", "v", 30, 60, 170, "milieu", 66, 55, 90, 22, 99, 65, 88, 50);
-		Player amrabt = new Player("Amrabt", "v", 18, 60, 170, "milieu", 93, 33, 94, 44, 36, 88, 88, 50);
-		Player fajr = new Player("Fajr", "a", 26, 60, 170, "milieu", 54, 95, 90, 23, 85, 70, 80, 50);
-		Player bennaser = new Player("Bennaser", "p", 22, 60, 170, "milieu", 15, 76, 81, 86, 87, 86, 70, 50);
-		Player harit = new Player("Harit", "p", 22, 60, 170, "milieu", 66, 60, 79, 79, 84, 79, 70, 50);
-		Player taarabt = new Player("Taarabt", "s", 23, 60, 170, "milieu", 80, 60, 87, 87, 47, 50, 88, 50);
-		Player hafidi = new Player("Hafidi", "d", 23, 60, 170, "milieu", 69, 71, 81, 86, 73, 70, 88, 50);
+		Player zyich = new Player("Zyich", "Mohamed", 25, 75, 185, "milieu", 66, 55, 80, 22, 99, 65, 76, 50);
+		Player amrabt = new Player("Amrabt", "Nordin", 32, 85, 180, "milieu", 93, 33, 94, 44, 36, 88, 88, 50);
+		Player fajr = new Player("Fajr", "Faycal", 31, 71, 178, "milieu", 54, 95, 90, 23, 85, 70, 80, 50);
+		Player bennaser = new Player("Bennacer", "Ismael", 22, 64, 173, "milieu", 15, 76, 81, 86, 87, 86, 70, 50);
+		Player harit = new Player("Harit", "Amine", 22, 67, 180, "milieu", 66, 60, 79, 79, 84, 79, 70, 50);
+		Player taarabt = new Player("Taarabt", "Adel", 30, 75, 185, "milieu", 80, 60, 87, 87, 47, 50, 88, 50);
+		Player hafidi = new Player("Hafidi", "Hamza", 23, 78, 184, "milieu", 69, 71, 81, 70, 73, 70, 45, 50);
 		// attaque
-		Player enssiri = new Player("Enssiri ", "v", 25, 60, 170, "attaquant", 65, 86, 88, 96, 33, 58, 88, 96);
-		Player yajour = new Player("Yajour", "s", 25, 60, 170, "attaquant", 79, 84, 81, 89, 62, 80, 90, 90);
-		Player alarabi = new Player("Alarabi", "c", 28, 60, 170, "attaquant", 50, 85, 88, 56, 38, 77, 88, 88);
-		Player chamakh = new Player("Chamakh", "f", 29, 60, 170, "attaquant", 26, 78, 81, 45, 90, 76, 88, 66);
-		Player hamdalah = new Player("Hamdlah", "p", 29, 60, 170, "attaquant", 25, 86, 88, 92, 90, 90, 88, 77);
-		Player belhanda = new Player("willian", "v", 33, 60, 170, "attaquant", 45, 84, 85, 89, 53, 90, 54, 77);
+		Player enssiri = new Player("En-Nesyri ", "Youssef", 22, 77, 188, "attaquant", 65, 86, 88, 96, 33, 58, 88, 96);
+		Player yajour = new Player("Iajour", "Mouhcine", 34, 76, 178, "attaquant", 79, 84, 81, 89, 62, 80, 90, 90);
+		Player alarabi = new Player("El-Arabi", "Youssef", 33, 70, 183, "attaquant", 50, 85, 88, 56, 38, 77, 88, 88);
+		Player chamakh = new Player("Chamakh", "Marouane", 36, 70, 185, "attaquant", 26, 78, 81, 45, 90, 76, 88, 66);
+		Player hamdalah = new Player("Hamed Allah", "Abderrazak", 29, 75, 179, "attaquant", 25, 86, 88, 92, 90, 90, 88, 77);
+		Player belhanda = new Player("Belhanda", "Younès", 30, 75, 179, "attaquant", 45, 84, 85, 89, 53, 90, 54, 77);
 
 		Player[] morocco_players = { zniti, bounou, munir, hakimi, costa, feddal, yamiq, banoun, mendyl, saadane, zyich,
 				amrabt, fajr, bennaser, harit, taarabt, hafidi, enssiri, yajour, alarabi, chamakh, hamdalah, belhanda };
 		Coach eric = new Coach("Eric", "guerets", 73, "uruguayen", 2);
 		Coach[] coach_morocco = { eric };
-		Team morocco = new Team("4-3-3", "Morocco", morocco_players, coach_morocco, "offensif","../Flag/morocco-flag-icon-32.png");
+		Team morocco = new Team("4-3-3", "Morocco", morocco_players, coach_morocco, "offensif");
 
 		// -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 		// netherlands
 
-		Player zoet = new Player("Zoet", "d", 25, 60, 190, "gardien", 79, 77, 77, 77, 82, 45, 90, 90);
-		Player bizot = new Player(" Bizot ", "c", 23, 60, 180, "gardien", 80, 74, 66, 77, 47, 74, 88, 50);
-		Player cillicen = new Player("Cillicen", "h", 30, 60, 170, "gardien", 84, 85, 80, 85, 54, 84, 88, 50);
+		Player zoet = new Player("Zoet", "Jeroen", 29, 88, 189, "gardien", 79, 77, 77, 77, 82, 45, 90, 90);
+		Player bizot = new Player("Bizot", "Marco", 28, 85, 194, "gardien", 80, 74, 66, 77, 47, 74, 88, 50);
+		Player cillicen = new Player("Cillessen ", "Jasper", 30, 83, 185, "gardien", 84, 85, 80, 85, 54, 84, 88, 50);
 		// defene
-		Player vanDijk = new Player("van dijk", "d", 28, 60, 170, "defense", 88, 80, 92, 90, 99, 98, 88, 90);
-		Player deLigt = new Player(" DE Ligt ", "r", 23, 60, 170, "defense", 85, 75, 86, 86, 88, 96, 88, 90);
-		Player deVrij = new Player("De Vrigt", "j", 32, 60, 170, "defense", 68, 43, 64, 89, 76, 82, 88, 80);
-		Player beek = new Player("Beek", "m", 19, 60, 170, "defense", 75, 82, 80, 82, 74, 82, 88, 70);
-		Player blind = new Player("Blind ", "j", 34, 60, 170, "defense", 54, 65, 80, 80, 77, 74, 88, 90);
-		Player klaiber = new Player("Klaiber ", "i", 36, 60, 170, "defense", 87, 66, 73, 72, 72, 76, 88, 90);
-		Player veltman = new Player("Veltman", "b", 31, 60, 170, "defense", 66, 49, 66, 69, 79, 78, 99, 99);
+		Player vanDijk = new Player("van dijk", "d", 28, 92, 193, "defense", 88, 80, 92, 90, 99, 98, 88, 90);
+		Player deLigt = new Player("De Ligt", "Matthijs", 20, 89, 189, "defense", 85, 75, 86, 86, 88, 96, 88, 90);
+		Player deVrij = new Player("De Vrij", "Stefan", 32, 78, 189, "defense", 68, 43, 64, 89, 76, 82, 88, 80);
+		Player beek = new Player("van de Beek", "Donny", 22, 74, 184, "defense", 75, 82, 80, 82, 74, 82, 88, 70);
+		Player blind = new Player("Blind ", "Daley", 28, 72, 180, "defense", 54, 65, 80, 80, 77, 74, 88, 90);
+		Player klaiber = new Player("Klaiber ", "Sean", 25, 76, 184, "defense", 87, 66, 73, 72, 72, 76, 88, 90);
+		Player veltman = new Player("Veltman", "Joel", 28, 75, 184, "defense", 66, 49, 66, 69, 79, 78, 99, 99);
 		// milieu
-		Player jong = new Player("De Jong", "v", 30, 60, 170, "milieu", 88, 87, 93, 95, 95, 88, 88, 50);
-		Player promes = new Player("Promes", "v", 18, 60, 170, "milieu", 92, 82, 82, 84, 42, 69, 88, 50);
-		Player wijnaldum = new Player("Wijnaldum", "a", 26, 60, 170, "milieu", 77, 73, 78, 85, 76, 78, 80, 50);
-		Player stengkos = new Player("Stengkos", "p", 22, 60, 170, "milieu", 83, 69, 80, 80, 83, 40, 88, 50);
-		Player brgwijin = new Player("Bregwijin", "p", 22, 60, 170, "milieu", 90, 78, 88, 41, 75, 79, 99, 99);
-		Player stengs = new Player("Stengs", "s", 23, 60, 170, "milieu", 83, 69, 80, 83, 40, 64, 88, 50);
-		Player chong = new Player("Chong", "d", 23, 60, 170, "milieu", 86, 84, 70, 86, 46, 78, 88, 50);
+		Player jong = new Player("De Jong", "Frenkie", 22, 74, 180, "milieu", 88, 87, 93, 95, 95, 88, 88, 50);
+		Player promes = new Player("Promes", "Quincy", 28, 72, 174, "milieu", 92, 82, 82, 84, 42, 69, 88, 50);
+		Player wijnaldum = new Player("Wijnaldum", "Georginio", 29, 69, 175, "milieu", 77, 73, 78, 85, 76, 78, 80, 50);
+		Player stengkos = new Player("Stengkos", "Phillipe", 25, 69, 173, "milieu", 83, 69, 80, 80, 83, 40, 88, 50);
+		Player brgwijin = new Player("Bregwijin", "Steven", 22, 78, 178, "milieu", 90, 78, 88, 41, 75, 79, 99, 99);
+		Player stengs = new Player("Stengs", "Calvin", 21, 68, 187, "milieu", 83, 69, 80, 83, 40, 64, 88, 50);
+		Player chong = new Player("Chong", "Tahith", 20, 75, 185, "milieu", 86, 84, 70, 86, 46, 78, 88, 50);
 		// attaque
-		Player depay = new Player("Enssiri ", "v", 25, 60, 170, "attaquant", 89, 83, 84, 85, 34, 79, 88, 96);
-		Player dost = new Player("Yajour", "s", 25, 60, 170, "attaquant", 50, 82, 57, 66, 45, 80, 90, 90);
-		Player gullit = new Player("Gullit", "c", 28, 60, 170, "attaquant", 80, 85, 80, 71, 75, 77, 88, 88);
-		Player kluvert = new Player("Kluvert", "f", 29, 60, 170, "attaquant", 80, 77, 81, 95, 90, 76, 88, 99);
-		Player basten = new Player("Basten", "p", 29, 60, 170, "attaquant", 91, 86, 88, 92, 90, 90, 88, 98);
-		Player overmars = new Player("Overmars", "v", 33, 60, 170, "attaquant", 89, 84, 85, 89, 53, 90, 88, 88);
+		Player depay = new Player("Depay", "Memphis", 26, 78, 176, "attaquant", 89, 83, 84, 85, 34, 79, 88, 96);
+		Player dost = new Player("Dost", "Bas", 30, 89, 196, "attaquant", 50, 82, 57, 66, 45, 80, 90, 90);
+		Player gullit = new Player("Gullit", "Ruud", 57, 84, 191, "attaquant", 70, 65, 75, 21, 48, 78, 59, 65);
+		Player kluvert = new Player("De Jong", "Luuk", 29, 86, 188, "attaquant", 80, 77, 81, 95, 90, 76, 88, 99);
+		Player basten = new Player("Berghuis", "Steven", 28, 75, 182, "attaquant", 91, 86, 88, 92, 90, 90, 88, 98);
+		Player overmars = new Player("Babel", "Ryan", 33, 85, 185, "attaquant", 89, 84, 85, 89, 53, 90, 88, 88);
 
 		Player[] netherlands_players = { zoet, bizot, cillicen, vanDijk, deLigt, deVrij, beek, blind, klaiber, veltman,
 				jong, promes, wijnaldum, stengkos, brgwijin, stengs, chong, depay, dost, gullit, kluvert, basten,
