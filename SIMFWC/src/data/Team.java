@@ -124,6 +124,25 @@ public class Team {
 	
 	
 
+	public Player getGoalPlayer() {
+		return null;
+	}
+	public Player getDefensePlayer() {
+		return null;
+			
+	}
+	public Player getMiddlePlayer() {
+		return null;
+		
+	}
+	public Player getAttackPlayer() {
+		return null;
+		
+	}
+	public Player getOnePlayer() {
+		return null;
+		
+	}
 	/**
 	 * @return the starterPlayers
 	 */
