@@ -1,6 +1,7 @@
 package data;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import data.Coach;
 import data.Player;
@@ -9,7 +10,7 @@ public class Team {
 	
 	private int groupStageScore = 0;
 	
-	
+
 	private String flag;
 
 	/**
@@ -123,24 +124,70 @@ public class Team {
 	}
 	
 	
-
+/**
+ * 
+ * @return goal, the g
+ */
 	public Player getGoalPlayer() {
-		return null;
+		Player goal = null;
+		for (Player p : starterPlayers){
+			if(p.getPosition() == "gardien") {
+				goal = p;
+			}
+		}
+		return goal;
 	}
+	
+	@SuppressWarnings("null")
 	public Player getDefensePlayer() {
-		return null;
-			
+		ArrayList<Player> defenser = null;
+		 Random random = new Random();
+		 
+		 for(Player p : starterPlayers) {
+	            if(p.getPosition()=="defense") {
+	            	defenser.add(p);
+	            }
+	        }
+	        
+		 return defenser.get(random.nextInt(defenser.size()));
 	}
+	
+	@SuppressWarnings("null")
 	public Player getMiddlePlayer() {
-		return null;
+		ArrayList<Player> middle = null;
+		 Random random = new Random();
+		 
+		 for(Player p : starterPlayers) {
+	            if(p.getPosition()=="defense") {
+	            	middle.add(p);
+	            }
+	        }
+	        
+		 return middle.get(random.nextInt(middle.size()));
 		
 	}
+	@SuppressWarnings("null")
 	public Player getAttackPlayer() {
-		return null;
+		ArrayList<Player> attack = null;
+		 Random random = new Random();
+		 
+		 for(Player p : starterPlayers) {
+	            if(p.getPosition()=="defense") {
+	            	attack.add(p);
+	            }
+	        }
+	        
+		 return attack.get(random.nextInt(attack.size()));
 		
 	}
 	public Player getOnePlayer() {
-		return null;
+		 Random random = new Random();
+		 Player p;
+		do{
+			  p = starterPlayers.get(random.nextInt(starterPlayers.size()));
+		 }while(p.getPosition() == "gardien");
+		 
+		return p;
 		
 	}
 	/**
@@ -211,6 +258,14 @@ public class Team {
 			score += p.getGlobalScore();
 		}
 		this.powerTeam=score/11;
+	}
+	
+	/**
+	 * 
+	 * @param power
+	 */
+	public void setPowerTeam(int power) {
+		this.powerTeam = power;
 	}
 	
 	/**
