@@ -105,7 +105,7 @@ public class WorldCup {
 
 		// array chili's players
 		Player chili_players[] = { bravo, cortes, arias, diaz, roco, jara, medel, maripan, isla, beausejour, valdivia,
-				vidal, aranguiz, puch, pulgar, silva, diaz2, vargas, sanchez2, castillo, fuenzalida, paredes, fernandes };
+				vidal, aranguiz, puch, pulgar, silva, diaz2, vargas, sanchez, castillo, fuenzalida, paredes, fernandes };
 		Coach rueda = new Coach("Reinaldo", "Rueda", 63, "colombien", 3);
 		Coach coach_chili[] = { rueda };
 		Team chili = new Team("5-3-1", "Chili", chili_players, coach_chili, "defensif","../Flag/chile-flag-icon-32.png");
@@ -226,7 +226,7 @@ public class WorldCup {
 				lemar, mbappe };
 		Coach didier = new Coach("Didier", "Deschamps", 51, "française", 95);
 		Coach coach_france[] = { didier };
-		Team france = new Team(" 4-2-3-1 ", "France ", france_players, coach_france, " équilibré ","../Flag/france-flag-icon-32.png");
+		Team france = new Team("4-4-2", "France ", france_players, coach_france, "équilibré","../Flag/france-flag-icon-32.png");
 
 		// ARGENTINE 
 		// gardien
@@ -255,14 +255,14 @@ public class WorldCup {
 		Player aguero = new Player(" Agüero ", " Sergio ", 31, 70, 173, "attaquant", 78, 70, 83, 78, 94, 79, 74, 70);
 		Player gonzalez = new Player("González", "Nicolás", 21, 72, 180, "attaquant", 79, 70, 70, 70, 73, 78, 70, 70);
 		Player icardi = new Player("Icardi", "Mauro", 26, 75, 181, "attaquant", 75, 70, 74, 88, 90, 70, 73, 70);
-		Player dybala = new Player("Dybala", " Paulo", 26, 75, 177, "attaquant", 82, 82, 87, 80, 88, 79, 70, 70);
+		Player dybala = new Player("Dybala", "Paulo", 26, 75, 177, "attaquant", 82, 82, 87, 80, 88, 79, 70, 70);
 		// tableau
 		Player argentin_players[] = { marchesín, musso, martínez, foyth, saravia, otamendi, pezzella, rojo, tagliafico,
 				pérez, rodríguez, loCelso, paredesl, diMaria, dePaul, acuna, pereyra, ocampos, messi, aguero, gonzalez,
 				icardi, dybala };
 		Coach lionel = new Coach("Lionel", "Scaloni", 41, "argentin", 45);
 		Coach coach_argentin[] = { lionel };
-		Team argentin = new Team(" 4-3-3 ", " Argentine ", argentin_players, coach_argentin, " offensif ","../Flag/argentina-flag-icon-32.png");
+		Team argentin = new Team("4-3-3", "Argentine", argentin_players, coach_argentin, "offensif","../Flag/argentina-flag-icon-32.png");
 
 		/**
 		 * Teams of Portugal and Italy : LIGUORI
@@ -273,7 +273,7 @@ public class WorldCup {
 		 */
 
 		// goal
-			Player patricio = new Player("Patricio", "Rui", 25, 84, 189, "gardien", 49, 61, 74, 79, 53, 60, 57, 83);
+	Player patricio = new Player("Patricio", "Rui", 25, 84, 189, "gardien", 49, 61, 74, 79, 53, 60, 57, 83);
 	Player sa = new Player("Sa", "Jose", 31, 84, 179, "gardien", 59, 71, 84, 79, 63, 50, 65, 73);
 	Player beto = new Player("Beto", "Antonio Alberto", 27, 84, 182, "gardien", 39, 41, 44, 69, 63, 68, 57, 63);
 
@@ -281,7 +281,7 @@ public class WorldCup {
 	Player pepe = new Player("Pepe", "", 33, 78, 189, "defense", 64, 74, 69, 73, 60, 73, 65, 71);
 	Player dias = new Player("Dias", "Ruben", 25, 80, 187, "defense", 76, 62, 78, 79, 52, 76, 70, 81);
 	Player guerreiro = new Player("Guerreiro", "Raphael", 34, 84, 192, "defense", 34, 49, 68, 77, 59, 58, 74, 75);
-	Player pereira = new Player("Pereira", "Ricardo", 31, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
+	Player pereiraR = new Player("Pereira", "Ricardo", 31, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
 	Player rui = new Player("Rui", "Mario", 31, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
 	Player fonte = new Player("Fonte", "Jose", 36, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
 	Player cancelo = new Player("Cancelo", "Joao", 25, 74, 175, "defense", 69, 65, 65, 48, 60, 73, 64, 67);
@@ -289,7 +289,7 @@ public class WorldCup {
 	// Middle
 	Player pereiraD = new Player("Pereira", "Danilo", 32, 77, 184, "milieu", 37, 49, 73, 65, 47, 85, 66, 72);
 	Player moutinho = new Player("Moutinho", "Joao", 26, 69, 180, "milieu", 78, 69, 67, 34, 68, 69, 77, 59);
-	Player fernandes = new Player("Fernandes", "Bruno", 25, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
+	Player fernandesB = new Player("Fernandes", "Bruno", 25, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
 	Player carvalho = new Player("Carvalho", "William", 25, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
 	Player pizzi = new Player("Pizzi", "", 25, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
 	Player neves = new Player("Neves", "Ruben", 22, 74, 180, "milieu", 70, 62, 71, 60, 71, 83, 70, 67);
@@ -304,8 +304,8 @@ public class WorldCup {
 	Player bruma = new Player("Bruma", "", 25, 64, 173, "attaquant", 65, 28, 48, 81, 55, 76, 71, 27);
 
 	// array players
-	Player[] portugal_players = { patricio, sa, beto, pepe, dias, guerreiro, pereira, rui, fonte, cancelo, pereiraD,
-			moutinho, fernandes, carvalho, pizzi, neves, ronaldoC, guedes, silvaB, felix, jota, silvaA, bruma };
+	Player[] portugal_players = { patricio, sa, beto, pepe, dias, guerreiro, pereiraR, rui, fonte, cancelo, pereiraD,
+			moutinho, fernandesB, carvalho, pizzi, neves, ronaldoC, guedes, silvaB, felix, jota, silvaA, bruma };
 
 		// array coachs
 		Coach santosF = new Coach("Santos", "Fernando", 66, "portugal", 2);
@@ -318,7 +318,7 @@ public class WorldCup {
 		 */
 
 		// goal
-		Player donnarumma = new Player("Donnarumma", "Gianluigi", 31, 84, 189, "gardien", 49, 11, 34, 19, 13, 40, 55, 13);
+	Player donnarumma = new Player("Donnarumma", "Gianluigi", 31, 84, 189, "gardien", 49, 11, 34, 19, 13, 40, 55, 13);
 	Player meret = new Player("Meret", "Alex", 22, 83, 190, "gardien", 49, 31, 44, 29, 23, 50, 65, 23);
 	Player sirigu = new Player("Sirigu", "Salvatore", 33, 80, 192, "gardien", 60, 22, 43, 40, 31, 51, 55, 31);
 
@@ -432,7 +432,7 @@ public class WorldCup {
 			Coach sofiane = new Coach("idmbarkos", "safawan", 80, "bresilien", 3);
 			// Coach ss = new Coach(lastName, firstName, age, nationality, level)
 			Coach[] coach_bresil = { sofiane };
-			Team bresil = new Team("4-3-4", "Brasil", bresil_players, coach_bresil, "offensif","../Flag/brazil-flag-icon-32.png");
+			Team bresil = new Team("4-2-4", "Brasil", bresil_players, coach_bresil, "offensif","../Flag/brazil-flag-icon-32.png");
 
 		// -------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -468,9 +468,9 @@ public class WorldCup {
 		Player[] belgique_players = { courtois, mignolet, sels, alderweireld, boyata, dendoncker, mechele, vermaelen, vertonghen,
 				carrasco, castagne, chadli, witsel, meunier, hazard1, tielemans, hazard2, januzaj, mertens, origi,
 				batshuayi, benteke, lukaku };
-		Coach MartinezC = new Coach("Martinez", "Roberto", 46, "portugal", 2);
+		Coach martinezC = new Coach("Martinez", "Roberto", 46, "portugal", 2);
 		// Coach ss = new Coach(lastName, firstName, age, nationality, level)
-		Coach[] coach_belgique = { morinio };
+		Coach[] coach_belgique = { martinezC };
 		Team belgique = new Team("4-5-1", "Belgique", belgique_players, coach_belgique, "offensif","../Flag/belgium-flag-icon-32.png");
 
 		// ALGERIE
@@ -508,7 +508,7 @@ public class WorldCup {
 		Coach belmadi = new Coach("Belmadi", "Djamel", 48, "algerien", 4);
 		// Coach ss = new Coach(lastName, firstName, age, nationality, level)
 		Coach[] coach_algeria = { belmadi };
-		Team algeria = new Team("4-4-3", "Algerie", algeria_players, coach_algeria, "offensif","../Flag/algeria-flag-icon-32.png");
+		Team algeria = new Team("4-3-3", "Algerie", algeria_players, coach_algeria, "offensif","../Flag/algeria-flag-icon-32.png");
 
 
 		// ----------------------------------------------------------------------------------------------------
@@ -619,7 +619,7 @@ public class WorldCup {
 				amrabt, fajr, bennaser, harit, taarabt, hafidi, enssiri, yajour, alarabi, chamakh, hamdalah, belhanda };
 		Coach eric = new Coach("Eric", "guerets", 73, "uruguayen", 2);
 		Coach[] coach_morocco = { eric };
-		Team morocco = new Team("4-3-3", "Morocco", morocco_players, coach_morocco, "offensif");
+		Team morocco = new Team("4-3-3", "Morocco", morocco_players, coach_morocco, "offensif", "");
 
 		// -------------------------------------------------------------------------------------------------------------------------------------------------------
 
