@@ -129,7 +129,7 @@ public class Team {
  * @return goal, the g
  */
 	public Player getGoalPlayer() {
-		Player goal = null;
+		Player goal = new Player();
 		for (Player p : starterPlayers){
 			if(p.getPosition() == "gardien") {
 				goal = p;
@@ -140,7 +140,7 @@ public class Team {
 	
 	@SuppressWarnings("null")
 	public Player getDefensePlayer() {
-		ArrayList<Player> defenser = null;
+		ArrayList<Player> defenser = new ArrayList<Player>();
 		 Random random = new Random();
 		 
 		 for(Player p : starterPlayers) {
@@ -154,11 +154,11 @@ public class Team {
 	
 	@SuppressWarnings("null")
 	public Player getMiddlePlayer() {
-		ArrayList<Player> middle = null;
+		ArrayList<Player> middle = new ArrayList<Player>();
 		 Random random = new Random();
 		 
 		 for(Player p : starterPlayers) {
-	            if(p.getPosition()=="defense") {
+	            if(p.getPosition()=="milieu") {
 	            	middle.add(p);
 	            }
 	        }
@@ -168,11 +168,11 @@ public class Team {
 	}
 	@SuppressWarnings("null")
 	public Player getAttackPlayer() {
-		ArrayList<Player> attack = null;
+		ArrayList<Player> attack = new ArrayList<Player>();
 		 Random random = new Random();
 		 
 		 for(Player p : starterPlayers) {
-	            if(p.getPosition()=="defense") {
+	            if(p.getPosition()=="attaquant") {
 	            	attack.add(p);
 	            }
 	        }
@@ -188,6 +188,29 @@ public class Team {
 		 }while(p.getPosition() == "gardien");
 		 
 		return p;
+		
+	}
+	/**
+	 * 
+	 * @param player
+	 * @return
+	 */
+	public Player changement(Player player) {
+		 ArrayList<Player> bench = new ArrayList<Player>();
+ 		 Random random = new Random();
+ 		 
+ 		 for(Player pb : benchPlayers) {
+ 			 if(pb.getPosition()==player.getPosition()) {
+ 				 bench.add(pb);
+ 			 }
+ 		 }
+	       
+		 Player newPlayer = bench.get(random.nextInt(bench.size()));
+	     
+		 starterPlayers.set(starterPlayers.indexOf(player), newPlayer);
+		 benchPlayers.set(benchPlayers.indexOf(newPlayer), player);
+		
+		return newPlayer;
 		
 	}
 	/**
