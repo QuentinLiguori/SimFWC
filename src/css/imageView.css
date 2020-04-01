@@ -1,0 +1,8 @@
+.image-view {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-stroke-width: 2.0;
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 10 10 10 10;
+     -fx-padding: 10; 
+   -fx-background-color: firebrick; 
+}

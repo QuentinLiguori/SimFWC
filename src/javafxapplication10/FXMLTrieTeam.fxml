@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication10.FXMLTrieTeamController">
+   <children>
+      <ImageView fitHeight="517.0" fitWidth="200.0" layoutX="74.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/mondial2022%20-%20Copie.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="488.0" fitWidth="165.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/mondial2022%20-%20Copie.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="525.0" fitWidth="668.0" layoutY="-4.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../Flag/wp4533251-fifa-world-cup-2022-wallpapers.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="team1" layoutX="48.0" layoutY="73.0" mnemonicParsing="false" onAction="#displayplayers" prefHeight="40.0" prefWidth="153.0" text="Button" />
+      <Button fx:id="team2" layoutX="48.0" layoutY="121.0" mnemonicParsing="false" onAction="#displayplayers" prefHeight="40.0" prefWidth="153.0" text="Button" />
+      <Button fx:id="team3" layoutX="48.0" layoutY="175.0" mnemonicParsing="false" onAction="#displayplayers" prefHeight="40.0" prefWidth="153.0" text="Button" />
+      <Button fx:id="team4" layoutX="48.0" layoutY="226.0" mnemonicParsing="false" onAction="#displayplayers" prefHeight="40.0" prefWidth="153.0" text="Button" />
+      <Button fx:id="team5" layoutX="48.0" layoutY="275.0" mnemonicParsing="false" onAction="#displayplayers" prefHeight="40.0" prefWidth="153.0" text="Button" />
+      <Button fx:id="team6" layoutX="48.0" layoutY="326.0" mnemonicParsing="false" onAction="#displayplayers" prefHeight="40.0" prefWidth="153.0" text="Button" />
+      <Button fx:id="team7" layoutX="48.0" layoutY="375.0" mnemonicParsing="false" onAction="#displayplayers" prefHeight="40.0" prefWidth="153.0" text="Button" />
+      <Button fx:id="team8" layoutX="48.0" layoutY="425.0" mnemonicParsing="false" onAction="#displayplayers" prefHeight="40.0" prefWidth="153.0" text="Button" />
+      <Button fx:id="team9" layoutX="453.0" layoutY="175.0" mnemonicParsing="false" onAction="#displayplayers" prefHeight="40.0" prefWidth="153.0" text="Button" />
+      <Button fx:id="team10" layoutX="453.0" layoutY="73.0" mnemonicParsing="false" onAction="#displayplayers" prefHeight="40.0" prefWidth="153.0" text="Button" />
+      <Button fx:id="team11" layoutX="453.0" layoutY="121.0" mnemonicParsing="false" onAction="#displayplayers" prefHeight="40.0" prefWidth="153.0" text="Button" />
+      <Button fx:id="team12" layoutX="453.0" layoutY="226.0" mnemonicParsing="false" onAction="#displayplayers" prefHeight="40.0" prefWidth="153.0" text="Button" />
+      <Button fx:id="team13" layoutX="453.0" layoutY="275.0" mnemonicParsing="false" onAction="#displayplayers" prefHeight="40.0" prefWidth="153.0" text="Button" />
+      <Button fx:id="team14" layoutX="453.0" layoutY="326.0" mnemonicParsing="false" onAction="#displayplayers" prefHeight="40.0" prefWidth="153.0" text="Button" />
+      <Button fx:id="team15" layoutX="453.0" layoutY="375.0" mnemonicParsing="false" onAction="#displayplayers" prefHeight="40.0" prefWidth="153.0" text="Button" />
+      <Button fx:id="team16" layoutX="453.0" layoutY="425.0" mnemonicParsing="false" onAction="#displayplayers" prefHeight="40.0" prefWidth="153.0" text="Button" />
+      <Label fx:id="l1" contentDisplay="CENTER" layoutX="14.0" layoutY="73.0" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: KHAKI;" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="l9" layoutX="613.0" layoutY="73.0" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: KHAKI;" text="Label">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="l2" layoutX="14.0" layoutY="121.0" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: KHAKI;" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="l3" layoutX="14.0" layoutY="175.0" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: KHAKI;" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="l4" layoutX="14.0" layoutY="226.0" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: KHAKI;" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="l5" layoutX="14.0" layoutY="275.0" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: KHAKI;" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="l6" layoutX="14.0" layoutY="326.0" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: KHAKI;" text="Label">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="l7" layoutX="14.0" layoutY="375.0" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: KHAKI;" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="l8" layoutX="14.0" layoutY="425.0" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: KHAKI;" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="l16" layoutX="613.0" layoutY="425.0" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: KHAKI;" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="l15" layoutX="613.0" layoutY="375.0" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: KHAKI;" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="L14" layoutX="613.0" layoutY="326.0" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: KHAKI;" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="l13" layoutX="613.0" layoutY="275.0" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: KHAKI;" text="Label">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="l12" layoutX="613.0" layoutY="226.0" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: KHAKI;" text="Label">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="l11" layoutX="613.0" layoutY="175.0" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: KHAKI;" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="l10" layoutX="613.0" layoutY="121.0" prefHeight="40.0" prefWidth="28.0" style="-fx-background-color: KHAKI;" text="Label" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
