@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="626.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication10.DisplayPlayer">
+   <children>
+      <ImageView fitHeight="626.0" fitWidth="495.0" opacity="0.94" pickOnBounds="true">
+         <image>
+            <Image url="@../Flag/Pitch%20Diffuse.jpg" />
+         </image>
+         <effect>
+            <Glow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="626.0" fitWidth="144.0" layoutX="492.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Flag/kindpng_1859678%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="206.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Flag/player.png" />
+         </image>
+      </ImageView>
+      <Button id="Button1" fx:id="Button1" layoutX="200.0" layoutY="57.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="74.0" prefWidth="78.0" style="-fx-background-radius: 200;" stylesheets="@BtnStyleSheet.css" text="Button1">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="55.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Flag/player.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Button2" layoutX="48.0" layoutY="132.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="74.0" prefWidth="78.0" style="-fx-background-radius: 100;" text="Button2">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="206.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Flag/player.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Button3" layoutX="199.0" layoutY="192.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="74.0" prefWidth="78.0" style="-fx-background-radius: 100;" text="Button3">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="209.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Flag/player.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Button4" layoutX="202.0" layoutY="303.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="74.0" prefWidth="78.0" style="-fx-background-radius: 100;" text="Button4">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="359.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Flag/player.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Button5" layoutX="352.0" layoutY="250.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="82.0" prefWidth="86.0" style="-fx-background-radius: 100;" text="Button5">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="55.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Flag/player.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Button6" layoutX="48.0" layoutY="250.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="82.0" prefWidth="86.0" style="-fx-background-radius: 100;" text="Button6">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="55.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Flag/player.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Button7" layoutX="48.0" layoutY="397.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="74.0" prefWidth="78.0" style="-fx-background-radius: 100;" text="Button7">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="209.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Flag/player.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Button8" layoutX="202.0" layoutY="418.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="82.0" prefWidth="86.0" style="-fx-background-radius: 100;" text="Button8">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="359.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Flag/player.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Button9" layoutX="352.0" layoutY="397.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="74.0" prefWidth="78.0" style="-fx-background-radius: 100;" text="Button9">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="206.0" layoutY="496.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Flag/player.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Button10" layoutX="198.0" layoutY="506.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="82.0" prefWidth="86.0" style="-fx-background-radius: 100;" text="Button10">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <Button fx:id="Button11" layoutX="518.0" layoutY="32.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="32.0" prefWidth="95.0" text="Button11">
+         <effect>
+            <ColorAdjust brightness="-0.51" contrast="0.28" hue="-0.2">
+               <input>
+                  <ColorAdjust />
+               </input>
+            </ColorAdjust>
+         </effect>
+      </Button>
+      <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="359.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Flag/player.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Button12" layoutX="352.0" layoutY="132.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="74.0" prefWidth="78.0" style="-fx-background-radius: 100;" text="Button12">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <Button fx:id="Button13" layoutX="518.0" layoutY="73.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="32.0" prefWidth="95.0" text="Button13">
+         <effect>
+            <ColorAdjust brightness="-0.51" contrast="0.28" hue="-0.2">
+               <input>
+                  <ColorAdjust />
+               </input>
+            </ColorAdjust>
+         </effect>
+      </Button>
+      <Button fx:id="Button14" layoutX="518.0" layoutY="314.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="32.0" prefWidth="95.0" text="Button14">
+         <effect>
+            <ColorAdjust brightness="-0.51" contrast="0.28" hue="-0.2">
+               <input>
+                  <ColorAdjust />
+               </input>
+            </ColorAdjust>
+         </effect>
+      </Button>
+      <Button fx:id="Button15" layoutX="518.0" layoutY="273.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="32.0" prefWidth="95.0" text="Button15">
+         <effect>
+            <ColorAdjust brightness="-0.51" contrast="0.28" hue="-0.2">
+               <input>
+                  <ColorAdjust />
+               </input>
+            </ColorAdjust>
+         </effect>
+      </Button>
+      <Button fx:id="Button16" layoutX="518.0" layoutY="230.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="32.0" prefWidth="95.0" text="Button16">
+         <effect>
+            <ColorAdjust brightness="-0.51" contrast="0.28" hue="-0.2">
+               <input>
+                  <ColorAdjust />
+               </input>
+            </ColorAdjust>
+         </effect>
+      </Button>
+      <Button fx:id="Button17" layoutX="518.0" layoutY="190.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="32.0" prefWidth="95.0" text="Button17">
+         <effect>
+            <ColorAdjust brightness="-0.51" contrast="0.28" hue="-0.2">
+               <input>
+                  <ColorAdjust />
+               </input>
+            </ColorAdjust>
+         </effect>
+      </Button>
+      <Button fx:id="Button18" layoutX="518.0" layoutY="151.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="32.0" prefWidth="95.0" text="Button18">
+         <effect>
+            <ColorAdjust brightness="-0.51" contrast="0.28" hue="-0.2">
+               <input>
+                  <ColorAdjust />
+               </input>
+            </ColorAdjust>
+         </effect>
+      </Button>
+      <Button fx:id="Button19" layoutX="518.0" layoutY="109.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="32.0" prefWidth="95.0" text="Button19">
+         <effect>
+            <ColorAdjust brightness="-0.51" contrast="0.28" hue="-0.2">
+               <input>
+                  <ColorAdjust />
+               </input>
+            </ColorAdjust>
+         </effect>
+      </Button>
+      <Button fx:id="Button20" layoutX="518.0" layoutY="397.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="95.0" text="Button20">
+         <effect>
+            <ColorAdjust brightness="-0.51" contrast="0.28" hue="-0.2">
+               <input>
+                  <ColorAdjust />
+               </input>
+            </ColorAdjust>
+         </effect>
+      </Button>
+      <Button fx:id="Button21" layoutX="518.0" layoutY="356.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="32.0" prefWidth="95.0" text="Button21">
+         <effect>
+            <ColorAdjust brightness="-0.51" contrast="0.28" hue="-0.2">
+               <input>
+                  <ColorAdjust />
+               </input>
+            </ColorAdjust>
+         </effect>
+      </Button>
+      <Button fx:id="Button22" layoutX="518.0" layoutY="487.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="32.0" prefWidth="95.0" text="Button22">
+         <effect>
+            <ColorAdjust brightness="-0.51" contrast="0.28" hue="-0.2">
+               <input>
+                  <ColorAdjust />
+               </input>
+            </ColorAdjust>
+         </effect>
+      </Button>
+      <Button fx:id="Button23" layoutX="518.0" layoutY="439.0" mnemonicParsing="false" onAction="#infoPlayer" prefHeight="32.0" prefWidth="95.0" text="Button23">
+         <effect>
+            <ColorAdjust brightness="-0.51" contrast="0.28" hue="-0.2">
+               <input>
+                  <ColorAdjust />
+               </input>
+            </ColorAdjust>
+         </effect>
+      </Button>
+      <Button fx:id="back" layoutX="541.0" layoutY="547.0" mnemonicParsing="false" onAction="#backclassement" prefHeight="48.0" prefWidth="50.0" style="-fx-background-radius: 100;" text="Back">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

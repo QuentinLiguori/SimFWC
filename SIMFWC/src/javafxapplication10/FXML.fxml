@@ -8,8 +8,8 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="786.0" prefWidth="164.0" style="-fx-background-color: #3D4956;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <JFXButton accessibleText="couche" buttonType="RAISED" prefHeight="65.0" prefWidth="164.0" style="-fx-background-color: #00FF7F;" text="All teams" textFill="WHITE" />
-      <JFXButton accessibleText="ion" buttonType="RAISED" prefHeight="56.0" prefWidth="164.0" style="-fx-background-color: #00FFFF;" text="Hats" textFill="WHITE">
+      <JFXButton accessibleText="couche" buttonType="RAISED" prefHeight="65.0" prefWidth="164.0" style="-fx-background-color: #00FF7F;" text="See Players Info" textFill="WHITE" />
+      <JFXButton accessibleText="ion" buttonType="RAISED" prefHeight="56.0" prefWidth="164.0" style="-fx-background-color: #00FFFF;" text="Groupe Stage " textFill="WHITE" visible="false">
          <effect>
             <Lighting>
                <bumpInput>
@@ -21,10 +21,10 @@
             </Lighting>
          </effect>
       </JFXButton>
-      <JFXButton accessibleText="valide" prefHeight="65.0" prefWidth="164.0" style="-fx-background-color: #DC143C;" text="Groupe Stage " textFill="WHITE" />
-      <JFXButton accessibleText="lewis" buttonType="RAISED" prefHeight="65.0" prefWidth="164.0" style="-fx-background-color: #FF8C00;" text="Lewis" textFill="WHITE" />
-      <JFXButton accessibleText="devlope" buttonType="RAISED" prefHeight="65.0" prefWidth="164.0" style="-fx-background-color: #008080;" text="Formule développée" textFill="WHITE" />
-      <JFXButton accessibleText="isomere" buttonType="RAISED" prefHeight="65.0" prefWidth="164.0" style="-fx-background-color: #87CEFA;" text="Isomére" textFill="WHITE" />
-      <JFXButton accessibleText="reaction" buttonType="RAISED" prefHeight="65.0" prefWidth="164.0" style="-fx-background-color: #FF69B4;" text="Réaction " textFill="WHITE" />
+      <JFXButton accessibleText="valide" prefHeight="65.0" prefWidth="164.0" style="-fx-background-color: #DC143C;" text="group" textFill="WHITE" visible="false" />
+      <JFXButton accessibleText="lewis" buttonType="RAISED" prefHeight="65.0" prefWidth="164.0" style="-fx-background-color: #FF8C00;" text="Lewis" textFill="WHITE" visible="false" />
+      <JFXButton accessibleText="devlope" buttonType="RAISED" prefHeight="65.0" prefWidth="164.0" style="-fx-background-color: #008080;" text="Formule développée" textFill="WHITE" visible="false" />
+      <JFXButton accessibleText="isomere" buttonType="RAISED" prefHeight="65.0" prefWidth="164.0" style="-fx-background-color: #87CEFA;" text="Isomére" textFill="WHITE" visible="false" />
+      <JFXButton accessibleText="reaction" buttonType="RAISED" prefHeight="65.0" prefWidth="164.0" style="-fx-background-color: #FF69B4;" text="Réaction " textFill="WHITE" visible="false" />
    </children>
 </VBox>

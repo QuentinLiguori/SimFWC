@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="container" layoutY="15.0" prefHeight="1111.0" prefWidth="1932.0" style="-fx-background-color: #7a0629; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication10.GroupeStageController">
+   <children>
+      <AnchorPane fx:id="pane1" layoutX="58.0" layoutY="114.0" prefHeight="284.0" prefWidth="476.0" style="-fx-background-color: #c7bfbd; -fx-background-radius: 0;">
+         <children>
+            <ImageView fx:id="imageTesto" fitHeight="285.0" fitWidth="471.0" focusTraversable="true" layoutX="3.0" layoutY="1.0" opacity="0.7" pickOnBounds="true" />
+            <GridPane layoutX="-212.0" layoutY="-38.0" prefHeight="200.0" prefWidth="353.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="equipe1" alignment="CENTER" contentDisplay="CENTER" prefHeight="57.0" prefWidth="464.0" text="Label" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font></Label>
+                  <Label fx:id="equipe2" alignment="CENTER" prefHeight="57.0" prefWidth="890.0" text="Label" textFill="#00d2fc" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font></Label>
+                  <Label fx:id="equip3" alignment="CENTER" prefHeight="57.0" prefWidth="1036.0" text="Label" textFill="#fff70d" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font></Label>
+                  <Label fx:id="equipe4" alignment="CENTER" prefHeight="56.0" prefWidth="950.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="50.0" prefWidth="241.0" text="Country" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="50.0" prefWidth="241.0" text="points" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font></Label>
+                  <ImageView fx:id="flag1A" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fx:id="flag2A" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fx:id="flag3A" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fx:id="flag4A" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" />
+                     </viewport>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane11" layoutX="1372.0" layoutY="114.0" prefHeight="284.0" prefWidth="476.0" style="-fx-background-color: #c7bfbd; -fx-background-radius: 0;">
+         <children>
+            <ImageView fx:id="imageBackGroundB" fitHeight="284.0" fitWidth="476.0" focusTraversable="true" opacity="0.7" pickOnBounds="true" />
+            <GridPane layoutX="-212.0" layoutY="-38.0" prefHeight="200.0" prefWidth="353.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="equipe2_1" alignment="CENTER" contentDisplay="CENTER" prefHeight="57.0" prefWidth="882.0" text="Label" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font></Label>
+                  <Label fx:id="equipe2_2" alignment="CENTER" prefHeight="57.0" prefWidth="890.0" text="Label" textFill="#00d2fc" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font></Label>
+                  <Label fx:id="equip2_3" alignment="CENTER" prefHeight="57.0" prefWidth="1036.0" text="Label" textFill="#fff70d" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font></Label>
+                  <Label fx:id="equipe2_4" alignment="CENTER" prefHeight="56.0" prefWidth="950.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="50.0" prefWidth="241.0" text="points" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font></Label>
+                  <ImageView fx:id="flagB1" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fx:id="flagB2" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fx:id="flagB3" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fx:id="flag1A112" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fx:id="flagB4" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="241.0" text="Country">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane12" layoutX="58.0" layoutY="615.0" prefHeight="284.0" prefWidth="476.0" style="-fx-background-color: #c7bfbd; -fx-background-radius: 0;">
+         <children>
+            <ImageView fx:id="imageBackGroundC" fitHeight="284.0" fitWidth="476.0" opacity="0.7" pickOnBounds="true" />
+            <GridPane layoutX="-212.0" layoutY="-38.0" prefHeight="200.0" prefWidth="353.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="equipe3_1" alignment="CENTER" contentDisplay="CENTER" prefHeight="57.0" prefWidth="882.0" text="Label" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font></Label>
+                  <Label fx:id="equipe3_2" alignment="CENTER" prefHeight="57.0" prefWidth="890.0" text="Label" textFill="#00d2fc" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font></Label>
+                  <Label fx:id="equip3_3" alignment="CENTER" prefHeight="57.0" prefWidth="1036.0" text="Label" textFill="#fff70d" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font></Label>
+                  <Label fx:id="equipe3_4" alignment="CENTER" prefHeight="56.0" prefWidth="950.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="50.0" prefWidth="241.0" text="points" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font></Label>
+                  <ImageView fx:id="flagC1" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fx:id="flagC2" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fx:id="flag1A111" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fx:id="flagC3" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fx:id="flag1A114" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fx:id="flagC4" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="241.0" text="Country">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane13" layoutX="1372.0" layoutY="623.0" prefHeight="284.0" prefWidth="476.0" style="-fx-background-color: #c7bfbd; -fx-background-radius: 0;">
+         <children>
+            <ImageView fx:id="imageBackGroundD" fitHeight="284.0" fitWidth="476.0" focusTraversable="true" opacity="0.7" pickOnBounds="true" />
+            <GridPane layoutX="-212.0" layoutY="-38.0" prefHeight="200.0" prefWidth="353.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="equipe4_1" alignment="CENTER" contentDisplay="CENTER" prefHeight="57.0" prefWidth="882.0" text="Label" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font></Label>
+                  <Label fx:id="equipe4_2" alignment="CENTER" prefHeight="57.0" prefWidth="890.0" text="Label" textFill="#00d2fc" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font></Label>
+                  <Label fx:id="equipe4_3" alignment="CENTER" prefHeight="57.0" prefWidth="1036.0" text="Label" textFill="#fff70d" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font></Label>
+                  <Label fx:id="equipe4_4" alignment="CENTER" prefHeight="56.0" prefWidth="950.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="50.0" prefWidth="241.0" text="points" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="50.0" prefWidth="241.0" text="Country">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font></Label>
+                  <ImageView fx:id="flagD1" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fx:id="flagD2" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fx:id="flagD3" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fx:id="flagD4" fitHeight="45.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <viewport>
+                        <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+                     </viewport>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="goQF" layoutX="1744.0" layoutY="952.0" onAction="#goToQuarterFinal" style="-fx-background-color: white; -fx-background-radius: 30;" text="go to Quarter Final" />
+      <Label alignment="CENTER" layoutX="114.0" layoutY="53.0" prefHeight="31.0" prefWidth="365.0" text="Group A" textFill="WHITE">
+         <font>
+            <Font name="Arabic Typesetting" size="45.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="114.0" layoutY="554.0" prefHeight="31.0" prefWidth="365.0" text="Group C" textFill="WHITE">
+         <font>
+            <Font name="Arabic Typesetting" size="45.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1428.0" layoutY="53.0" prefHeight="31.0" prefWidth="365.0" text="Group B" textFill="WHITE">
+         <font>
+            <Font name="Arabic Typesetting" size="45.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1428.0" layoutY="554.0" prefHeight="31.0" prefWidth="365.0" text="Group D" textFill="WHITE">
+         <font>
+            <Font name="Arabic Typesetting" size="45.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="zabour" layoutX="609.0" layoutY="121.0" prefHeight="268.0" prefWidth="269.0" style="-fx-background-color: #c7bfbd; -fx-background-radius: 20;" visible="false">
+         <children>
+            <Button fx:id="hideFirst" layoutX="105.0" layoutY="239.0" mnemonicParsing="false" onMouseClicked="#hideme" text="HIDE" />
+            <GridPane prefHeight="235.0" prefWidth="279.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="scoreA" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" />
+                  <Label fx:id="scoreB" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="scoreD" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="scoreC" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="scoreE" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="matchF2" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0">
+                     <graphic>
+                        <ImageView fx:id="imageA1" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF21" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="2">
+                     <graphic>
+                        <ImageView fx:id="imageC1" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF211" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <graphic>
+                        <ImageView fx:id="imageD2" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF212" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="3">
+                     <graphic>
+                        <ImageView fx:id="imageD1" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF22" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="5">
+                     <graphic>
+                        <ImageView fx:id="imageF1" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF23" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="4">
+                     <graphic>
+                        <ImageView fx:id="imageE1" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF24" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fx:id="imageB1" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF26" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2">
+                     <graphic>
+                        <ImageView fx:id="imageA2" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF27" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fx:id="imageB2" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF28" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <graphic>
+                        <ImageView fx:id="imageC2" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF29" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0">
+                     <graphic>
+                        <ImageView fx:id="imageA" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF291" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <graphic>
+                        <ImageView fx:id="imageE2" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF292" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <graphic>
+                        <ImageView fx:id="imageF2" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="scoreF" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="key" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="534.0" layoutY="110.0" mnemonicParsing="false" onMouseClicked="#run" prefHeight="295.0" prefWidth="41.0" style="-fx-background-radius: 50;" text="Button" textOverrun="CENTER_WORD_ELLIPSIS" />
+      <AnchorPane fx:id="zabour1" layoutX="609.0" layoutY="622.0" prefHeight="268.0" prefWidth="269.0" style="-fx-background-color: #c7bfbd; -fx-background-radius: 20;" visible="false">
+         <children>
+            <Button fx:id="hideFirst1" layoutX="105.0" layoutY="239.0" mnemonicParsing="false" onMouseClicked="#hidemeC" text="HIDE" />
+            <GridPane prefHeight="235.0" prefWidth="279.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="scoreA1" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" />
+                  <Label fx:id="scoreB1" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="scoreD1" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="scoreC1" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="scoreE1" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="matchF21" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0">
+                     <graphic>
+                        <ImageView fx:id="imageA11" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF211" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="2">
+                     <graphic>
+                        <ImageView fx:id="imageG3C11" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF2111" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <graphic>
+                        <ImageView fx:id="imageG3D21" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF2121" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="3">
+                     <graphic>
+                        <ImageView fx:id="imageG3D11" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF221" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="5">
+                     <graphic>
+                        <ImageView fx:id="imageG3F11" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF231" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="4">
+                     <graphic>
+                        <ImageView fx:id="imageG3E11" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF241" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fx:id="imageG3B11" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF261" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2">
+                     <graphic>
+                        <ImageView fx:id="imageG3A21" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF271" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fx:id="imageG3B21" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF281" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <graphic>
+                        <ImageView fx:id="imageG3C21" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF291" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0">
+                     <graphic>
+                        <ImageView fx:id="imageG3A1" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF2911" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <graphic>
+                        <ImageView fx:id="imageG3E21" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF2921" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <graphic>
+                        <ImageView fx:id="imageG3F21" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="scoreF1" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="key1" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="534.0" layoutY="612.0" mnemonicParsing="false" onMouseClicked="#runC" prefHeight="286.0" prefWidth="41.0" style="-fx-background-radius: 50;" text="Button" textOverrun="CENTER_WORD_ELLIPSIS" />
+      <AnchorPane fx:id="zabour2" layoutX="1026.0" layoutY="623.0" prefHeight="268.0" prefWidth="269.0" style="-fx-background-color: #c7bfbd; -fx-background-radius: 20;" visible="false">
+         <children>
+            <Button fx:id="hideFirst2" layoutX="105.0" layoutY="239.0" mnemonicParsing="false" onMouseClicked="#hidemeD" text="HIDE" />
+            <GridPane prefHeight="235.0" prefWidth="279.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="scoreA2" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" />
+                  <Label fx:id="scoreB2" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="scoreD2" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="scoreC2" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="scoreE2" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="matchF21" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0">
+                     <graphic>
+                        <ImageView fx:id="imageA12" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF211" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="2">
+                     <graphic>
+                        <ImageView fx:id="imageG4C12" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF2112" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <graphic>
+                        <ImageView fx:id="imageG4D22" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF2122" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="3">
+                     <graphic>
+                        <ImageView fx:id="imageG4D12" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF222" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="5">
+                     <graphic>
+                        <ImageView fx:id="imageG4F12" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF232" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="4">
+                     <graphic>
+                        <ImageView fx:id="imageG4E12" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF242" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fx:id="imageG4B12" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF262" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2">
+                     <graphic>
+                        <ImageView fx:id="imageG4A22" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF272" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fx:id="imageG4B22" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF282" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <graphic>
+                        <ImageView fx:id="imageG4C22" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF291" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0">
+                     <graphic>
+                        <ImageView fx:id="imageG4AA4" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF2912" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <graphic>
+                        <ImageView fx:id="imageG4E22" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF2922" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <graphic>
+                        <ImageView fx:id="imageG4F22" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="scoreF2" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="zabour3" layoutX="1026.0" layoutY="121.0" prefHeight="268.0" prefWidth="269.0" style="-fx-background-color: #c7bfbd; -fx-background-radius: 20;" visible="false">
+         <children>
+            <Button fx:id="hideFirst3" layoutX="105.0" layoutY="239.0" mnemonicParsing="false" onMouseClicked="#hidemeB" text="HIDE" />
+            <GridPane prefHeight="235.0" prefWidth="279.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="scoreA3" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" />
+                  <Label fx:id="scoreB3" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="scoreD3" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="scoreC3" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="scoreE3" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="matchF21" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0">
+                     <graphic>
+                        <ImageView fx:id="imageA13" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF211" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="2">
+                     <graphic>
+                        <ImageView fx:id="imageG2C13" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF2113" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <graphic>
+                        <ImageView fx:id="imageG2D23" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF2123" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="3">
+                     <graphic>
+                        <ImageView fx:id="imageG2D13" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF223" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="5">
+                     <graphic>
+                        <ImageView fx:id="imageG2F13" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF233" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="4">
+                     <graphic>
+                        <ImageView fx:id="imageG2E13" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF243" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fx:id="imageG2B13" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF263" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2">
+                     <graphic>
+                        <ImageView fx:id="imageG2A23" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF273" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fx:id="imageG2B23" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF283" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <graphic>
+                        <ImageView fx:id="imageG2C23" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF291" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0">
+                     <graphic>
+                        <ImageView fx:id="imageG2A1" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF2913" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <graphic>
+                        <ImageView fx:id="imageG2E23" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="matchF2923" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <graphic>
+                        <ImageView fx:id="imageG2F23" fitHeight="37.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="scoreF3" alignment="CENTER" prefHeight="67.0" prefWidth="116.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="key2" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="1331.0" layoutY="619.0" mnemonicParsing="false" onMouseClicked="#runD" prefHeight="286.0" prefWidth="41.0" style="-fx-background-radius: 50;" text="Button" textOverrun="CENTER_WORD_ELLIPSIS" />
+      <Button fx:id="key3" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="1331.0" layoutY="110.0" mnemonicParsing="false" onMouseClicked="#runB" prefHeight="286.0" prefWidth="41.0" style="-fx-background-radius: 50;" text="Button" textOverrun="CENTER_WORD_ELLIPSIS" />
+      <Line fx:id="nina" endX="-80.0" endY="-29.0" fill="#fcfcfc" focusTraversable="true" layoutX="326.0" layoutY="429.0" startX="-80.0" startY="-29.0" stroke="WHITE" translateX="200.0" AnchorPane.leftAnchor="244.7071075439453" />
+      <ImageView fx:id="theCup" fitHeight="305.0" fitWidth="169.0" layoutX="886.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/worldCup.png" />
+         </image>
+      </ImageView>
+      <Line fx:id="nina2" endX="-100.0" layoutX="546.0" layoutY="468.0" startX="-100.0" stroke="WHITE" />
+      <Line fx:id="nina3" endX="-63.0" endY="14.0" layoutX="508.0" layoutY="601.0" startX="-63.0" startY="14.0" stroke="WHITE" />
+      <Line fx:id="line4" endX="-101.0" layoutX="546.0" layoutY="550.0" startX="-101.0" stroke="WHITE" />
+      <Line fx:id="line5" endX="-100.0" endY="-31.0" layoutX="1560.0" layoutY="429.0" startX="-100.0" startY="-31.0" stroke="WHITE" />
+      <Line fx:id="line6" endX="-13.0" layoutX="1473.0" layoutY="467.0" startX="-13.0" stroke="WHITE" />
+      <Line fx:id="line7" endX="-100.0" endY="60.0" layoutX="1560.0" layoutY="562.0" startX="-100.0" startY="60.0" stroke="WHITE" />
+      <Line fx:id="line8" endX="-13.0" layoutX="1473.0" layoutY="549.0" startX="-13.0" stroke="WHITE" />
+      <ImageView fx:id="arrow1" disable="true" fitHeight="39.0" fitWidth="41.0" focusTraversable="true" layoutX="1079.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="arrow2" disable="true" fitHeight="39.0" fitWidth="41.0" focusTraversable="true" layoutX="1079.0" layoutY="531.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="arrow4" disable="true" fitHeight="39.0" fitWidth="41.0" focusTraversable="true" layoutX="829.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@../../../../../Downloads/arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="arrow3" fitHeight="39.0" fitWidth="41.0" focusTraversable="true" layoutX="829.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@../../../../../Downloads/arrow.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="a1Flag" fitHeight="22.0" fitWidth="27.0" layoutX="873.0" layoutY="438.0" pickOnBounds="true" preserveRatio="true">
+         <viewport>
+            <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+         </viewport>
+         <image>
+            <Image url="@algeria.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="a1Flag1" fitHeight="22.0" fitWidth="27.0" layoutX="875.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+         <viewport>
+            <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+         </viewport>
+         <image>
+            <Image url="@algeria.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="a1Flag2" fitHeight="22.0" fitWidth="27.0" layoutX="875.0" layoutY="561.0" pickOnBounds="true" preserveRatio="true">
+         <viewport>
+            <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+         </viewport>
+         <image>
+            <Image url="@algeria.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="a1Flag21" fitHeight="22.0" fitWidth="27.0" layoutX="1033.0" layoutY="561.0" pickOnBounds="true" preserveRatio="true">
+         <viewport>
+            <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+         </viewport>
+         <image>
+            <Image url="@algeria.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="a1Flag22" fitHeight="22.0" fitWidth="27.0" layoutX="1033.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true">
+         <viewport>
+            <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+         </viewport>
+         <image>
+            <Image url="@algeria.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="a1Flag23" fitHeight="22.0" fitWidth="27.0" layoutX="875.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
+         <viewport>
+            <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+         </viewport>
+         <image>
+            <Image url="@algeria.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="a1Flag231" fitHeight="22.0" fitWidth="27.0" layoutX="1033.0" layoutY="438.0" pickOnBounds="true" preserveRatio="true">
+         <viewport>
+            <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+         </viewport>
+         <image>
+            <Image url="@algeria.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="a1Flag2311" fitHeight="22.0" fitWidth="27.0" layoutX="1033.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+         <viewport>
+            <Rectangle2D minX="500.0" minY="500.0" width="1000.0" />
+         </viewport>
+         <image>
+            <Image url="@algeria.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

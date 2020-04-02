@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="514.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication10.FXMLINFOSPLAYERController">
+   <children>
+      <ImageView fitHeight="540.0" fitWidth="614.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Flag/wp4533299-fifa-world-cup-2022-wallpapers.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="532.0" fitWidth="629.0" layoutX="-16.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Flag/gold1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="185.0" layoutX="203.0" layoutY="52.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Flag/player.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nom" alignment="CENTER" layoutX="197.0" layoutY="202.0" prefHeight="30.0" prefWidth="209.0" text="nom" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Label1" layoutX="74.0" layoutY="280.0" prefHeight="42.0" prefWidth="185.0" text="Label1">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Label2" layoutX="74.0" layoutY="322.0" prefHeight="42.0" prefWidth="185.0" text="Label2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Label3" layoutX="74.0" layoutY="364.0" prefHeight="42.0" prefWidth="185.0" text="Label3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Label4" layoutX="348.0" layoutY="286.0" prefHeight="42.0" prefWidth="185.0" text="Label4">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Label5" layoutX="348.0" layoutY="328.0" prefHeight="42.0" prefWidth="185.0" text="Label5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Label6" layoutX="348.0" layoutY="370.0" prefHeight="42.0" prefWidth="185.0" text="Label6">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="pays" alignment="CENTER" layoutX="74.0" layoutY="92.0" prefHeight="67.0" prefWidth="145.0" text="pays" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="-1.0" endY="-16.0" layoutX="299.0" layoutY="299.0" startX="-1.0" startY="199.0" />
+      <Button fx:id="back" layoutX="25.0" layoutY="482.0" mnemonicParsing="false" onAction="#Getabck" prefHeight="48.0" prefWidth="50.0" style="-fx-background-radius: 100;" text="Back">
+         <font>
+            <Font size="1.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
